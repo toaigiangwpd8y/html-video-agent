@@ -1,0 +1,20 @@
+{
+  "provider": "onda",
+  "revision": "onda-cli@fixture",
+  "cliVersion": "fixture",
+  "sourceRegistry": "fixture://onda",
+  "itemCount": 1,
+  "items": [
+    {
+      "id": "onda:test-fade",
+      "slug": "test-fade",
+      "name": "TestFade",
+      "category": "entrances",
+      "kind": "primitive",
+      "description": "A deterministic test fade.",
+      "tags": [],
+      "dependencies": [],
+      "registryDependencies": []
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "version": "1",
+  "assets": [
+    {
+      "id": "remotion-interactivity-local",
+      "publicPath": "/assets/remotion-interactivity-local.svg",
+      "type": "image/svg+xml",
+      "source": "fixture",
+      "provenance": "Original local asset for the Remotion interactivity contract fixture.",
+      "license": "Original fixture artwork",
+      "permittedUse": "Remotion interactivity contract fixture only",
+      "sceneIds": ["scene-1"],
+      "role": "illustration"
+    }
+  ]
+}

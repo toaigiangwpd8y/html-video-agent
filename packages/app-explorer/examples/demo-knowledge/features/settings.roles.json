@@ -1,0 +1,6 @@
+{
+  "id":"settings.roles","title":"Quản lý vai trò","area":"Settings","summary":"Chỉnh sửa quyền của người dùng.","status":"blocked",
+  "entry":{"url":"/settings/roles","label":"Settings → Roles"},"testedContext":{"role":"Member (demo)","date":"2026-10-15"},"lastVerifiedAt":null,"updatedAt":"2026-10-15",
+  "steps":[],"questions":["Role Admin có thể chỉnh sửa quyền không?"],
+  "nextActions":[{"id":"admin-account","goal":"Thử với tài khoản Admin được cấp quyền","reason":"Tài khoản hiện tại không có quyền truy cập trang Roles.","entryPath":"/settings/roles"}]
+}

@@ -1,0 +1,82 @@
+# Dependencies
+node_modules/
+.venv-tts/
+remotion/node_modules/
+hyperframes/node_modules/
+hyperframes/projects/
+hyperframes/implementation-manifest.json
+.agents/skills/remotion-*/
+.agents/skills/3d/
+.agents/skills/mediabunny/
+.agents/skills/remotion/
+skills-lock.json
+
+# Build outputs
+dist/
+*.tsbuildinfo
+
+# Per-project working files. `npm run video -- init` recreates them for a new
+# video and archives the previous one under archive/, so none belong in git.
+/video.json
+/request.md
+/assets/
+/video-input/*
+!/video-input/README.md
+!/video-input/manifest.template.json
+!/video-input/sources/
+/video-input/sources/*
+!/video-input/sources/.gitkeep
+
+# Runtime/video artifacts
+.video/
+.app-explorer/
+output/
+archive/
+remotion/generated/*
+!remotion/generated/.gitkeep
+remotion/projects/
+remotion/public/assets/
+remotion/implementation-manifest.json
+
+# Remotion/cache artifacts
+.remotion/
+remotion/.remotion/
+.cache/
+remotion/.cache/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment and local machine config
+.env
+.env.*
+!.env.example
+
+# Editor/OS noise
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+.worktrees/
+
+# Coverage/test artifacts
+coverage/
+.nyc_output/
+
+# Test runtime artifacts
+tests/.tmp-*/
+remotion/.tmp-*/
+
+# Local GRA-39 planning, diagnostic reports, and acceptance output
+/docs/GRA-39_ACCEPTANCE.md
+/docs/acceptance/gra-39/
+/docs/research/*GRA-39*
+/docs/superpowers/plans/*GRA-39*
+/docs/superpowers/specs/*GRA-39*
+/packages/app-explorer/tests/evidence/

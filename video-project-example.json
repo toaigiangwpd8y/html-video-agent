@@ -1,0 +1,6 @@
+{
+  "meta": {"title": "SaaS Minimal Explainer", "width": 1920, "height": 1080, "durationsInFrames": 500, "fps": 30, "theme": {"palette": ["#09090B", "#FAFAFA", "#2563EB"], "font": "Inter"}, "constraints": {"style": "flat-minimal", "disallowed": ["gradients", "glitch-effects", "skeuomorphism"], "motionTone": "smooth-and-subtle"}},
+  "scenes": [
+    {"id": "scene_01", "durationInFrames": 90, "audio": {"voiceoverText": "Render video automatically in a few seconds."}, "screenText": "Faster rendering", "visualConcept": "A concise statement and a simple time cue communicate speed without prescribing a component, layout, or animation recipe."}
+  ]
+}

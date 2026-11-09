@@ -1,0 +1,37 @@
+:root {
+  --bg-app: #111316;
+  --bg-header: #191b20;
+  --bg-card: #1e2127;
+  --bg-card-subtle: #25282f;
+  --bg-code: #15171b;
+  --border-strong: #3b4049;
+  --border-default: #30343b;
+  --border-subtle: #272b31;
+  --text-primary: #f2f3f5;
+  --text-secondary: #b0b5bf;
+  --text-muted: #858c97;
+  --accent-blue: #9ab4ea;
+  --accent-blue-bg: rgba(154, 180, 234, 0.12);
+  --accent-blue-border: rgba(154, 180, 234, 0.32);
+  --accent-blue-action: #536e9e;
+  --accent-blue-action-hover: #5d769f;
+  --accent-amber: #d7a765;
+  --accent-amber-hover: #e0b775;
+  --accent-amber-bg: rgba(215, 167, 101, 0.12);
+  --accent-amber-border: rgba(215, 167, 101, 0.36);
+  --accent-green: #69cba4;
+  --accent-green-bg: rgba(105, 203, 164, 0.12);
+  --accent-green-border: rgba(105, 203, 164, 0.3);
+  --accent-red: #e78c86;
+  --accent-red-bg: rgba(231, 140, 134, 0.12);
+  --accent-red-border: rgba(231, 140, 134, 0.36);
+  --accent-orange: var(--accent-amber);
+  --accent-orange-hover: var(--accent-amber-hover);
+  --accent-orange-bg: var(--accent-amber-bg);
+  --accent-orange-border: var(--accent-amber-border);
+  --radius-sm: 4px;
+  --radius: 6px;
+  --radius-lg: 8px;
+  --font-sans: Inter, "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}

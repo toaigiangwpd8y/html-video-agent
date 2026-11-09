@@ -1,0 +1,7 @@
+{
+  "meta": {"title": "Narrated caching explainer", "width": 1080, "height": 1920, "durationsInFrames": 180, "fps": 30, "theme": {"palette": ["#111827", "#F9FAFB", "#22C55E"], "font": "Inter"}, "constraints": {"style": "simple-illustrated", "disallowed": [], "motionTone": "clear-and-purposeful"}},
+  "scenes": [
+    {"id": "scene-1", "durationInFrames": 90, "audio": {"voiceoverText": "A cache keeps a nearby copy of data you expect to need again."}, "screenText": "A nearby copy", "visualConcept": "One requested data card is copied from a distant server into a clearly labeled nearby cache while the original remains visible."},
+    {"id": "scene-2", "durationInFrames": 90, "screenText": "Reuse it sooner", "visualConcept": "The next identical request takes the shorter route to the cached copy, making the saved journey visible without implying that every request is cached."}
+  ]
+}

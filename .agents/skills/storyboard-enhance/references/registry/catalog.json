@@ -1,0 +1,146 @@
+{
+  "version": "0.1.0",
+  "purpose": "Optional lookup for reusable Remotion implementation sources after blueprint selection.",
+  "selection_contract": {
+    "blueprint_precedes_registry": true,
+    "registry_is_optional": true,
+    "none_is_valid": true,
+    "registry_does_not_override_story_truth": true,
+    "registry_does_not_override_asset_fit": true,
+    "direct_remotion_remains_final_authoring_model": true
+  },
+  "items": [
+    {
+      "id": "onda-blur-reveal",
+      "provider": "onda",
+      "kind": "primitive",
+      "description": "Calm spring-driven headline reveal combining blur, opacity, and a short upward settle.",
+      "capabilities": ["text-reveal", "blur", "opacity", "spring"],
+      "inputs": ["headline text", "reveal timing", "text placement"],
+      "constraints": ["text-led visual"],
+      "sourcePath": "remotion/registry/onda/blur-reveal/BlurReveal.tsx",
+      "origin": {"repo": "https://github.com/degueba/onda", "revision": "3c814051269597b31fee1603bef7ccfb93d091b6"}
+    },
+    {
+      "id": "onda-callout",
+      "provider": "onda",
+      "kind": "primitive",
+      "description": "Label-and-arrow annotation that reveals a bubble before drawing attention to a canvas point.",
+      "capabilities": ["annotation", "callout", "arrow", "tutorial"],
+      "inputs": ["annotation label", "target position", "reveal timing"],
+      "constraints": ["requires a visible point or region to annotate"],
+      "sourcePath": "remotion/registry/onda/callout/Callout.tsx",
+      "origin": {"repo": "https://github.com/degueba/onda", "revision": "3c814051269597b31fee1603bef7ccfb93d091b6"}
+    },
+    {
+      "id": "onda-count-up",
+      "provider": "onda",
+      "kind": "primitive",
+      "description": "Deterministic locale-grouped number count-up with a coordinated fade and spring settle.",
+      "capabilities": ["numeric", "counter", "metric", "spring"],
+      "inputs": ["start and end values", "number formatting", "count timing"],
+      "constraints": ["numeric value or metric"],
+      "sourcePath": "remotion/registry/onda/count-up/CountUp.tsx",
+      "origin": {"repo": "https://github.com/degueba/onda", "revision": "3c814051269597b31fee1603bef7ccfb93d091b6"}
+    },
+    {
+      "id": "onda-dynamic-grid",
+      "provider": "onda",
+      "kind": "effect",
+      "description": "Frame-driven diagonal technical grid atmosphere with an optional centered accent glow.",
+      "capabilities": ["background", "effect", "grid", "atmosphere", "deterministic-motion"],
+      "inputs": ["grid style", "motion speed", "background treatment"],
+      "constraints": ["atmospheric effect; do not encode story semantics"],
+      "sourcePath": "remotion/registry/onda/dynamic-grid/DynamicGrid.tsx",
+      "origin": {"repo": "https://github.com/degueba/onda", "revision": "3c814051269597b31fee1603bef7ccfb93d091b6"}
+    },
+    {
+      "id": "onda-image-reveal",
+      "provider": "onda",
+      "kind": "primitive",
+      "description": "Still-image reveal with Onda blur, fade, or subtle scale motion and optional canvas placement.",
+      "capabilities": ["media", "image", "reveal", "entrance"],
+      "inputs": ["image source", "reveal motion", "image fit"],
+      "constraints": ["requires inspected local or frozen media source"],
+      "sourcePath": "remotion/registry/onda/image-reveal/ImageReveal.tsx",
+      "origin": {"repo": "https://github.com/degueba/onda", "revision": "3c814051269597b31fee1603bef7ccfb93d091b6"}
+    },
+    {
+      "id": "remotionui-counter",
+      "provider": "remotionui",
+      "kind": "primitive",
+      "description": "Fixed-width animated counter with optional odometer roll and deterministic landing motion.",
+      "capabilities": ["counter", "numeric", "metric", "roll"],
+      "inputs": ["start and end values", "number formatting", "counter timing"],
+      "constraints": ["numeric value or metric"],
+      "sourcePath": "remotion/registry/remotionui/counter/counter.tsx",
+      "origin": {"repo": "https://github.com/riaz37/remotion-ui", "revision": "802a63708cc5c13936bcccb47f091a0b14325cb5"}
+    },
+    {
+      "id": "remotionui-comparison-bars",
+      "provider": "remotionui",
+      "kind": "primitive",
+      "description": "Shared-scale before-and-after bars that stage comparable values and their delta annotation.",
+      "capabilities": ["comparison", "data", "bars", "change"],
+      "inputs": ["before and after values", "row labels", "comparison timing"],
+      "constraints": ["requires comparable numeric rows"],
+      "sourcePath": "remotion/registry/remotionui/comparison-bars/comparison-bars.tsx",
+      "origin": {"repo": "https://github.com/riaz37/remotion-ui", "revision": "802a63708cc5c13936bcccb47f091a0b14325cb5"}
+    },
+    {
+      "id": "remotionui-masked-slide-reveal",
+      "provider": "remotionui",
+      "kind": "primitive",
+      "description": "Word- or line-based masked headline reveal with staggered upward motion.",
+      "capabilities": ["text-reveal", "mask", "stagger", "headline"],
+      "inputs": ["headline text", "word or line grouping", "reveal timing"],
+      "constraints": ["text-led reveal"],
+      "sourcePath": "remotion/registry/remotionui/masked-slide-reveal/masked-slide-reveal.tsx",
+      "origin": {"repo": "https://github.com/riaz37/remotion-ui", "revision": "802a63708cc5c13936bcccb47f091a0b14325cb5"}
+    },
+    {
+      "id": "remotionui-split-screen",
+      "provider": "remotionui",
+      "kind": "scene",
+      "description": "Two-panel visual comparison with arriving media, labels, divider, and optional wipe to the surviving panel.",
+      "capabilities": ["scene", "comparison", "media", "wipe"],
+      "inputs": ["left media source", "right media source", "comparison labels", "wipe timing"],
+      "constraints": ["requires two inspected media items or panels"],
+      "sourcePath": "remotion/registry/remotionui/split-screen/SplitScreen.tsx",
+      "origin": {"repo": "https://github.com/riaz37/remotion-ui", "revision": "802a63708cc5c13936bcccb47f091a0b14325cb5"}
+    },
+    {
+      "id": "remotionui-transition-wipe",
+      "provider": "remotionui",
+      "kind": "transition",
+      "description": "Directional wipe transition configuration for authored Remotion scene handoffs.",
+      "capabilities": ["transition", "wipe", "scene-handoff", "deterministic-timing"],
+      "inputs": ["transition duration", "wipe direction", "timing variant"],
+      "constraints": ["use between authored scenes in TransitionSeries"],
+      "sourcePath": "remotion/registry/remotionui/transition-wipe/TransitionWipe.tsx",
+      "origin": {"repo": "https://github.com/riaz37/remotion-ui", "revision": "802a63708cc5c13936bcccb47f091a0b14325cb5"}
+    },
+    {
+      "id": "remotionbits-type-writer",
+      "provider": "remotionbits",
+      "kind": "primitive",
+      "description": "Deterministic typewriter sequence with configurable typing, deletion, pauses, cursor, errors, and looping.",
+      "capabilities": ["text", "typewriter", "cursor", "deterministic-motion"],
+      "inputs": ["text sequence", "typing timing", "cursor behavior"],
+      "constraints": ["text-led terminal or typewriter treatment"],
+      "sourcePath": "remotion/registry/remotionbits/type-writer/TypeWriter.tsx",
+      "origin": {"repo": "https://github.com/av/remotion-bits", "revision": "6c71169aa061f15313fadbdc6e29a3a3a87f2c03"}
+    },
+    {
+      "id": "remotionbits-staggered-motion",
+      "provider": "remotionbits",
+      "kind": "primitive",
+      "description": "Child-element motion with forward, reverse, center, or deterministic random staggering.",
+      "capabilities": ["stagger", "transform", "children", "deterministic-motion"],
+      "inputs": ["child elements", "stagger direction", "motion timing"],
+      "constraints": ["requires repeated child visuals"],
+      "sourcePath": "remotion/registry/remotionbits/staggered-motion/StaggeredMotion.tsx",
+      "origin": {"repo": "https://github.com/av/remotion-bits", "revision": "6c71169aa061f15313fadbdc6e29a3a3a87f2c03"}
+    }
+  ]
+}

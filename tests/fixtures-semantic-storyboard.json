@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "title": "Semantic normalization fixture",
+    "width": 1920,
+    "height": 1080,
+    "durationsInFrames": 120,
+    "fps": 30,
+    "theme": {"palette": ["#111111", "#FFFFFF"], "font": "Inter"},
+    "constraints": {"style": "documentary", "disallowed": [], "motionTone": "measured"}
+  },
+  "scenes": [
+    {
+      "id": "scene-film-digital",
+      "durationInFrames": 60,
+      "screenText": "Digital disrupts film",
+      "visualConcept": "Show how digital photography disrupts the film-based value chain."
+    },
+    {
+      "id": "scene-kodak-contradiction",
+      "durationInFrames": 60,
+      "screenText": "Invention did not prevent crisis",
+      "visualConcept": "Make the contradiction clear between Kodak's early digital invention and its later business crisis, without implying that invention alone caused the crisis."
+    }
+  ]
+}

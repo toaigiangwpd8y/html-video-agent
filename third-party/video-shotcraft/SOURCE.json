@@ -1,0 +1,2121 @@
+{
+  "repo": "https://github.com/Vincentwei1021/video-shotcraft",
+  "revision": "43bd349a136651865ecfa6ea1cf012f6e957d304",
+  "importedAt": "2026-10-23T11:16:43.709Z",
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "02da8ccd8ddb6946940ccc99494c04992a8cf4b9835bcc32f70ae985ef160f59"
+    },
+    {
+      "path": "assets/lib/Caption.tsx",
+      "sha256": "7539ceb9456cb2fe693872bd77f976db9c703addb8eb569633666df9050f99bd"
+    },
+    {
+      "path": "assets/lib/ClipCard.tsx",
+      "sha256": "709c0d15faf96662998d8677ed833f4ecf19dfda8313fd0efbdf19cb2b39fe2b"
+    },
+    {
+      "path": "assets/lib/DigitRoll.tsx",
+      "sha256": "9b4e3b269a9d053ed22469b5f49c09f30aae0d18a2df46e1d4449b38b86f50bf"
+    },
+    {
+      "path": "assets/lib/FlashCut.tsx",
+      "sha256": "c21d48223ed5d99cfafca77836c7055976e83a6589e73a4b0d0bdd8f1ed29e79"
+    },
+    {
+      "path": "assets/lib/FlatPanel.tsx",
+      "sha256": "d3bad4d49521b834fdc3b13f8a89d30176ffdc81f07fce1ee86306cb2ee69d76"
+    },
+    {
+      "path": "assets/lib/PageCam.tsx",
+      "sha256": "1b82a9d612894d1a4d6daf8700b39cb50fc71715ae7b6f0897a0bd66ab3411c8"
+    },
+    {
+      "path": "assets/lib/VerticalTicker.tsx",
+      "sha256": "1de3a6ee447eb5afc5cd7339bf32aa82b78a6e0b8e6850f0cf7d4efa3bad7791"
+    },
+    {
+      "path": "assets/lib/helpers/camera.tsx",
+      "sha256": "f35b9814457e12970f35cdd601f44e88721333699cf3d6dd0ca80ec15b1faf1e"
+    },
+    {
+      "path": "assets/lib/helpers/motion.ts",
+      "sha256": "95fac010e48eb7d49dcad68b0f855dca57bfd5ea3d5b197a27b7597f51e7fad8"
+    },
+    {
+      "path": "assets/lib/helpers/rand.ts",
+      "sha256": "383aa73d830fd81bab495199b07d9626ea6c2a710ed6081c2341f2b57b762d41"
+    },
+    {
+      "path": "assets/lib/helpers/shake.ts",
+      "sha256": "962aff832d17410c050c9cb374c2991033eac470e99bb0c3e7ce037776448368"
+    },
+    {
+      "path": "demos/_fixtures/Brand.tsx",
+      "sha256": "8034fa987c0f8ed37fd6422a0b8a2fcf1f6e2c73abe373aba5fb83007af250e2"
+    },
+    {
+      "path": "demos/_fixtures/Fixtures.tsx",
+      "sha256": "bd45fa10c22d6c4645e74fe5e106f2a91841716962b9be198c545e9ab34cd987"
+    },
+    {
+      "path": "demos/_fixtures/Look.tsx",
+      "sha256": "d3dba47b91841648a9ee7d827f86fbb1224f11acce2036fa5b2270fbe4e19bf6"
+    },
+    {
+      "path": "demos/_fixtures/Motion.tsx",
+      "sha256": "81daa150aded61c21f4e8fe4b80a7efb87f9a767d28b69b274bc50705f07485e"
+    },
+    {
+      "path": "demos/_fixtures/PageCam2D.tsx",
+      "sha256": "97e687ac30adc8e96bd1f71107de9d0e417cc35f405b72c7c6db98a8687cf154"
+    },
+    {
+      "path": "demos/_fixtures/Polish.tsx",
+      "sha256": "85d26e13593f38b403bb66945c05dbc2631c23437ac5b0242f9d96b53cc54e54"
+    },
+    {
+      "path": "demos/_textures/card1.png",
+      "sha256": "68cb25fbcac0e8a90f8327604b10e136f5fb58710c2e54b0d9e0be28e00cea7b",
+      "upstreamSha256": "91e5ff3d3a786eea1ac42f2cb3c6083fae6c3ddf214b80dfa9a7e70d250948f9"
+    },
+    {
+      "path": "demos/_textures/card10.png",
+      "sha256": "ef8456731eef9b8b53c9c00f43f26f27632babbd665312485cbdb9d92f4b547d",
+      "upstreamSha256": "615736608714f4d4162fa2bd1abd557252c933bec5d32ca0975079bdac593f63"
+    },
+    {
+      "path": "demos/_textures/card2.png",
+      "sha256": "a27a7f8d0f2500f71a7166c11e81e4d39631ec4f228df7c8f9f9890e74074115",
+      "upstreamSha256": "ea6f1bc6b774bbd81be54ea63d8c15a0025f47adfeeedd8529b002832ff70e49"
+    },
+    {
+      "path": "demos/_textures/card3.png",
+      "sha256": "7857b4864349c1b390b070eabba383dab7a6235c625e276edf7c0e3ced82ebb0",
+      "upstreamSha256": "e8e7331f7b7aaf592f4db54eb28d248ba17cd12fbfa237cd3a959b13b0da92fd"
+    },
+    {
+      "path": "demos/_textures/card4-hires.png",
+      "sha256": "f8f39bfcf25808309b9b12b13ac4d3d8177a96010e9810296ba498ab4ad5a0f2",
+      "upstreamSha256": "2d31a711702e7c4a4aea939717338141dbc81c490facea9691705f003e904b26"
+    },
+    {
+      "path": "demos/_textures/card4.png",
+      "sha256": "7483bc0b78ad16b60a65aec166bb2db69658ddba16d34ac34f7c5e4f86e1e677",
+      "upstreamSha256": "26dff0fc4e4efe529c4002ef9703b827ba9d9a00d05cbcc9136bc88d385134ad"
+    },
+    {
+      "path": "demos/_textures/card5.png",
+      "sha256": "c9cf1306d380bdaa730e63b7f2e86f4faeaa5654b9e196d1c954b2a51a729f06",
+      "upstreamSha256": "7e548f79350cbc9a8a4f53db550401bacd85b2221112d175378bf46c5090feb1"
+    },
+    {
+      "path": "demos/_textures/card6.png",
+      "sha256": "c332bae85afffe49723658a9c60e10aa07cf7f6bbf0591b9e5a368f977515374",
+      "upstreamSha256": "c7718be0c1238cd6b66d704e76cf403d92e11182faa6a56901b221066ed4c081"
+    },
+    {
+      "path": "demos/_textures/card7.png",
+      "sha256": "25f5f0fcd1de8de8ab3fa114830cb36377b1be1a548d5853b700d3144d01d4bf",
+      "upstreamSha256": "a0820ad18551c1503a9c4bfb75c74b65381ba428e085b288856cd418f605a233"
+    },
+    {
+      "path": "demos/_textures/card8.png",
+      "sha256": "96db4b9ad04ea74b3f1423aa6c66c1aec0ee4e103638c6e551695adf158206b5",
+      "upstreamSha256": "fcec883f6fb03ff2313d91f7b647af20fa59451580af387a34d0a1f5088d1b45"
+    },
+    {
+      "path": "demos/_textures/card9.png",
+      "sha256": "d23a6d5a7c0667afc5e761f188f7f8479cd448d6a6762aab2f3b779a5edfaa8b",
+      "upstreamSha256": "bb508ce0058265fa7175cffe512c10e371121b4548eebdb69ba6ab2b83d6c613"
+    },
+    {
+      "path": "demos/_textures/detail-full.png",
+      "sha256": "5e60df6de2ebfd063740a49418a1419d85e56da1e4c2c5feffae568b1fd1f9b5",
+      "upstreamSha256": "e724db69c405d68a57c8649c102e297969c9fecad233b0896c9c18a13eadd0a5"
+    },
+    {
+      "path": "demos/_textures/float-search.png",
+      "sha256": "bde28cf571a56667081633871dba8e9a0625b4f4002a59cd5c2ef51b22b25f1d",
+      "upstreamSha256": "53839d02801f6bc2b2b6e7c801cd73ea0edb20b748d248f3ba845dfba835f222"
+    },
+    {
+      "path": "demos/_textures/float-stats.png",
+      "sha256": "cd7e839b39cfb6e050fcb75756cf1fa40abff4d57b352f031278097c157d07fa",
+      "upstreamSha256": "8a100bd4419c3711dcd2e590a0e122d6c91930670d5bfef1e8c48b979a798cdd"
+    },
+    {
+      "path": "demos/_textures/live-layout.json",
+      "sha256": "e8d2e6a76fbc1e1fa0cd56a9acc341279683cd2452a1a667d420c31931b520fd"
+    },
+    {
+      "path": "demos/_textures/nav.png",
+      "sha256": "d2924f6fcad22b18cd135e528fcc3d0b2bc3df78e2721186392f889b0231257d",
+      "upstreamSha256": "889d860e17886d18d7dfeccebabad14da01395e84e8a0bd3447c61249a0d511f"
+    },
+    {
+      "path": "demos/_textures/paper1.png",
+      "sha256": "18bf35885f0459a963e6a18fa8adc5ca7c5f52b7baab3cd822a0a31fd2f4042f",
+      "upstreamSha256": "50e288d82440174bae60d8ed1c4fbc5c87d24025e06b5c4061d6bb523eb1a906"
+    },
+    {
+      "path": "demos/_textures/paper2.png",
+      "sha256": "af59b001a00853161c0c816848f1cf1f6a667e0a4cae0a66e5ab9f7e5d765972",
+      "upstreamSha256": "059a8b6b012ff449f935a50034171cd5298971eb90f6258156f602dcc51ed804"
+    },
+    {
+      "path": "demos/_textures/paper3.png",
+      "sha256": "758a6989cbf8f7a2ffffedfb7e1d5422a5963afe2ff990552c6c706527a45ee1",
+      "upstreamSha256": "2f410e9871033a16caeee984a1bacc250727a86c96fde39e9fcc0981e87a2a16"
+    },
+    {
+      "path": "demos/_textures/paper4.png",
+      "sha256": "29388170a6d08baf1ff760cf681a99ff97190765256a4a02249396c8cc1590fb",
+      "upstreamSha256": "5595f9d544467d220a6c9db5c1a28e430df4401976a1c261bc7633216fa326fb"
+    },
+    {
+      "path": "demos/_textures/paper5.png",
+      "sha256": "8ee7c16185f32594d757babb25ab71d13ebc1e8cd14e4a8b796a81ae31806f7e",
+      "upstreamSha256": "50f8797cc13871808c1105b46c9cbc81e7c08c6564d22cbde5255d9589593167"
+    },
+    {
+      "path": "demos/_textures/papers-full.png",
+      "sha256": "f5f4db5ba95b8163230ff0d722cb933bc31d3e0389cf7ddd6b5bc1988c09c69c",
+      "upstreamSha256": "2cc5e7d30d0644859b3f52cb385bb61582eef802a17394ede2687a4b37ed0662"
+    },
+    {
+      "path": "demos/_textures/projects-empty.png",
+      "sha256": "7f64b2deb6965e0eafd1da03268249b8c08d264771a2069355f9fe8c1f393ef9",
+      "upstreamSha256": "41fcbff82eb394879a3f2483808b619d9530f05e33dbbb2bedc5d9e3ff3fe4c6"
+    },
+    {
+      "path": "demos/_textures/projects-full.png",
+      "sha256": "d53d27caaef7caaa0e688743e855a2ed110bcf9ec42997dfe379130bc0fcbddc",
+      "upstreamSha256": "685466cebc1f2c08076e975c72003abda096c0bd0cd7b8880baba22e227f7d3d"
+    },
+    {
+      "path": "demos/_textures/wbr-full.png",
+      "sha256": "c1b7d0a94c463faf235064bd7ca7c922376020f2fa15499c9c0ac20837a7f32e",
+      "upstreamSha256": "2c54aab8ce760e04ecf1ce5b759cf8ee70759b8f9f9e06865bd6413e66a7a8f4"
+    },
+    {
+      "path": "demos/camera/basic-3d-scene/Basic3DScene.tsx",
+      "sha256": "5c06728fca57abb7d6416ce6dd7ff92642ebedbe590e5459e63d5a0082691016"
+    },
+    {
+      "path": "demos/camera/crash-zoom-punch/CrashImpactReal.tsx",
+      "sha256": "e44839c7d1e43a25978bededa58573478aeb95e94f2b1b830542fd55f693bc49"
+    },
+    {
+      "path": "demos/camera/crash-zoom-punch/CrashZoomReal.tsx",
+      "sha256": "f226b81b8f970b7d0a38ae3fb0d86cefc27a2ab1aa0334cf3cbf30b172563f45"
+    },
+    {
+      "path": "demos/camera/cursor-flyover/CursorFlyover.tsx",
+      "sha256": "f234775365ecb93f9576db4715c66bb21513bfb158e71112c1efa63b121ab826"
+    },
+    {
+      "path": "demos/camera/depth-layer-moves/MultiplaneReal.tsx",
+      "sha256": "4566d05a98022ce52d09b2292bf0d81e04f0ea5d40f5cfe71455e3266fb19bd7"
+    },
+    {
+      "path": "demos/camera/graze-face-tour/GrazeFaceTour.tsx",
+      "sha256": "27e816d7b33051f677e5472276fcdcf9fe8832aeef8780cb16644724c4377db4"
+    },
+    {
+      "path": "demos/camera/overhead-camera-moves/OverheadTabletopDrop.tsx",
+      "sha256": "2a8e3d5241d68d2a4b77eb2bc51d69cfe644baf51d673564871600eeaac872e7"
+    },
+    {
+      "path": "demos/camera/overhead-camera-moves/TiltReveal.tsx",
+      "sha256": "2621fbf6a60d2c89175156c9e6b6c28c2c741b011f9c6dffcd4d267714ae5568"
+    },
+    {
+      "path": "demos/camera/space-camera-moves/DroneDiveLanding.tsx",
+      "sha256": "8cafe8fc6011a5ced57765916e4f1be7bbfffbf83973a94f2eda34292ccc91af"
+    },
+    {
+      "path": "demos/camera/space-camera-moves/ExplodedView.tsx",
+      "sha256": "5127dc596bd5557b3cd093ed5fb983f6d00ff3a05bae9344702a69215783aec4"
+    },
+    {
+      "path": "demos/camera/steep-tilt-glide/SteepTiltGlide.tsx",
+      "sha256": "a99a4f838a0f33bb963e5de0845597973b4712ccb7f4ffab955be3bcd141f67d"
+    },
+    {
+      "path": "demos/camera/tension-camera-moves/BulletTimeFreezeOrbit.tsx",
+      "sha256": "87e2ae1248a724cebbc6642bbea013fb000a1bd9841a51221129af7b9026d273"
+    },
+    {
+      "path": "demos/camera/tension-camera-moves/PullBackIsolation.tsx",
+      "sha256": "f6e909d64453b9da0b484bd34d3c7d03cee0fabd407286aad6b4ff0681c9de39"
+    },
+    {
+      "path": "demos/camera/terminal-3d/Terminal3D.tsx",
+      "sha256": "74a96bcb19e4e65a9822703f5907b3e7357f39ee15e69d5867a23ef86f220300"
+    },
+    {
+      "path": "demos/data/before-after-slider-scrub/BeforeAfterSliderScrub.tsx",
+      "sha256": "924435426b3e0f3378ab05ca5a04e66b8b1a7ab198410b8bc2ee1ddb69458359"
+    },
+    {
+      "path": "demos/data/chart-live-moves/AxisRescaleShockV2.tsx",
+      "sha256": "7f6003c967329cc7d9bd5e9c78cd4924ca2ffec84aedc1d6537b865b0a529c94"
+    },
+    {
+      "path": "demos/data/chart-live-moves/OscilloscopeStreamV2.tsx",
+      "sha256": "00548471ea812de87e3e010cb45a2c0722dd0ca4eaa3146eb7e8ad6d82b3b30a"
+    },
+    {
+      "path": "demos/data/chart-live-moves/UnitDotSwarmRegroupV2.tsx",
+      "sha256": "9898bae674ed759eb9d888dcae1ec2a556463d9854dbbf870e44cd324945f496"
+    },
+    {
+      "path": "demos/data/gauge-readout-moves/NeedleSweepSelftest.tsx",
+      "sha256": "7d869f984b89fe0d6c2b339737990faceb3556ff0489bf03404fe72042f3e577"
+    },
+    {
+      "path": "demos/data/gauge-readout-moves/TapeScrollFixedPointer.tsx",
+      "sha256": "0fd3fd8cf726f75852ac3d6d02509252e8d806bf82e96b502d81207f0d7f4204"
+    },
+    {
+      "path": "demos/data/scroll-brake-moves/BrakeReticleLock.tsx",
+      "sha256": "d7a835169382d630a6a0c76922a75eee7ff7d66d78fa0b47e9c8a7580eb3f63b"
+    },
+    {
+      "path": "demos/data/scroll-brake-moves/ChangelogScrollBrake.tsx",
+      "sha256": "624034efec290edb04c789f5b96c1c6aac5cdffa18417fc5f2ff6f547c68f75c"
+    },
+    {
+      "path": "demos/data/timeline-travel/TimelineTravel.tsx",
+      "sha256": "d93d1b33db8ad29f69a913b15662670121031f5be2df90188c5680527b8eccf7"
+    },
+    {
+      "path": "demos/effects/assemble-then-type-flyin/AssembleThenTypeFlyin.tsx",
+      "sha256": "ddf865a26f5309e00ae13d64428341f36c4f44054027b2fdd86fbe5679fe6519"
+    },
+    {
+      "path": "demos/effects/aurora-bloom-bg-flip/AuroraBloomBgFlip.tsx",
+      "sha256": "2c663caf82bfbb2b564c897bb205ba8e8b65d09ac827e590f62357f08195893f"
+    },
+    {
+      "path": "demos/effects/brand-frame-snap/BrandFrameSnap.tsx",
+      "sha256": "52247e0eafc647a86b1ef7cd7408ddf6fcfe6d02b4d5057907a69e02005fc2d4"
+    },
+    {
+      "path": "demos/effects/fui-hud-moves/ReticleLockOn.tsx",
+      "sha256": "f24845551c2a68a9393bd527c065acf9062ac2d2b125e97079d6392ec56b013d"
+    },
+    {
+      "path": "demos/effects/glow-flyline-moves/FlylineArc.tsx",
+      "sha256": "325b9e9e4b946b0750e1ea45a6049b245cf6bda21a046908647a5065c5e50a00"
+    },
+    {
+      "path": "demos/effects/glow-flyline-moves/GlowOrbAmbient.tsx",
+      "sha256": "c7d1b04d7587a96bfd348dd60589424a0b3311aa92b470b0be0dccaa51e9908f"
+    },
+    {
+      "path": "demos/effects/glow-flyline-moves/OrbFlylineRelay.tsx",
+      "sha256": "bb05cd2c495585fc1635cdf7a09cf55fb372eda77c9210edd105aa646e7bb974"
+    },
+    {
+      "path": "demos/effects/icon-performance-moves/AttentionBounce.tsx",
+      "sha256": "8fbb1fab7c2165dc3e68b9d012425687b1d1285ea314fdd9138491e3ca45db56"
+    },
+    {
+      "path": "demos/effects/impact-feedback/AnimeImpact.tsx",
+      "sha256": "8552991a4632b1df974b25898cd3299d2f06f85e5b9a132dce2058cb5f917bd9"
+    },
+    {
+      "path": "demos/effects/impact-feedback/HitCounter.tsx",
+      "sha256": "ccb3a3234faa19b366a3468fbd3e4a9a0d7d3b881f28e47f3db18edbaaf17dce"
+    },
+    {
+      "path": "demos/effects/light-play-moves/SheenSweepRetry.tsx",
+      "sha256": "5067474b225197224ed0a95fc38e71228fd96de5faee1436501e7d53a798c1df"
+    },
+    {
+      "path": "demos/effects/light-play-moves/SpotlightSweepReveal.tsx",
+      "sha256": "48095a947ebea7c7dafc4e50a77064cd26afe29092aaf2660789f9d51f6d98f3"
+    },
+    {
+      "path": "demos/effects/radial-ripple-phone-chips/RadialRipplePhoneChips.tsx",
+      "sha256": "2ca99b1ccb2431bf4b2050a32f60f52d764e72839f5594c1f6e58f751116d0ee"
+    },
+    {
+      "path": "demos/effects/riso-print-hits/RisoMisregistrationHit.tsx",
+      "sha256": "913226ac62d954206dad1f107626d9eca1a09e1ef8acd1c1ed4476e30738be77"
+    },
+    {
+      "path": "demos/effects/scan-bracket-sweep/ScanBracketSweep.tsx",
+      "sha256": "64900312007e27b0e7e7ea02b225c86934a07523b093dfedca3d026ffd6a4f3b"
+    },
+    {
+      "path": "demos/effects/scanline-annotate-focus/ScanlineAnnotateFocus.tsx",
+      "sha256": "da414a1e1ba71dfe59221dafb35a98836d54e79b0aa0ef00e080a1cb7bba4bc9"
+    },
+    {
+      "path": "demos/effects/scanline-assemble-flyin/ScanlineAssembleFlyin.tsx",
+      "sha256": "899214f8b124d489d8cd033f2c3ea61c91de21650527e3e8ab30145b44467778"
+    },
+    {
+      "path": "demos/effects/slam-entrance-moves/ImpactBurstKit.tsx",
+      "sha256": "88d8c85161612d7e5c55c8698b7fdd86577303080356c558d6ff1a85e59a7461"
+    },
+    {
+      "path": "demos/effects/slam-entrance-moves/KanadaPerspectiveSnap.tsx",
+      "sha256": "05327068ad0dc691c1cadd1b64ff029d6fbe77a7897779106a549b1342dfffae"
+    },
+    {
+      "path": "demos/effects/slam-entrance-moves/ScoreSlam.tsx",
+      "sha256": "3809e6e77a381b486fe94461e968f5138d196d80fcc12d1eba10a25ea99f4bad"
+    },
+    {
+      "path": "demos/effects/spotlight-sweep-moves/CornerSpotlightReveal.tsx",
+      "sha256": "8cbc0e970a19d439e45799f1a0efd0a5a95139fb4ba331f2a772945deff9a461"
+    },
+    {
+      "path": "demos/effects/spotlight-sweep-moves/GlowWakeSleepPanel.tsx",
+      "sha256": "b99e33200908716c8c451c4b23845099331cafd4ffb558c578c25c5d39b2f188"
+    },
+    {
+      "path": "demos/effects/spotlight-sweep-moves/SlideSpotlightPan.tsx",
+      "sha256": "38b59eedab291378ea42b867220ddb2b8e7d08d0eebf3a26b2c8324e1808c446"
+    },
+    {
+      "path": "demos/interaction/autolayout-gap-dial/AutolayoutGapDial.tsx",
+      "sha256": "72378447c389fa250361344a29c4fc74ba62002e962b9b05a8466477c7273d89"
+    },
+    {
+      "path": "demos/interaction/canvas-materialize-moves/DiagramCascadeBuild.tsx",
+      "sha256": "ffe489f7c357aec64769da9944452479e4f9b5014a9bab6d487d981a878e3a8e"
+    },
+    {
+      "path": "demos/interaction/canvas-materialize-moves/PanelToCanvasMaterialize.tsx",
+      "sha256": "3013fedfaaa05cd540235a1d7ca11d19b391959c7d6d3d519b6c8abab8d62aa4"
+    },
+    {
+      "path": "demos/interaction/chip-grid-single-select-blackout/ChipGridSingleSelectBlackout.tsx",
+      "sha256": "b3333477dce8f7b0541b96e8783b0ac74b6fdfd269f866b312a2015cffcb80d3"
+    },
+    {
+      "path": "demos/interaction/collab-cursor-moves/CursorCastEnsemble.tsx",
+      "sha256": "292d966103221e31fecaaffc53777807970546e1d36f5931167147eee84c4103"
+    },
+    {
+      "path": "demos/interaction/glass-pill-dictation-typing/GlassPillDictationTyping.tsx",
+      "sha256": "a9690f5bd857ceafad5146ae61a3d8ca9c03f2ae32e9db620e29c057ff050284"
+    },
+    {
+      "path": "demos/interaction/hashtag-to-pill-materialize/HashtagToPillMaterialize.tsx",
+      "sha256": "80185c9ce559fe2b2f99064e56b7d2c84f5e6f58619523ab70f9d7cb8f7e2e0f"
+    },
+    {
+      "path": "demos/interaction/picker-carousel-feature-cycle/PickerCarouselFeatureCycle.tsx",
+      "sha256": "2106dfe5f69329e5580825db5f3bd41f46cfd6b455667bc5632556886a3a71fa"
+    },
+    {
+      "path": "demos/interaction/segmented-thumb-hero/SegmentedThumbHero.tsx",
+      "sha256": "8426ee1879c2e30105579668f8cbbd9421da902fce6ecb391a8b04a24590aa5a"
+    },
+    {
+      "path": "demos/interaction/theme-switch-moves/PaletteThemeRipple.tsx",
+      "sha256": "5999463f193470d83f0d89c3ffe96efeabb0c624b0b984e58ede7ab61ce5963c"
+    },
+    {
+      "path": "demos/interaction/theme-switch-moves/ThemeSweepToggle.tsx",
+      "sha256": "44898999ea91bb2be4e27ea12514d0ad055e37336ddd002c0b9ad1f63bc073f5"
+    },
+    {
+      "path": "demos/interaction/type-and-filter/TypeAndFilter.tsx",
+      "sha256": "6669feb5a5b71d6dd11b194c385bbf7c0ef78c5f89c05e14aae94b8f84ac5e11"
+    },
+    {
+      "path": "demos/interaction/voice-waveform-live/VoiceWaveformLive.tsx",
+      "sha256": "57167645eb3846e6c9055c901261911c03ef75207fff3212b9ebb57463b8891f"
+    },
+    {
+      "path": "demos/opening/crane-rise-reveal/CraneRiseReveal.tsx",
+      "sha256": "53b084c01bc32f70a570396b8fad6babb637128527dbb53829ecbf9269441baa"
+    },
+    {
+      "path": "demos/opening/dataviz-landscape-open/DatavizLandscapeOpen.tsx",
+      "sha256": "fb8105f2f0772193bb5a051409070a6693ee433a38f3ef15efc7b6d22da1c724"
+    },
+    {
+      "path": "demos/opening/fracture/Fracture.tsx",
+      "sha256": "4c97ecb444364c4ece38747d3677662eed906c14d2914c6c3cfcd510b59b0084"
+    },
+    {
+      "path": "demos/opening/icon-field-colorize/IconFieldColorize.tsx",
+      "sha256": "5df1ee5bb62e58ec64cfb9a44d398ecb88ae45c5ad03677a84296ac4398bd452"
+    },
+    {
+      "path": "demos/opening/letterspace-materialize/LetterspaceMaterialize.tsx",
+      "sha256": "f78ad285592bc7f641c80a701ad3c1dc4afe34a66ce8eec576d91b304fb338b4"
+    },
+    {
+      "path": "demos/opening/magician-card-flourish/MagicianCardFlourish.tsx",
+      "sha256": "a4747bd1b2d851cc6e13f0aeffe701175948dca499fc5880200062166d6ad769"
+    },
+    {
+      "path": "demos/opening/orbit-ring-title-open/OrbitRingTitleOpen.tsx",
+      "sha256": "03ddc9b013139a35cb147242f4c9398aab860bc5faf0b97aa476109bc364908d"
+    },
+    {
+      "path": "demos/opening/spotlight-hero-card/SpotlightHeroCard.tsx",
+      "sha256": "84191de88c8ed3518ab1605fd4773d19446bf1fd07c912f93a0cfa3424e8490c"
+    },
+    {
+      "path": "demos/opening/stroke-segment-build/StrokeSegmentBuild.tsx",
+      "sha256": "22b98c0579012cb90ad36d2e9eef9f229b84bce11573bb45e3956e57e8d37499"
+    },
+    {
+      "path": "demos/opening/text-as-mask/TextAsMask.tsx",
+      "sha256": "6f743450fce0437d2aa2f7797d7d62dbb6e0d4b63fac94e05bb6bb0660ab63f2"
+    },
+    {
+      "path": "demos/outro/grain-dissolve/GrainDissolve.tsx",
+      "sha256": "7e06c6de29f7c860b884a2befe4f905541e1446d784ece6539a108fb287092e6"
+    },
+    {
+      "path": "demos/outro/logo-shrink-wordmark-lockup/LogoShrinkWordmarkLockup.tsx",
+      "sha256": "f32087814fa84d1d51b53a82840cf35a6d25e055445c9a615691ba68903eff85"
+    },
+    {
+      "path": "demos/outro/neon-triple-marquee/NeonTripleMarquee.tsx",
+      "sha256": "da5df96cdbd6e13f7789a44525ea9215ee7c8f03549c5efe0c08c94cb9bfe561"
+    },
+    {
+      "path": "demos/outro/outro-group-photo-launch/OutroGroupPhotoLaunch.tsx",
+      "sha256": "bdfa8d1a3262b3e7d1fda66627cd4eba386c04258d47bb7eb16bfbe79480a527"
+    },
+    {
+      "path": "demos/outro/ui-strip-away-outro/UiStripAwayOutro.tsx",
+      "sha256": "dccfd1580a18c5fa126830f47f22e10f2d7f97f59ac607812edbbf59512a18ee"
+    },
+    {
+      "path": "demos/outro/ui-to-brand-morph/IconFlipBloomLogo.tsx",
+      "sha256": "29cfa27f8663cc6eb32e80d37529771c05d5d146f11b91ce1e31cd6244ee933a"
+    },
+    {
+      "path": "demos/outro/ui-to-brand-morph/InputMorphsIntoLogo.tsx",
+      "sha256": "024131a8cfb5ed46f3096767727708714da4fa500593a9257d10ca0d64befd23"
+    },
+    {
+      "path": "demos/rhythm/beat-cut-moves/PaparazziFlash.tsx",
+      "sha256": "a3a8b637ad57f1815dc77c725dc64349b09627c7b6be24b61a5f4ba04a7610e4"
+    },
+    {
+      "path": "demos/rhythm/beat-step-list-theme-cycle/BeatStepListThemeCycle.tsx",
+      "sha256": "191ac2d5081ac0ba3d04da19cc9af00ce5caf82178c2fddc56f9576f38348b18"
+    },
+    {
+      "path": "demos/rhythm/panel-grid-moves/ComicPanelSplit.tsx",
+      "sha256": "ebca2dde478a1a0e2b80cf0105c1c33ee97eaf673e6ace9dfb687d8d255e7c53"
+    },
+    {
+      "path": "demos/rhythm/quad-split-parallel-scenes/QuadSplitParallelScenes.tsx",
+      "sha256": "e16fd0689c64625264ec1faa10edd10a18efec3fa2cb822c6ac4c08c1a50c025"
+    },
+    {
+      "path": "demos/rhythm/rhythm-interrupt-moves/JumpCutPunchIn.tsx",
+      "sha256": "861708d44cc69d06ea57d93302ea6e24a15a67f518b83dae66658382c8f1fb25"
+    },
+    {
+      "path": "demos/rhythm/sakuga-timing-shift/SakugaTimingShift.tsx",
+      "sha256": "d7137c703e302b42ac9e6fd4c11f4f894110b6a67d4c889aab0d94051c70ca4e"
+    },
+    {
+      "path": "demos/rhythm/speed-ramp-freeze/FreezeAnnotateReal.tsx",
+      "sha256": "2998edc6c8009cb329e9e66dad1a26d26d55b11baea1212029f0912014b2a282"
+    },
+    {
+      "path": "demos/rhythm/trailer-grammar-moves/TrailerBumper.tsx",
+      "sha256": "7fc3f3e622830076d80f3b5d271b292ce145428d7dc79e4b0d552ca04d5ca267"
+    },
+    {
+      "path": "demos/transition/bottom-push-stack-wipe/BottomPushStackWipe.tsx",
+      "sha256": "2e5502f1ea0a72674b791ce4d7478426ee502b81927b211ec9b5f92fd6d0a571"
+    },
+    {
+      "path": "demos/transition/card-flip-reveal/CardFlipReveal.tsx",
+      "sha256": "8f865de560e44f96e950340099dc240c5a351168f9b5ca861ecb88c434a5e5ed"
+    },
+    {
+      "path": "demos/transition/card-flock-tumble/CardFlockTumble.tsx",
+      "sha256": "d5f7c6f39a24866fb05fb3011cd514449fd3906105a05b822746f0f4d09a1aeb"
+    },
+    {
+      "path": "demos/transition/circle-match-iris/CircleMatchIris.tsx",
+      "sha256": "4ea5457af4a57589edee36239824e78de7ec8cc792c9a3430af3acdb04b3d17c"
+    },
+    {
+      "path": "demos/transition/gradient-transition/GradientTransition.tsx",
+      "sha256": "0481d8ef6d0e7fdcb1dd4890721b7631b7fb5b1b7ff2cf768f054861db36a6a4"
+    },
+    {
+      "path": "demos/transition/line-carry-transition/LineCarryTransition.tsx",
+      "sha256": "bc4c0135279070f08061d236cab03e7716d1c89d7d295e76ea5c848850a50640"
+    },
+    {
+      "path": "demos/transition/mosaic-reframe/MosaicReframe.tsx",
+      "sha256": "bb0bc5a847754500f5f2a7a5c4681f93f5013f017cacc8c65cb33c88385fc227"
+    },
+    {
+      "path": "demos/transition/page-turn-transitions/BarnDoorSplit.tsx",
+      "sha256": "b042f3ab98c81ff2b1067952ad4e747466caad1e2a0176b51aaa6d4b7a1e2ee9"
+    },
+    {
+      "path": "demos/transition/print-texture-transitions/InkBleedReveal.tsx",
+      "sha256": "a77edfadac12bbb1c02f726f056e62364d0d84c1aced13a644571490a0c4babd"
+    },
+    {
+      "path": "demos/transition/shot-transitions/PortalWipeV2.tsx",
+      "sha256": "cde13bd5cbb445985dbc97c537a3f81c13d4a69d400b2d8e46fa7a1f6576fdef"
+    },
+    {
+      "path": "demos/transition/shot-transitions/WhipBrakeReal.tsx",
+      "sha256": "9544f3decc2402e90b7992a7f99c3ddf999bce7d9faf87a15f14d08644a33123"
+    },
+    {
+      "path": "demos/transition/tear-streak-transitions/GlitchDisplace.tsx",
+      "sha256": "b3b21babba48440ecb5b113857e3564572bb4b2130d4a8ed814c6b82d2b886c3"
+    },
+    {
+      "path": "demos/transition/transition-hidden-cut/InvisibleCut.tsx",
+      "sha256": "f87a3b32c1d279891a739ba24f873380947f8e63036c200230b0b308104bcb4c"
+    },
+    {
+      "path": "demos/transition/transition-hidden-cut/LightLeakBurn.tsx",
+      "sha256": "fe1d3dcbcf0be3dbbe2a1f7fee628219d5533dcb3da6ff7e5a16d78365297af4"
+    },
+    {
+      "path": "demos/transition/transition-hidden-cut/VersusSlam.tsx",
+      "sha256": "70cbdded004034ab63408de5b7b70d642067fe4a7f1fe5b1151a0081d57b1249"
+    },
+    {
+      "path": "demos/transition/transition-travel/LetterformZoom.tsx",
+      "sha256": "6aeade1667107bc2ee15c77dd2d5c7bf4377dc54e1816012806ceebfc4166a19"
+    },
+    {
+      "path": "demos/transition/white-flash-logo-simplify-cut/WhiteFlashLogoSimplifyCut.tsx",
+      "sha256": "d128b08190ab8ea2cc91f8d1a8801556ca3cff5232eee7717fa54b5744be4521"
+    },
+    {
+      "path": "demos/transition/wipe-transitions/BlindsSlice.tsx",
+      "sha256": "88683b602f5d149024b5231da5b8e28df33fb7b325d7409fbd5a8ad4bec2afb3"
+    },
+    {
+      "path": "demos/typography/blur-slide/BlurSlide.tsx",
+      "sha256": "c7bc3640f882a05755b5c41989a7a10eb9306b8cf598629a3027997d17296ae1"
+    },
+    {
+      "path": "demos/typography/brace-expand/BraceExpand.tsx",
+      "sha256": "f1a6fcdc389f844c0370ed18a7b40acb8f9e766b4fcbce53ca5f9085430b2b9c"
+    },
+    {
+      "path": "demos/typography/brand-ink-open/BrandInkOpen.tsx",
+      "sha256": "9a1b82feadfdf20b1c4b7b59ec9b1ca34d5d8d190eb4669209a5de0b4dadcb4d"
+    },
+    {
+      "path": "demos/typography/countdown-arc-scatter/CountdownArcScatter.tsx",
+      "sha256": "b990c81d4e93890f0113d9a80351eef782d38d6994da2073cf9ba8f88c069843"
+    },
+    {
+      "path": "demos/typography/flying-words/FlyingWords.tsx",
+      "sha256": "28b5bd14044e8af6b4488715012a627d9354245bbb4ead5cc40c21fa47c2d572"
+    },
+    {
+      "path": "demos/typography/glitch-cycle/GlitchCycle.tsx",
+      "sha256": "43a37b5c7cd6d8d475884acffcb1dd1d3db1ec1e9b42a8824ba5333a7230448f"
+    },
+    {
+      "path": "demos/typography/gradient-word-sweep/GradientWordSweep.tsx",
+      "sha256": "44d0f358dbdfe6489ceb923ae0431f7a8e64d8ad59152399f99bc6ed8c3c879a"
+    },
+    {
+      "path": "demos/typography/lead-word-zoom-assemble/LeadWordZoomAssemble.tsx",
+      "sha256": "4da4b0d0310e38100cb1166985af54fb43136f1a26a18f8b5d1d07c18b73b8e7"
+    },
+    {
+      "path": "demos/typography/marker-underline-title/MarkerUnderlineTitle.tsx",
+      "sha256": "7b098cd880837603ceadd434b8a280b6bf1671ef5b37e8643ab09cfc166d9305"
+    },
+    {
+      "path": "demos/typography/outline-word-fill/OutlineWordFill.tsx",
+      "sha256": "784e01369effad879abb99fbac3ae2cc12d6c2d99dc012b18e4140c86046c44b"
+    },
+    {
+      "path": "demos/typography/paper-title-card/PaperTitleCard.tsx",
+      "sha256": "0a6f6a16e377e71e14e46956284f039f42707a066cd70352dcf201f0c1587c1a"
+    },
+    {
+      "path": "demos/typography/pill-chip-slot-cycle-handled/PillChipSlotCycleHandled.tsx",
+      "sha256": "408f6d1eeebfe0eb8057a761e4e615e9b145a96497b8bc1e12410931cfaad127"
+    },
+    {
+      "path": "demos/typography/pill-slot-cycle/PillSlotCycle.tsx",
+      "sha256": "70239ba5505e79dd1d2b9d27ccc6afa68482f1631949fd0f192f7f7b52e73490"
+    },
+    {
+      "path": "demos/typography/text-column-converge/TextColumnConverge.tsx",
+      "sha256": "d9f8d7235c0fa6f87f32ae654f77ea72aa9f0b4a3638bdc85f55563185f5aab1"
+    },
+    {
+      "path": "demos/typography/title-demote-to-label/TitleDemoteToLabel.tsx",
+      "sha256": "8ac70ad306246e2638fb66ef57a8bff37b8c2b2d7d7db2211509fc30e01fb0cf"
+    },
+    {
+      "path": "demos/typography/type-assembly-moves/LetterformDriftAssembly.tsx",
+      "sha256": "485730a498141df7e0498ff8460c0a1c5115ff1f47433ebb0722642aa7d9a37f"
+    },
+    {
+      "path": "demos/typography/type-assembly-moves/SplitTextStagger.tsx",
+      "sha256": "d1eab61db0ccc06071acf599f0557c86927db829b0caf85a4505571c7749a618"
+    },
+    {
+      "path": "demos/typography/type-assembly-moves/TextOnPath.tsx",
+      "sha256": "1db95ca24c4d7428728ebbc640e2ac799d5756badc34b3f296468761324c8ed3"
+    },
+    {
+      "path": "demos/typography/type-entrance-moves/LetterDropPhysics.tsx",
+      "sha256": "9c8402993e4bfdb909a74eec5962ae91ffb1928aad4e6d5d055eb7b2f40fc4fa"
+    },
+    {
+      "path": "demos/typography/type-rhythm-sync/FontWeightPump.tsx",
+      "sha256": "8e5f12b05844599109a6e567c4e730146e96396e91b9cb2535befbd1571710c1"
+    },
+    {
+      "path": "demos/typography/type-rhythm-sync/KaraokeFillSync.tsx",
+      "sha256": "c2725c7aa3ce92df8dd09306f7af4765ae90035129f99130e95b0839720bf29d"
+    },
+    {
+      "path": "demos/typography/typewriter-moves/TypewriterErrorRetype.tsx",
+      "sha256": "dd96cc07d19af6884e5d2034d63a8ba46e065a03874fe32cc35c856b6289ef2b"
+    },
+    {
+      "path": "demos/typography/vertical-word-roll-blur-cycle/VerticalWordRollBlurCycle.tsx",
+      "sha256": "a39720c6bdde7c88f5aea1e5d7a109f5efa1fe89f655849981ce67451d7c52df"
+    },
+    {
+      "path": "demos/typography/word-relay-filmstrip/WordRelayFilmstrip.tsx",
+      "sha256": "3f8a10adccf6ded4bda050aecd04da0fc749821b4d0566d31405521a4eabebc7"
+    },
+    {
+      "path": "demos/typography/word-relay-geometry/WordRelayGeometry.tsx",
+      "sha256": "ea418e0ca9f78fe491e086728587c5795b55b1a106d39f12d3d9a21c96c5b725"
+    },
+    {
+      "path": "demos/ui-entrance/avatar-bracket-carousel/AvatarBracketCarousel.tsx",
+      "sha256": "b22ce4f7d1d57f78ec367ea88a0a10780579c4e93c9f7142fbef0a01fb9eb000"
+    },
+    {
+      "path": "demos/ui-entrance/bezier-source-converge-merge/BezierSourceConvergeMerge.tsx",
+      "sha256": "016d60301b2592aab161e1fbd22ee536653c1ef63bd06a12e27357226771434c"
+    },
+    {
+      "path": "demos/ui-entrance/card-stack/CardStack.tsx",
+      "sha256": "e3d720d6990ca04183906d78c19df7ec5f8f8284021aee50307131457c15df56"
+    },
+    {
+      "path": "demos/ui-entrance/carousel-3d/Carousel3D.tsx",
+      "sha256": "64bcd4d730abd63abff1906223f2b858965c395f95f04f794a2e612021ee338e"
+    },
+    {
+      "path": "demos/ui-entrance/cloner-depth-echo/ClonerDepthEcho.tsx",
+      "sha256": "6ebdff4cb7174a3f0874746945c4e822665d827d37af9678dc3d34be2589b495"
+    },
+    {
+      "path": "demos/ui-entrance/deck-deal-flyin/DeckDealFlyin.tsx",
+      "sha256": "162a502aa7b7ec6ad39d12c6c6574f918e95e710686289e643ca0bba84326fdd"
+    },
+    {
+      "path": "demos/ui-entrance/doc-park-left-pill-deal/DocParkLeftPillDeal.tsx",
+      "sha256": "e1b1277d9f594c89e39af47a7482bf9e84fc9a462bd78db0c05ef79a566009b8"
+    },
+    {
+      "path": "demos/ui-entrance/document-typewriter-reveal/DocumentTypewriterReveal.tsx",
+      "sha256": "8399fe6b10f948c21415737b3380b4b445739b6825c3cabba00197ae0a0b2047"
+    },
+    {
+      "path": "demos/ui-entrance/draw-svg-trace/DrawSvgTrace.tsx",
+      "sha256": "c963b464b302069604e98ce2fb13d03239a6b41d6085ff764e6c48144c2121bd"
+    },
+    {
+      "path": "demos/ui-entrance/element-body-moves/ContactShadowLift.tsx",
+      "sha256": "06e2c7e4d12915a3c0aecc55031078f428a50dc15ca92bf134ccf68cd6b52be1"
+    },
+    {
+      "path": "demos/ui-entrance/integration-hub-map/IntegrationHubMap.tsx",
+      "sha256": "ccc7c43fafae77e2edf9ab21aef5abfd0b860f71f6587ac57fdb5472a3ca001b"
+    },
+    {
+      "path": "demos/ui-entrance/list-reveal/ListReveal.tsx",
+      "sha256": "5efe5fa7fc9332f573b56cf7c2946a4fc4644ad3513653205e982ff4b0ef66a9"
+    },
+    {
+      "path": "demos/ui-entrance/list-stack-press/ListStackPress.tsx",
+      "sha256": "20fa86e51a1a47354dd43e6a2b6b5217a5aa818805e9ffcd50d6588be6566d25"
+    },
+    {
+      "path": "demos/ui-entrance/neon-frame-forerun/NeonFrameForerun.tsx",
+      "sha256": "d4f3e76bcba8dc7c7d0a50bef96db92018728fc56684d41e11d9c3653957a4c3"
+    },
+    {
+      "path": "demos/ui-entrance/neon-frame-orbit-drop/NeonFrameForerunOrbit.tsx",
+      "sha256": "11e9a6225e98be88011dcd9cd6d42748e97da7fa010d9dbd05a9cc4f9613d9c1"
+    },
+    {
+      "path": "demos/ui-entrance/page-waterfall-wall/PageWaterfallWall.tsx",
+      "sha256": "c1cc793244dd55c3746ce67e60080e61970426f5ec8845809255d89a443cf989"
+    },
+    {
+      "path": "demos/ui-entrance/page-waterfall-wall/VerticalTicker.tsx",
+      "sha256": "1de3a6ee447eb5afc5cd7339bf32aa82b78a6e0b8e6850f0cf7d4efa3bad7791"
+    },
+    {
+      "path": "demos/ui-entrance/product-card-progressive-assemble/ProductCardProgressiveAssemble.tsx",
+      "sha256": "f72cab79cf90e6efd1ef46c3713839302970371eb6852ad38089c4d3238d7e6e"
+    },
+    {
+      "path": "demos/ui-entrance/radial-wave/RadialWave.tsx",
+      "sha256": "c4d372a60355be61148d9a84cd8bfa125f59163bbfe00856639ff172c24a0a64"
+    },
+    {
+      "path": "demos/ui-entrance/research-card-stack-scroll/ResearchCardStackScroll.tsx",
+      "sha256": "7fb916c96b9fc759d97797e6eba15328ceb5bffa08e5af103f8a3ae9c9343c50"
+    },
+    {
+      "path": "demos/ui-entrance/row-embed/RowEmbed.tsx",
+      "sha256": "bf075225041ee750b9859215b4aa13f3b700da923a94bbd8fb7780b8a5d7fd6f"
+    },
+    {
+      "path": "demos/ui-entrance/value-stagger-gradient/ValueStaggerGradient.tsx",
+      "sha256": "e8aaa1aadbe9ac05712baf3965f9b95281c5149ee86e3576d69b5d6c787ae4cb"
+    },
+    {
+      "path": "demos/ui-entrance/wall-reveal-moves/BentoLightUp.tsx",
+      "sha256": "088ca4e82490e88206f4595dec9274a354e1d1da2b1ad925aa287e0561d63cf5"
+    },
+    {
+      "path": "demos/ui-entrance/wall-reveal-moves/WireframeDrawOn.tsx",
+      "sha256": "d8e6607d0fe5629fb3130d34804595b4335039cc8ceb0e9f47f905a1b9a26f31"
+    },
+    {
+      "path": "gallery/api/library.json",
+      "sha256": "0f2164bf52ada0d33e1e0571288f8afcc105b0de5f6a4d2558a35048f205a9a0"
+    },
+    {
+      "path": "gallery/source/assemble-then-type-flyin.md",
+      "sha256": "e33b01043347d8d4aa2156a3895e692b868afa351ac59480d7ad327cf162ecd8"
+    },
+    {
+      "path": "gallery/source/aurora-bloom-bg-flip.md",
+      "sha256": "dba493d8aca20bf45ad2dd41998f0d5dc856559e367212843fe44768b80029fc"
+    },
+    {
+      "path": "gallery/source/autolayout-gap-dial.md",
+      "sha256": "3d7488afd21ccc6a73013ecc1ea9d31e1b189905808e3f0fa2a0086ae60ea233"
+    },
+    {
+      "path": "gallery/source/avatar-bracket-carousel.md",
+      "sha256": "410c66547ca1a7d69f87786d241e89208e289f0d11edb34f1fec462026814a9d"
+    },
+    {
+      "path": "gallery/source/basic-3d-scene.md",
+      "sha256": "83c7cacdac78b4db949ccf0c0f842a8676016aeeea9f5d2c67c25b8f4475be13"
+    },
+    {
+      "path": "gallery/source/beat-cut-moves.md",
+      "sha256": "76a8ab1be31d4aeb7c4456a7c069f9a5fe697a6c6fc08fe0eff49bcc7a8ed0cd"
+    },
+    {
+      "path": "gallery/source/beat-step-list-theme-cycle.md",
+      "sha256": "2c6d48ddeafd6514a2809be9c94dadb9823df97913df9d3ceee3c3d19ac538e6"
+    },
+    {
+      "path": "gallery/source/before-after-slider-scrub.md",
+      "sha256": "5c585d6a4d1df4c43bcc3cc501b3e1141d87ab8977c273ec136c67e56d897d9f"
+    },
+    {
+      "path": "gallery/source/bezier-source-converge-merge.md",
+      "sha256": "2ab3e1993b49803c3089018c0802bae413b479f26d26c11cae542a8efe252e85"
+    },
+    {
+      "path": "gallery/source/blur-slide.md",
+      "sha256": "ef244292adea7d2f4a284a5599fb2f01893d3c50197b3a1f8ade9d3a4cc9ea7d"
+    },
+    {
+      "path": "gallery/source/bottom-push-stack-wipe.md",
+      "sha256": "070ed6e3f804786579d0d6e1a80fa5ad407824f053c1d327857ccb4a3f2626c8"
+    },
+    {
+      "path": "gallery/source/brace-expand.md",
+      "sha256": "7540d542a5ccd573fec946e1757ba4b5f5d1fa3e3bf909301176dcc05aae637f"
+    },
+    {
+      "path": "gallery/source/brand-frame-snap.md",
+      "sha256": "e057f60567fc5f696a65fe8b7a3c1bd14b9d205ffa7ba972520f3c169a2471f7"
+    },
+    {
+      "path": "gallery/source/brand-ink-open.md",
+      "sha256": "b9f5402c5afb47607fcd6324835d95215a901b2adfb0293c828c2eae6104e2cf"
+    },
+    {
+      "path": "gallery/source/canvas-materialize-moves.md",
+      "sha256": "075d26cb0c4d5b9413a1b63dabc8a42699ba6e63e23529e3a66962a6a4f21770"
+    },
+    {
+      "path": "gallery/source/card-flip-reveal.md",
+      "sha256": "34ab2b0d738881dd51f34c96f94a82d153f7176e119a3a6f0a0d1fd954df5f5f"
+    },
+    {
+      "path": "gallery/source/card-flock-tumble.md",
+      "sha256": "85f7e09b5102406dbe7b395435424edaabea6193b98d5359b15360dc956fae09"
+    },
+    {
+      "path": "gallery/source/card-stack.md",
+      "sha256": "c656aafdd705ce2cad029e6a8a26f997837bc84a6f36dba077a304ebebf10095"
+    },
+    {
+      "path": "gallery/source/carousel-3d.md",
+      "sha256": "30346eb0d0521e64f61d7b1c8d371a61d94a6c3e7f8942bed1718748a1ed47a6"
+    },
+    {
+      "path": "gallery/source/chart-live-moves.md",
+      "sha256": "f1641e2daee76148f6ebb0019620d500fbb25c0518b963c87b4f56289ce68b17"
+    },
+    {
+      "path": "gallery/source/chip-grid-single-select-blackout.md",
+      "sha256": "3a72dccb3c29a3c39a32cfeb4078cfba6023e1d3975e677bb200307aff8dc90a"
+    },
+    {
+      "path": "gallery/source/circle-match-iris.md",
+      "sha256": "ca2ac559d8d0359f8067696524dff1cf216fb3d1dfa00e5668faf86943516293"
+    },
+    {
+      "path": "gallery/source/cloner-depth-echo.md",
+      "sha256": "13f4a98c6a0816e55693c5644351616500e8b946b711332b4d4b4396238b2632"
+    },
+    {
+      "path": "gallery/source/collab-cursor-moves.md",
+      "sha256": "76854683f4888afc309317833b837a43b4fce0963598f20d2c999369b6fa2628"
+    },
+    {
+      "path": "gallery/source/countdown-arc-scatter.md",
+      "sha256": "220d28834fb78a7fd09cfebf3a7ad134e0d2158f46ebd0448692fcf3df03f1dc"
+    },
+    {
+      "path": "gallery/source/crane-rise-reveal.md",
+      "sha256": "081a20d3cee54456108185a1b3aa3fcf718fbf60d1a97f25165ce76fee1d46ec"
+    },
+    {
+      "path": "gallery/source/crash-zoom-punch.md",
+      "sha256": "b683d6bb83546680b0381e999adfd0c38d39a167b9bad8b28a19f9652454344b"
+    },
+    {
+      "path": "gallery/source/cursor-flyover.md",
+      "sha256": "dbda78e0054ca4ca9e83c09bea4e23fbbb68c2331ab40da765eb77ca8c73d1cb"
+    },
+    {
+      "path": "gallery/source/dataviz-landscape-open.md",
+      "sha256": "55d6a9ffc368801d1d30b3aee964a26270657a733a4c61f93c062662028f9aea"
+    },
+    {
+      "path": "gallery/source/deck-deal-flyin.md",
+      "sha256": "eed5b9585bf80a7566b776ca16a5926ec6b35417803090e9a0756726315b039b"
+    },
+    {
+      "path": "gallery/source/depth-layer-moves.md",
+      "sha256": "54cfc27b32b008c121e4bb2f26d626f503547c6c1fb91f1d286446feee7998d1"
+    },
+    {
+      "path": "gallery/source/doc-park-left-pill-deal.md",
+      "sha256": "b1cca04e44384e21d79ebb947b6bec70aa1003f7e8e53d497709348a238dd57c"
+    },
+    {
+      "path": "gallery/source/document-typewriter-reveal.md",
+      "sha256": "bbaf22b6a62066b478818a47f316aeaf93886abb550e65bcbe6ce40c748f8cbd"
+    },
+    {
+      "path": "gallery/source/draw-svg-trace.md",
+      "sha256": "10badc80ed577324083366142a5a6d99021b67b5b81a41e1ea29b759b2dcfd0a"
+    },
+    {
+      "path": "gallery/source/element-body-moves.md",
+      "sha256": "940931d0f1858c7bcbc0679b68bbc56b7fde1ab324b8d7b71d9cccf0ae1a0f5a"
+    },
+    {
+      "path": "gallery/source/flying-words.md",
+      "sha256": "13a625386e65d9d548d09a582e467b898f4600050c710d13a17ce54dd27739a3"
+    },
+    {
+      "path": "gallery/source/fracture.md",
+      "sha256": "62de428e8d982569ab095ab0b3289bab4c6773fb85065676118b9f10b124ee09"
+    },
+    {
+      "path": "gallery/source/fui-hud-moves.md",
+      "sha256": "014baed764a43a5eee27bcb760ea9e9b815bb3e004bda7fcd755c8876b2c62fa"
+    },
+    {
+      "path": "gallery/source/gauge-readout-moves.md",
+      "sha256": "f6eb9c44389dad9704863cd64cb2e104ba0c14d4fba7fbe0b932e51e3a348ca0"
+    },
+    {
+      "path": "gallery/source/glass-pill-dictation-typing.md",
+      "sha256": "27b85011e4c19df5f5dc96ae382fd5fb1be7f9b12a1eed7279f06869ff04cc5d"
+    },
+    {
+      "path": "gallery/source/glitch-cycle.md",
+      "sha256": "dadc9b4663bdb6955e5f838d6ff886d1238683cd05bb526d993fafea1b2b4e68"
+    },
+    {
+      "path": "gallery/source/glow-flyline-moves.md",
+      "sha256": "27a769378a5523df1cfb8a24502982ff8d288663916c97d1aa31f0d28cf937b7"
+    },
+    {
+      "path": "gallery/source/gradient-transition.md",
+      "sha256": "80cbaf73406e51ef49dd5bb0dabffe6df0df4824a38c23953da7684743bdcc00"
+    },
+    {
+      "path": "gallery/source/gradient-word-sweep.md",
+      "sha256": "7a29e0fbcd3c3207b050ca1d33c0c38647d46641c9d5201d04fa449ad9717b6b"
+    },
+    {
+      "path": "gallery/source/grain-dissolve.md",
+      "sha256": "67e66e904e1ee5b6e848fe66aba1d4919a75cf947988e4f817080107d3c3c1a7"
+    },
+    {
+      "path": "gallery/source/graze-face-tour.md",
+      "sha256": "7247d4c1f19ab50204536a98af2e42b39da8023e2881c58d75ec8d8e774559c7"
+    },
+    {
+      "path": "gallery/source/hashtag-to-pill-materialize.md",
+      "sha256": "1d770cd02ca835027d14099140239efe037963a7d0528845cae787e5b486d7ed"
+    },
+    {
+      "path": "gallery/source/icon-field-colorize.md",
+      "sha256": "cfd3373a3014b029281838e906ae75cf8d9bb4706bd8e6d3ec42637afb0816c3"
+    },
+    {
+      "path": "gallery/source/icon-performance-moves.md",
+      "sha256": "626e4833a2d994a572ad71214e74ef1f8d95d294ad9b13075be2da595405b293"
+    },
+    {
+      "path": "gallery/source/impact-feedback.md",
+      "sha256": "ce76e43e1f90b252601d5af8afea995a6f760e1a12b3a26315f6a252800c1c98"
+    },
+    {
+      "path": "gallery/source/integration-hub-map.md",
+      "sha256": "a1474661f0e4158fd2223868742473cee903d9a33bdb51557638204c47522a09"
+    },
+    {
+      "path": "gallery/source/lead-word-zoom-assemble.md",
+      "sha256": "6d3854a15d2311176b2fc87e98b9baffa45f9e7c54ea6405c992b8bf90da4c27"
+    },
+    {
+      "path": "gallery/source/letterspace-materialize.md",
+      "sha256": "910d848c6e925a7287f17905e94c109962353bbc4120d752b8fb327d431d59b8"
+    },
+    {
+      "path": "gallery/source/light-play-moves.md",
+      "sha256": "cb89525d47fe9c7450ae8b80264f5fa625ac99b8f8c78dabd6a7bcc5bd9eb343"
+    },
+    {
+      "path": "gallery/source/line-carry-transition.md",
+      "sha256": "83c7e8a7638cf4cb179a82c0b387849c9fe95981c751af017c18391cf16bbe5a"
+    },
+    {
+      "path": "gallery/source/list-reveal.md",
+      "sha256": "68b655b516fe96b714b5c798d7c50068741ceea570bc11c80db8513def83f4e9"
+    },
+    {
+      "path": "gallery/source/list-stack-press.md",
+      "sha256": "079565fe5134b2ff97eb472203b49e8a4e21749afae6d8329fa41b5eee8c4732"
+    },
+    {
+      "path": "gallery/source/logo-shrink-wordmark-lockup.md",
+      "sha256": "c0909921a97b4db59145161dfad725875a0137aa7d38835ce94774c8cbf8953f"
+    },
+    {
+      "path": "gallery/source/magician-card-flourish.md",
+      "sha256": "92def0c771f360b4feaa9bb08c954df2a6fa9102b4273f5a60af20d23f45925f"
+    },
+    {
+      "path": "gallery/source/marker-underline-title.md",
+      "sha256": "7d42483e006ecd6bb6bb0e983b3815e21726a1428792df5ad3974b44b8754b2e"
+    },
+    {
+      "path": "gallery/source/mosaic-reframe.md",
+      "sha256": "110cd5871844c173d519d3730c85757e0e13e8a31232ac15c8647c103da5826f"
+    },
+    {
+      "path": "gallery/source/neon-frame-forerun.md",
+      "sha256": "ee53fd6e931383bc51ccdc4c710379df0867c97fc5b98e217e55c74f47d7dfd2"
+    },
+    {
+      "path": "gallery/source/neon-frame-orbit-drop.md",
+      "sha256": "6f5ecdaabd2700a7aee4feebacdd4dd5415f0d82cd09fe52e80211b8ddb959d2"
+    },
+    {
+      "path": "gallery/source/neon-triple-marquee.md",
+      "sha256": "435d95881b7d0b54119153f08efe7c9f05f33a46606db97501a37a49d555f21f"
+    },
+    {
+      "path": "gallery/source/orbit-ring-title-open.md",
+      "sha256": "54025976b3e66d500591af9b1f7e3dfb512f3622ce99ca6aeddff482c0e4cf64"
+    },
+    {
+      "path": "gallery/source/outline-word-fill.md",
+      "sha256": "062ffd426dfb518a6c0fa926e4b73e5f4355e4fd706b59f576ed31a977c76206"
+    },
+    {
+      "path": "gallery/source/outro-group-photo-launch.md",
+      "sha256": "99a1f4231965a01dc653e7fe869d778f87a9210028230d76743cd16d599e5146"
+    },
+    {
+      "path": "gallery/source/overhead-camera-moves.md",
+      "sha256": "ad56813514c854f0289ba5a7e6f8c68ead34de190bc7ebd594c42c6a6dd58d5b"
+    },
+    {
+      "path": "gallery/source/page-turn-transitions.md",
+      "sha256": "389653bbf110a629c5da62af52af6aec8929880765b589df3dbedfe0edd78eb4"
+    },
+    {
+      "path": "gallery/source/page-waterfall-wall.md",
+      "sha256": "fc4cd282ef0f7d2c5c36b2f192ddc9d5e318ff60b6c3007305e439161db06cef"
+    },
+    {
+      "path": "gallery/source/panel-grid-moves.md",
+      "sha256": "230ceb38ca2c4c157b28c5fbc129cd5e68b03e24f9ce8534f6e980f6f6886d7e"
+    },
+    {
+      "path": "gallery/source/paper-title-card.md",
+      "sha256": "b64de54f010f46da6f2ab0da484b05c0121672f71a0dea344ffeba23ad4479b0"
+    },
+    {
+      "path": "gallery/source/picker-carousel-feature-cycle.md",
+      "sha256": "e21ed5876c49e23f2bbeb5ff5caff53efd82070fb184c9cd60c61baa2db37a86"
+    },
+    {
+      "path": "gallery/source/pill-chip-slot-cycle-handled.md",
+      "sha256": "4fa55f4633c4d194001382a8a8448df713b913bff2f92a380ac09b36e29af628"
+    },
+    {
+      "path": "gallery/source/pill-slot-cycle.md",
+      "sha256": "d521b8436f383ab5eed6fcd6c1eab2ee099cd8d9785bb7c304253e7d1a76ce6c"
+    },
+    {
+      "path": "gallery/source/print-texture-transitions.md",
+      "sha256": "a805d29ad25b142d28c4cf0041947c8f17ff4f27300c48abe9fd7bd57adf2c62"
+    },
+    {
+      "path": "gallery/source/product-card-progressive-assemble.md",
+      "sha256": "b33c0702e9a5fcd66fad7b26b890ea5f5c5a8e389466e597b19752e7f1397839"
+    },
+    {
+      "path": "gallery/source/quad-split-parallel-scenes.md",
+      "sha256": "1424d5692906ceaee7bc9626b92c1f6c0a0203346c1103745fdba3fcaf7c3606"
+    },
+    {
+      "path": "gallery/source/radial-ripple-phone-chips.md",
+      "sha256": "51acf92b06f92c9aa9dfdea12af0efcc5e75347689e07c123c749d423a57e3e5"
+    },
+    {
+      "path": "gallery/source/radial-wave.md",
+      "sha256": "587f58625f5815e0376101b35ac552e977e5a57622959bed594d1decb9b53dc0"
+    },
+    {
+      "path": "gallery/source/research-card-stack-scroll.md",
+      "sha256": "afb2c4d35007fde738bbf2a0c7a3e337de19b4b9254790878c1577eca6f904bb"
+    },
+    {
+      "path": "gallery/source/rhythm-interrupt-moves.md",
+      "sha256": "b16bb150d0d4ec69c513dc783b787ed42cf17aa2460bf0a5d6585c387ab087ff"
+    },
+    {
+      "path": "gallery/source/riso-print-hits.md",
+      "sha256": "00c69e305c984f56eb2080d53fd0123c88120ef1b93d93092e21b6a8d8dcff16"
+    },
+    {
+      "path": "gallery/source/row-embed.md",
+      "sha256": "c6e6026bc4e2c74b77e76c636752a6b5afe9cfb9740c0ffca2c39e091bf999f8"
+    },
+    {
+      "path": "gallery/source/sakuga-timing-shift.md",
+      "sha256": "a35518f88b06db937d87529a1906be2d224a314c4cc8ba4d3a90edbe3e00a935"
+    },
+    {
+      "path": "gallery/source/scan-bracket-sweep.md",
+      "sha256": "ba3464faafc3ada5a64c4e29e8bcbc4ebe5f4ffb8ef3567f488be5121385a06f"
+    },
+    {
+      "path": "gallery/source/scanline-annotate-focus.md",
+      "sha256": "4b20f8d91d999cd3f9a0a7922f0fc6b118691ba083bbcd5582dfebe65e75d8e4"
+    },
+    {
+      "path": "gallery/source/scanline-assemble-flyin.md",
+      "sha256": "b634451c0c997974e99bf6149362015b103f8b8be0ea6c0b00d02cceb1098fb0"
+    },
+    {
+      "path": "gallery/source/scroll-brake-moves.md",
+      "sha256": "da8381402f9528a0b5a2063be6ea5aaac0b41574554351cc5d0f4cdd5cba527d"
+    },
+    {
+      "path": "gallery/source/segmented-thumb-hero.md",
+      "sha256": "5ac8152358e7dc151473f4881b05497cc5aeea821343e369fedd5b640b84598e"
+    },
+    {
+      "path": "gallery/source/shot-transitions.md",
+      "sha256": "8d5b79d8d20ab09ab76b25a75ba08c80bae41486728807d440bf5de3b765e314"
+    },
+    {
+      "path": "gallery/source/slam-entrance-moves.md",
+      "sha256": "40f656e15b47270a5ef82f8a8319d500402357ea468869626a9cb688903e2409"
+    },
+    {
+      "path": "gallery/source/space-camera-moves.md",
+      "sha256": "41225e87d157bb11e89c4cfea8cebded3258ef0a208ba940573df3be369ac04d"
+    },
+    {
+      "path": "gallery/source/speed-ramp-freeze.md",
+      "sha256": "e0256a63e0f96b798a60171ac53a319ba87eacc552925fd117d4578ee9b69b7b"
+    },
+    {
+      "path": "gallery/source/spotlight-hero-card.md",
+      "sha256": "85e698e973dea676b529ce627842c0b3715a82ae68deff4a774fc48db113e4b6"
+    },
+    {
+      "path": "gallery/source/spotlight-sweep-moves.md",
+      "sha256": "39657d09b90009f4a18190664820b6cfd28d6808cbd65d47f5f5e4a1b43cdf7d"
+    },
+    {
+      "path": "gallery/source/steep-tilt-glide.md",
+      "sha256": "c0e8f5efd8658042b1722d408fa79e664c141c129cb3053120597acdef907a2c"
+    },
+    {
+      "path": "gallery/source/stroke-segment-build.md",
+      "sha256": "82575a4e988a95503539a05ecc1e681d763fbda1f7a8dff1099ac60c878824f3"
+    },
+    {
+      "path": "gallery/source/tear-streak-transitions.md",
+      "sha256": "bf6f373e543935fb8145936a8bbaeb928f7d795175e412d78870eb1449a831d4"
+    },
+    {
+      "path": "gallery/source/tension-camera-moves.md",
+      "sha256": "a9058e6c280eae8d567b18259fc375346376a058a24bd83d3545d44b27eeb3c3"
+    },
+    {
+      "path": "gallery/source/terminal-3d.md",
+      "sha256": "57812e6bf786498afbe4c3771dd3b70208b6bd4182d26423fd67e233e06e63c1"
+    },
+    {
+      "path": "gallery/source/text-as-mask.md",
+      "sha256": "fc5b2fe1b703667e7267352493a9992a953b9058676c6ee3168efadc7b05d33e"
+    },
+    {
+      "path": "gallery/source/text-column-converge.md",
+      "sha256": "1805ed635b77fa6686c1101e507bb5e7a3f1856d1dea8f7961ece1cb6786d247"
+    },
+    {
+      "path": "gallery/source/theme-switch-moves.md",
+      "sha256": "982c7d1127e3db56b518eff645662c195c84d983881d11fa11f932e5e0054618"
+    },
+    {
+      "path": "gallery/source/timeline-travel.md",
+      "sha256": "c5f7ceceaf74cb9b88368e9a89d7006afdf53734ec5919ea6d79f4a0ca77fe14"
+    },
+    {
+      "path": "gallery/source/title-demote-to-label.md",
+      "sha256": "544097b9f7a00ac0addb680a9ec1bdbc320536e6cf45208a0b1cbefa334f59f5"
+    },
+    {
+      "path": "gallery/source/trailer-grammar-moves.md",
+      "sha256": "92a1be277b568298708c7a0c0d09c7f5c405038db48b78995cf023f0fffae67a"
+    },
+    {
+      "path": "gallery/source/transition-hidden-cut.md",
+      "sha256": "5ba4e973caa1fcf657cd9b65b23960fe93d952f100511ec5f05eaa7256479249"
+    },
+    {
+      "path": "gallery/source/transition-travel.md",
+      "sha256": "0ee4fedf950bbda436a9491bcfe581233cac333dc29e68655edaba52c6b3eabe"
+    },
+    {
+      "path": "gallery/source/type-and-filter.md",
+      "sha256": "a3dcc73f8cf96271e971bad2377295a7856d1903885bbcc6c47401311aa193de"
+    },
+    {
+      "path": "gallery/source/type-assembly-moves.md",
+      "sha256": "acb3bb884c49bb19288df1b4b00afc673f92d55e579d08d5194a4f02778afc20"
+    },
+    {
+      "path": "gallery/source/type-entrance-moves.md",
+      "sha256": "fe757ae9b42fb5e251da58104766adfdc4aa2b170b0c40a38ea30f6da54310d2"
+    },
+    {
+      "path": "gallery/source/type-rhythm-sync.md",
+      "sha256": "c2d729fb8e8f491e5cdc83171b0896e862b9ec25b1f5e93a923572f5c52f3a08"
+    },
+    {
+      "path": "gallery/source/typewriter-moves.md",
+      "sha256": "b635864059f247034261a38bb436e664ff938c89b17a15868a7ba73a06d7e998"
+    },
+    {
+      "path": "gallery/source/ui-strip-away-outro.md",
+      "sha256": "ce7471ee2db9baa32b90754ad470cc04f4ec5e3e59bb9594b435d815a7f9762f"
+    },
+    {
+      "path": "gallery/source/ui-to-brand-morph.md",
+      "sha256": "365d75cdc0f2ca564fa599580825eeec5c454222986fec65f037dc5897e96bb4"
+    },
+    {
+      "path": "gallery/source/value-stagger-gradient.md",
+      "sha256": "59cff036d152a0f4448b7faee355f197e41c60226f726389f122dd3253e9e9fc"
+    },
+    {
+      "path": "gallery/source/vertical-word-roll-blur-cycle.md",
+      "sha256": "e36192eb94946cf498c984f7876e623f0dc71d454281457671017b5a1f73f989"
+    },
+    {
+      "path": "gallery/source/voice-waveform-live.md",
+      "sha256": "062a71b8e70b65a5b41084de65a56b8c572cef8a67bb3ff250c6925c83b7f8eb"
+    },
+    {
+      "path": "gallery/source/wall-reveal-moves.md",
+      "sha256": "8cf1a3f63d45f507ac9fe4db580079a0ed0ae48c4db5d641e36010055debaa15"
+    },
+    {
+      "path": "gallery/source/white-flash-logo-simplify-cut.md",
+      "sha256": "a5f8a0aadfd16006e6109bfbff48025319f423c4c66ea5473833609d88819ba9"
+    },
+    {
+      "path": "gallery/source/wipe-transitions.md",
+      "sha256": "ec0338aaff0208789495ba72b2f70e6031092b8bb47c2d3061f742cfe99e1702"
+    },
+    {
+      "path": "gallery/source/word-relay-filmstrip.md",
+      "sha256": "e6fa5bfe5c207fe84fc984b4c95a42bf7e22def2abf8c3bf139d0535cf12e35c"
+    },
+    {
+      "path": "gallery/source/word-relay-geometry.md",
+      "sha256": "e88b51c807feecc87a959aa35913a32871c4719265e82df96fe1d604fa4b45ec"
+    },
+    {
+      "path": "references/music-beat-sync.md",
+      "sha256": "7bcb12a309f8e855f4698936e842dec91c2cd24421b8003a4a36721c2c6b8ba9"
+    },
+    {
+      "path": "references/shots/camera/basic-3d-scene.md",
+      "sha256": "83c7cacdac78b4db949ccf0c0f842a8676016aeeea9f5d2c67c25b8f4475be13"
+    },
+    {
+      "path": "references/shots/camera/crash-zoom-punch.md",
+      "sha256": "b683d6bb83546680b0381e999adfd0c38d39a167b9bad8b28a19f9652454344b"
+    },
+    {
+      "path": "references/shots/camera/cursor-flyover.md",
+      "sha256": "dbda78e0054ca4ca9e83c09bea4e23fbbb68c2331ab40da765eb77ca8c73d1cb"
+    },
+    {
+      "path": "references/shots/camera/depth-layer-moves.md",
+      "sha256": "54cfc27b32b008c121e4bb2f26d626f503547c6c1fb91f1d286446feee7998d1"
+    },
+    {
+      "path": "references/shots/camera/graze-face-tour.md",
+      "sha256": "7247d4c1f19ab50204536a98af2e42b39da8023e2881c58d75ec8d8e774559c7"
+    },
+    {
+      "path": "references/shots/camera/overhead-camera-moves.md",
+      "sha256": "ad56813514c854f0289ba5a7e6f8c68ead34de190bc7ebd594c42c6a6dd58d5b"
+    },
+    {
+      "path": "references/shots/camera/space-camera-moves.md",
+      "sha256": "41225e87d157bb11e89c4cfea8cebded3258ef0a208ba940573df3be369ac04d"
+    },
+    {
+      "path": "references/shots/camera/steep-tilt-glide.md",
+      "sha256": "c0e8f5efd8658042b1722d408fa79e664c141c129cb3053120597acdef907a2c"
+    },
+    {
+      "path": "references/shots/camera/tension-camera-moves.md",
+      "sha256": "a9058e6c280eae8d567b18259fc375346376a058a24bd83d3545d44b27eeb3c3"
+    },
+    {
+      "path": "references/shots/camera/terminal-3d.md",
+      "sha256": "57812e6bf786498afbe4c3771dd3b70208b6bd4182d26423fd67e233e06e63c1"
+    },
+    {
+      "path": "references/shots/data/before-after-slider-scrub.md",
+      "sha256": "5c585d6a4d1df4c43bcc3cc501b3e1141d87ab8977c273ec136c67e56d897d9f"
+    },
+    {
+      "path": "references/shots/data/chart-live-moves.md",
+      "sha256": "f1641e2daee76148f6ebb0019620d500fbb25c0518b963c87b4f56289ce68b17"
+    },
+    {
+      "path": "references/shots/data/gauge-readout-moves.md",
+      "sha256": "f6eb9c44389dad9704863cd64cb2e104ba0c14d4fba7fbe0b932e51e3a348ca0"
+    },
+    {
+      "path": "references/shots/data/scroll-brake-moves.md",
+      "sha256": "da8381402f9528a0b5a2063be6ea5aaac0b41574554351cc5d0f4cdd5cba527d"
+    },
+    {
+      "path": "references/shots/data/timeline-travel.md",
+      "sha256": "c5f7ceceaf74cb9b88368e9a89d7006afdf53734ec5919ea6d79f4a0ca77fe14"
+    },
+    {
+      "path": "references/shots/effects/assemble-then-type-flyin.md",
+      "sha256": "e33b01043347d8d4aa2156a3895e692b868afa351ac59480d7ad327cf162ecd8"
+    },
+    {
+      "path": "references/shots/effects/aurora-bloom-bg-flip.md",
+      "sha256": "dba493d8aca20bf45ad2dd41998f0d5dc856559e367212843fe44768b80029fc"
+    },
+    {
+      "path": "references/shots/effects/brand-frame-snap.md",
+      "sha256": "e057f60567fc5f696a65fe8b7a3c1bd14b9d205ffa7ba972520f3c169a2471f7"
+    },
+    {
+      "path": "references/shots/effects/fui-hud-moves.md",
+      "sha256": "014baed764a43a5eee27bcb760ea9e9b815bb3e004bda7fcd755c8876b2c62fa"
+    },
+    {
+      "path": "references/shots/effects/glow-flyline-moves.md",
+      "sha256": "27a769378a5523df1cfb8a24502982ff8d288663916c97d1aa31f0d28cf937b7"
+    },
+    {
+      "path": "references/shots/effects/icon-performance-moves.md",
+      "sha256": "626e4833a2d994a572ad71214e74ef1f8d95d294ad9b13075be2da595405b293"
+    },
+    {
+      "path": "references/shots/effects/impact-feedback.md",
+      "sha256": "ce76e43e1f90b252601d5af8afea995a6f760e1a12b3a26315f6a252800c1c98"
+    },
+    {
+      "path": "references/shots/effects/light-play-moves.md",
+      "sha256": "cb89525d47fe9c7450ae8b80264f5fa625ac99b8f8c78dabd6a7bcc5bd9eb343"
+    },
+    {
+      "path": "references/shots/effects/radial-ripple-phone-chips.md",
+      "sha256": "51acf92b06f92c9aa9dfdea12af0efcc5e75347689e07c123c749d423a57e3e5"
+    },
+    {
+      "path": "references/shots/effects/riso-print-hits.md",
+      "sha256": "00c69e305c984f56eb2080d53fd0123c88120ef1b93d93092e21b6a8d8dcff16"
+    },
+    {
+      "path": "references/shots/effects/scan-bracket-sweep.md",
+      "sha256": "ba3464faafc3ada5a64c4e29e8bcbc4ebe5f4ffb8ef3567f488be5121385a06f"
+    },
+    {
+      "path": "references/shots/effects/scanline-annotate-focus.md",
+      "sha256": "4b20f8d91d999cd3f9a0a7922f0fc6b118691ba083bbcd5582dfebe65e75d8e4"
+    },
+    {
+      "path": "references/shots/effects/scanline-assemble-flyin.md",
+      "sha256": "b634451c0c997974e99bf6149362015b103f8b8be0ea6c0b00d02cceb1098fb0"
+    },
+    {
+      "path": "references/shots/effects/slam-entrance-moves.md",
+      "sha256": "40f656e15b47270a5ef82f8a8319d500402357ea468869626a9cb688903e2409"
+    },
+    {
+      "path": "references/shots/effects/spotlight-sweep-moves.md",
+      "sha256": "39657d09b90009f4a18190664820b6cfd28d6808cbd65d47f5f5e4a1b43cdf7d"
+    },
+    {
+      "path": "references/shots/interaction/autolayout-gap-dial.md",
+      "sha256": "3d7488afd21ccc6a73013ecc1ea9d31e1b189905808e3f0fa2a0086ae60ea233"
+    },
+    {
+      "path": "references/shots/interaction/canvas-materialize-moves.md",
+      "sha256": "075d26cb0c4d5b9413a1b63dabc8a42699ba6e63e23529e3a66962a6a4f21770"
+    },
+    {
+      "path": "references/shots/interaction/chip-grid-single-select-blackout.md",
+      "sha256": "3a72dccb3c29a3c39a32cfeb4078cfba6023e1d3975e677bb200307aff8dc90a"
+    },
+    {
+      "path": "references/shots/interaction/collab-cursor-moves.md",
+      "sha256": "76854683f4888afc309317833b837a43b4fce0963598f20d2c999369b6fa2628"
+    },
+    {
+      "path": "references/shots/interaction/glass-pill-dictation-typing.md",
+      "sha256": "27b85011e4c19df5f5dc96ae382fd5fb1be7f9b12a1eed7279f06869ff04cc5d"
+    },
+    {
+      "path": "references/shots/interaction/hashtag-to-pill-materialize.md",
+      "sha256": "1d770cd02ca835027d14099140239efe037963a7d0528845cae787e5b486d7ed"
+    },
+    {
+      "path": "references/shots/interaction/picker-carousel-feature-cycle.md",
+      "sha256": "e21ed5876c49e23f2bbeb5ff5caff53efd82070fb184c9cd60c61baa2db37a86"
+    },
+    {
+      "path": "references/shots/interaction/segmented-thumb-hero.md",
+      "sha256": "5ac8152358e7dc151473f4881b05497cc5aeea821343e369fedd5b640b84598e"
+    },
+    {
+      "path": "references/shots/interaction/theme-switch-moves.md",
+      "sha256": "982c7d1127e3db56b518eff645662c195c84d983881d11fa11f932e5e0054618"
+    },
+    {
+      "path": "references/shots/interaction/type-and-filter.md",
+      "sha256": "a3dcc73f8cf96271e971bad2377295a7856d1903885bbcc6c47401311aa193de"
+    },
+    {
+      "path": "references/shots/interaction/voice-waveform-live.md",
+      "sha256": "062a71b8e70b65a5b41084de65a56b8c572cef8a67bb3ff250c6925c83b7f8eb"
+    },
+    {
+      "path": "references/shots/opening/brand-ink-open.md",
+      "sha256": "b9f5402c5afb47607fcd6324835d95215a901b2adfb0293c828c2eae6104e2cf"
+    },
+    {
+      "path": "references/shots/opening/crane-rise-reveal.md",
+      "sha256": "081a20d3cee54456108185a1b3aa3fcf718fbf60d1a97f25165ce76fee1d46ec"
+    },
+    {
+      "path": "references/shots/opening/dataviz-landscape-open.md",
+      "sha256": "55d6a9ffc368801d1d30b3aee964a26270657a733a4c61f93c062662028f9aea"
+    },
+    {
+      "path": "references/shots/opening/fracture.md",
+      "sha256": "62de428e8d982569ab095ab0b3289bab4c6773fb85065676118b9f10b124ee09"
+    },
+    {
+      "path": "references/shots/opening/icon-field-colorize.md",
+      "sha256": "cfd3373a3014b029281838e906ae75cf8d9bb4706bd8e6d3ec42637afb0816c3"
+    },
+    {
+      "path": "references/shots/opening/letterspace-materialize.md",
+      "sha256": "910d848c6e925a7287f17905e94c109962353bbc4120d752b8fb327d431d59b8"
+    },
+    {
+      "path": "references/shots/opening/magician-card-flourish.md",
+      "sha256": "92def0c771f360b4feaa9bb08c954df2a6fa9102b4273f5a60af20d23f45925f"
+    },
+    {
+      "path": "references/shots/opening/orbit-ring-title-open.md",
+      "sha256": "54025976b3e66d500591af9b1f7e3dfb512f3622ce99ca6aeddff482c0e4cf64"
+    },
+    {
+      "path": "references/shots/opening/spotlight-hero-card.md",
+      "sha256": "85e698e973dea676b529ce627842c0b3715a82ae68deff4a774fc48db113e4b6"
+    },
+    {
+      "path": "references/shots/opening/stroke-segment-build.md",
+      "sha256": "82575a4e988a95503539a05ecc1e681d763fbda1f7a8dff1099ac60c878824f3"
+    },
+    {
+      "path": "references/shots/opening/text-as-mask.md",
+      "sha256": "fc5b2fe1b703667e7267352493a9992a953b9058676c6ee3168efadc7b05d33e"
+    },
+    {
+      "path": "references/shots/outro/grain-dissolve.md",
+      "sha256": "67e66e904e1ee5b6e848fe66aba1d4919a75cf947988e4f817080107d3c3c1a7"
+    },
+    {
+      "path": "references/shots/outro/logo-shrink-wordmark-lockup.md",
+      "sha256": "c0909921a97b4db59145161dfad725875a0137aa7d38835ce94774c8cbf8953f"
+    },
+    {
+      "path": "references/shots/outro/neon-triple-marquee.md",
+      "sha256": "435d95881b7d0b54119153f08efe7c9f05f33a46606db97501a37a49d555f21f"
+    },
+    {
+      "path": "references/shots/outro/outro-group-photo-launch.md",
+      "sha256": "99a1f4231965a01dc653e7fe869d778f87a9210028230d76743cd16d599e5146"
+    },
+    {
+      "path": "references/shots/outro/ui-strip-away-outro.md",
+      "sha256": "ce7471ee2db9baa32b90754ad470cc04f4ec5e3e59bb9594b435d815a7f9762f"
+    },
+    {
+      "path": "references/shots/outro/ui-to-brand-morph.md",
+      "sha256": "365d75cdc0f2ca564fa599580825eeec5c454222986fec65f037dc5897e96bb4"
+    },
+    {
+      "path": "references/shots/rhythm/beat-cut-moves.md",
+      "sha256": "76a8ab1be31d4aeb7c4456a7c069f9a5fe697a6c6fc08fe0eff49bcc7a8ed0cd"
+    },
+    {
+      "path": "references/shots/rhythm/beat-step-list-theme-cycle.md",
+      "sha256": "2c6d48ddeafd6514a2809be9c94dadb9823df97913df9d3ceee3c3d19ac538e6"
+    },
+    {
+      "path": "references/shots/rhythm/panel-grid-moves.md",
+      "sha256": "230ceb38ca2c4c157b28c5fbc129cd5e68b03e24f9ce8534f6e980f6f6886d7e"
+    },
+    {
+      "path": "references/shots/rhythm/quad-split-parallel-scenes.md",
+      "sha256": "1424d5692906ceaee7bc9626b92c1f6c0a0203346c1103745fdba3fcaf7c3606"
+    },
+    {
+      "path": "references/shots/rhythm/rhythm-interrupt-moves.md",
+      "sha256": "b16bb150d0d4ec69c513dc783b787ed42cf17aa2460bf0a5d6585c387ab087ff"
+    },
+    {
+      "path": "references/shots/rhythm/sakuga-timing-shift.md",
+      "sha256": "a35518f88b06db937d87529a1906be2d224a314c4cc8ba4d3a90edbe3e00a935"
+    },
+    {
+      "path": "references/shots/rhythm/speed-ramp-freeze.md",
+      "sha256": "e0256a63e0f96b798a60171ac53a319ba87eacc552925fd117d4578ee9b69b7b"
+    },
+    {
+      "path": "references/shots/rhythm/trailer-grammar-moves.md",
+      "sha256": "92a1be277b568298708c7a0c0d09c7f5c405038db48b78995cf023f0fffae67a"
+    },
+    {
+      "path": "references/shots/transition/bottom-push-stack-wipe.md",
+      "sha256": "070ed6e3f804786579d0d6e1a80fa5ad407824f053c1d327857ccb4a3f2626c8"
+    },
+    {
+      "path": "references/shots/transition/card-flip-reveal.md",
+      "sha256": "34ab2b0d738881dd51f34c96f94a82d153f7176e119a3a6f0a0d1fd954df5f5f"
+    },
+    {
+      "path": "references/shots/transition/card-flock-tumble.md",
+      "sha256": "85f7e09b5102406dbe7b395435424edaabea6193b98d5359b15360dc956fae09"
+    },
+    {
+      "path": "references/shots/transition/circle-match-iris.md",
+      "sha256": "ca2ac559d8d0359f8067696524dff1cf216fb3d1dfa00e5668faf86943516293"
+    },
+    {
+      "path": "references/shots/transition/gradient-transition.md",
+      "sha256": "80cbaf73406e51ef49dd5bb0dabffe6df0df4824a38c23953da7684743bdcc00"
+    },
+    {
+      "path": "references/shots/transition/line-carry-transition.md",
+      "sha256": "83c7e8a7638cf4cb179a82c0b387849c9fe95981c751af017c18391cf16bbe5a"
+    },
+    {
+      "path": "references/shots/transition/mosaic-reframe.md",
+      "sha256": "110cd5871844c173d519d3730c85757e0e13e8a31232ac15c8647c103da5826f"
+    },
+    {
+      "path": "references/shots/transition/page-turn-transitions.md",
+      "sha256": "389653bbf110a629c5da62af52af6aec8929880765b589df3dbedfe0edd78eb4"
+    },
+    {
+      "path": "references/shots/transition/print-texture-transitions.md",
+      "sha256": "a805d29ad25b142d28c4cf0041947c8f17ff4f27300c48abe9fd7bd57adf2c62"
+    },
+    {
+      "path": "references/shots/transition/shot-transitions.md",
+      "sha256": "8d5b79d8d20ab09ab76b25a75ba08c80bae41486728807d440bf5de3b765e314"
+    },
+    {
+      "path": "references/shots/transition/tear-streak-transitions.md",
+      "sha256": "bf6f373e543935fb8145936a8bbaeb928f7d795175e412d78870eb1449a831d4"
+    },
+    {
+      "path": "references/shots/transition/transition-hidden-cut.md",
+      "sha256": "5ba4e973caa1fcf657cd9b65b23960fe93d952f100511ec5f05eaa7256479249"
+    },
+    {
+      "path": "references/shots/transition/transition-travel.md",
+      "sha256": "0ee4fedf950bbda436a9491bcfe581233cac333dc29e68655edaba52c6b3eabe"
+    },
+    {
+      "path": "references/shots/transition/white-flash-logo-simplify-cut.md",
+      "sha256": "a5f8a0aadfd16006e6109bfbff48025319f423c4c66ea5473833609d88819ba9"
+    },
+    {
+      "path": "references/shots/transition/wipe-transitions.md",
+      "sha256": "ec0338aaff0208789495ba72b2f70e6031092b8bb47c2d3061f742cfe99e1702"
+    },
+    {
+      "path": "references/shots/typography/blur-slide.md",
+      "sha256": "ef244292adea7d2f4a284a5599fb2f01893d3c50197b3a1f8ade9d3a4cc9ea7d"
+    },
+    {
+      "path": "references/shots/typography/brace-expand.md",
+      "sha256": "7540d542a5ccd573fec946e1757ba4b5f5d1fa3e3bf909301176dcc05aae637f"
+    },
+    {
+      "path": "references/shots/typography/countdown-arc-scatter.md",
+      "sha256": "220d28834fb78a7fd09cfebf3a7ad134e0d2158f46ebd0448692fcf3df03f1dc"
+    },
+    {
+      "path": "references/shots/typography/document-typewriter-reveal.md",
+      "sha256": "bbaf22b6a62066b478818a47f316aeaf93886abb550e65bcbe6ce40c748f8cbd"
+    },
+    {
+      "path": "references/shots/typography/flying-words.md",
+      "sha256": "13a625386e65d9d548d09a582e467b898f4600050c710d13a17ce54dd27739a3"
+    },
+    {
+      "path": "references/shots/typography/glitch-cycle.md",
+      "sha256": "dadc9b4663bdb6955e5f838d6ff886d1238683cd05bb526d993fafea1b2b4e68"
+    },
+    {
+      "path": "references/shots/typography/gradient-word-sweep.md",
+      "sha256": "7a29e0fbcd3c3207b050ca1d33c0c38647d46641c9d5201d04fa449ad9717b6b"
+    },
+    {
+      "path": "references/shots/typography/lead-word-zoom-assemble.md",
+      "sha256": "6d3854a15d2311176b2fc87e98b9baffa45f9e7c54ea6405c992b8bf90da4c27"
+    },
+    {
+      "path": "references/shots/typography/marker-underline-title.md",
+      "sha256": "7d42483e006ecd6bb6bb0e983b3815e21726a1428792df5ad3974b44b8754b2e"
+    },
+    {
+      "path": "references/shots/typography/outline-word-fill.md",
+      "sha256": "062ffd426dfb518a6c0fa926e4b73e5f4355e4fd706b59f576ed31a977c76206"
+    },
+    {
+      "path": "references/shots/typography/paper-title-card.md",
+      "sha256": "b64de54f010f46da6f2ab0da484b05c0121672f71a0dea344ffeba23ad4479b0"
+    },
+    {
+      "path": "references/shots/typography/pill-chip-slot-cycle-handled.md",
+      "sha256": "4fa55f4633c4d194001382a8a8448df713b913bff2f92a380ac09b36e29af628"
+    },
+    {
+      "path": "references/shots/typography/pill-slot-cycle.md",
+      "sha256": "d521b8436f383ab5eed6fcd6c1eab2ee099cd8d9785bb7c304253e7d1a76ce6c"
+    },
+    {
+      "path": "references/shots/typography/text-column-converge.md",
+      "sha256": "1805ed635b77fa6686c1101e507bb5e7a3f1856d1dea8f7961ece1cb6786d247"
+    },
+    {
+      "path": "references/shots/typography/title-demote-to-label.md",
+      "sha256": "544097b9f7a00ac0addb680a9ec1bdbc320536e6cf45208a0b1cbefa334f59f5"
+    },
+    {
+      "path": "references/shots/typography/type-assembly-moves.md",
+      "sha256": "acb3bb884c49bb19288df1b4b00afc673f92d55e579d08d5194a4f02778afc20"
+    },
+    {
+      "path": "references/shots/typography/type-entrance-moves.md",
+      "sha256": "fe757ae9b42fb5e251da58104766adfdc4aa2b170b0c40a38ea30f6da54310d2"
+    },
+    {
+      "path": "references/shots/typography/type-rhythm-sync.md",
+      "sha256": "c2d729fb8e8f491e5cdc83171b0896e862b9ec25b1f5e93a923572f5c52f3a08"
+    },
+    {
+      "path": "references/shots/typography/typewriter-moves.md",
+      "sha256": "b635864059f247034261a38bb436e664ff938c89b17a15868a7ba73a06d7e998"
+    },
+    {
+      "path": "references/shots/typography/vertical-word-roll-blur-cycle.md",
+      "sha256": "e36192eb94946cf498c984f7876e623f0dc71d454281457671017b5a1f73f989"
+    },
+    {
+      "path": "references/shots/typography/word-relay-filmstrip.md",
+      "sha256": "e6fa5bfe5c207fe84fc984b4c95a42bf7e22def2abf8c3bf139d0535cf12e35c"
+    },
+    {
+      "path": "references/shots/typography/word-relay-geometry.md",
+      "sha256": "e88b51c807feecc87a959aa35913a32871c4719265e82df96fe1d604fa4b45ec"
+    },
+    {
+      "path": "references/shots/ui-entrance/avatar-bracket-carousel.md",
+      "sha256": "410c66547ca1a7d69f87786d241e89208e289f0d11edb34f1fec462026814a9d"
+    },
+    {
+      "path": "references/shots/ui-entrance/bezier-source-converge-merge.md",
+      "sha256": "2ab3e1993b49803c3089018c0802bae413b479f26d26c11cae542a8efe252e85"
+    },
+    {
+      "path": "references/shots/ui-entrance/card-stack.md",
+      "sha256": "c656aafdd705ce2cad029e6a8a26f997837bc84a6f36dba077a304ebebf10095"
+    },
+    {
+      "path": "references/shots/ui-entrance/carousel-3d.md",
+      "sha256": "30346eb0d0521e64f61d7b1c8d371a61d94a6c3e7f8942bed1718748a1ed47a6"
+    },
+    {
+      "path": "references/shots/ui-entrance/cloner-depth-echo.md",
+      "sha256": "13f4a98c6a0816e55693c5644351616500e8b946b711332b4d4b4396238b2632"
+    },
+    {
+      "path": "references/shots/ui-entrance/deck-deal-flyin.md",
+      "sha256": "eed5b9585bf80a7566b776ca16a5926ec6b35417803090e9a0756726315b039b"
+    },
+    {
+      "path": "references/shots/ui-entrance/doc-park-left-pill-deal.md",
+      "sha256": "b1cca04e44384e21d79ebb947b6bec70aa1003f7e8e53d497709348a238dd57c"
+    },
+    {
+      "path": "references/shots/ui-entrance/draw-svg-trace.md",
+      "sha256": "10badc80ed577324083366142a5a6d99021b67b5b81a41e1ea29b759b2dcfd0a"
+    },
+    {
+      "path": "references/shots/ui-entrance/element-body-moves.md",
+      "sha256": "940931d0f1858c7bcbc0679b68bbc56b7fde1ab324b8d7b71d9cccf0ae1a0f5a"
+    },
+    {
+      "path": "references/shots/ui-entrance/integration-hub-map.md",
+      "sha256": "a1474661f0e4158fd2223868742473cee903d9a33bdb51557638204c47522a09"
+    },
+    {
+      "path": "references/shots/ui-entrance/list-reveal.md",
+      "sha256": "68b655b516fe96b714b5c798d7c50068741ceea570bc11c80db8513def83f4e9"
+    },
+    {
+      "path": "references/shots/ui-entrance/list-stack-press.md",
+      "sha256": "079565fe5134b2ff97eb472203b49e8a4e21749afae6d8329fa41b5eee8c4732"
+    },
+    {
+      "path": "references/shots/ui-entrance/neon-frame-forerun.md",
+      "sha256": "ee53fd6e931383bc51ccdc4c710379df0867c97fc5b98e217e55c74f47d7dfd2"
+    },
+    {
+      "path": "references/shots/ui-entrance/neon-frame-orbit-drop.md",
+      "sha256": "6f5ecdaabd2700a7aee4feebacdd4dd5415f0d82cd09fe52e80211b8ddb959d2"
+    },
+    {
+      "path": "references/shots/ui-entrance/page-waterfall-wall.md",
+      "sha256": "fc4cd282ef0f7d2c5c36b2f192ddc9d5e318ff60b6c3007305e439161db06cef"
+    },
+    {
+      "path": "references/shots/ui-entrance/product-card-progressive-assemble.md",
+      "sha256": "b33c0702e9a5fcd66fad7b26b890ea5f5c5a8e389466e597b19752e7f1397839"
+    },
+    {
+      "path": "references/shots/ui-entrance/radial-wave.md",
+      "sha256": "587f58625f5815e0376101b35ac552e977e5a57622959bed594d1decb9b53dc0"
+    },
+    {
+      "path": "references/shots/ui-entrance/research-card-stack-scroll.md",
+      "sha256": "afb2c4d35007fde738bbf2a0c7a3e337de19b4b9254790878c1577eca6f904bb"
+    },
+    {
+      "path": "references/shots/ui-entrance/row-embed.md",
+      "sha256": "c6e6026bc4e2c74b77e76c636752a6b5afe9cfb9740c0ffca2c39e091bf999f8"
+    },
+    {
+      "path": "references/shots/ui-entrance/value-stagger-gradient.md",
+      "sha256": "59cff036d152a0f4448b7faee355f197e41c60226f726389f122dd3253e9e9fc"
+    },
+    {
+      "path": "references/shots/ui-entrance/wall-reveal-moves.md",
+      "sha256": "8cf1a3f63d45f507ac9fe4db580079a0ed0ae48c4db5d641e36010055debaa15"
+    },
+    {
+      "path": "references/sound-design.md",
+      "sha256": "6d87ee4bc6a399a1f092349bf4f65c6a69fa6a08fae28bef770f76bce4cb9193"
+    },
+    {
+      "path": "template/TEMPLATE.md",
+      "sha256": "7641ff2ba4492458aca2b63ef98c227b0b9e8e0c9904ced8870c26be14ee789c"
+    },
+    {
+      "path": "template/THEMES.md",
+      "sha256": "02dd9afaf99106628ffc06fe0b0259950b42a564b57b0518b17819b3a4d9bf1e"
+    },
+    {
+      "path": "template/package.json",
+      "sha256": "7ca1a23c6fad1f21debc3c89186284176a44eed0f5d1fcbdde622fd5153db477"
+    },
+    {
+      "path": "template/public/textures/live/card1.png",
+      "sha256": "68cb25fbcac0e8a90f8327604b10e136f5fb58710c2e54b0d9e0be28e00cea7b",
+      "upstreamSha256": "91e5ff3d3a786eea1ac42f2cb3c6083fae6c3ddf214b80dfa9a7e70d250948f9"
+    },
+    {
+      "path": "template/public/textures/live/card10.png",
+      "sha256": "ef8456731eef9b8b53c9c00f43f26f27632babbd665312485cbdb9d92f4b547d",
+      "upstreamSha256": "615736608714f4d4162fa2bd1abd557252c933bec5d32ca0975079bdac593f63"
+    },
+    {
+      "path": "template/public/textures/live/card2.png",
+      "sha256": "a27a7f8d0f2500f71a7166c11e81e4d39631ec4f228df7c8f9f9890e74074115",
+      "upstreamSha256": "ea6f1bc6b774bbd81be54ea63d8c15a0025f47adfeeedd8529b002832ff70e49"
+    },
+    {
+      "path": "template/public/textures/live/card3.png",
+      "sha256": "7857b4864349c1b390b070eabba383dab7a6235c625e276edf7c0e3ced82ebb0",
+      "upstreamSha256": "f470890a3aef61bb1ae361c881380458edb33782f374aac161256d5d49c7a837"
+    },
+    {
+      "path": "template/public/textures/live/card4-hires.png",
+      "sha256": "f8f39bfcf25808309b9b12b13ac4d3d8177a96010e9810296ba498ab4ad5a0f2",
+      "upstreamSha256": "2d31a711702e7c4a4aea939717338141dbc81c490facea9691705f003e904b26"
+    },
+    {
+      "path": "template/public/textures/live/card4.png",
+      "sha256": "7483bc0b78ad16b60a65aec166bb2db69658ddba16d34ac34f7c5e4f86e1e677",
+      "upstreamSha256": "26dff0fc4e4efe529c4002ef9703b827ba9d9a00d05cbcc9136bc88d385134ad"
+    },
+    {
+      "path": "template/public/textures/live/card5.png",
+      "sha256": "c9cf1306d380bdaa730e63b7f2e86f4faeaa5654b9e196d1c954b2a51a729f06",
+      "upstreamSha256": "7e548f79350cbc9a8a4f53db550401bacd85b2221112d175378bf46c5090feb1"
+    },
+    {
+      "path": "template/public/textures/live/card6.png",
+      "sha256": "c332bae85afffe49723658a9c60e10aa07cf7f6bbf0591b9e5a368f977515374",
+      "upstreamSha256": "8564331618c779e4d459ecff26aad00c50cc6b2b33973eda6874493ad40b016c"
+    },
+    {
+      "path": "template/public/textures/live/card7.png",
+      "sha256": "25f5f0fcd1de8de8ab3fa114830cb36377b1be1a548d5853b700d3144d01d4bf",
+      "upstreamSha256": "e4ad44f3356db77b671386eb29581bd1ad78c277ef8852fa814b6c7e9f7cdcd7"
+    },
+    {
+      "path": "template/public/textures/live/card8.png",
+      "sha256": "96db4b9ad04ea74b3f1423aa6c66c1aec0ee4e103638c6e551695adf158206b5",
+      "upstreamSha256": "fcec883f6fb03ff2313d91f7b647af20fa59451580af387a34d0a1f5088d1b45"
+    },
+    {
+      "path": "template/public/textures/live/card9.png",
+      "sha256": "d23a6d5a7c0667afc5e761f188f7f8479cd448d6a6762aab2f3b779a5edfaa8b",
+      "upstreamSha256": "72151c3f2a580398cea7c809a967fa6c9b7aaa0c878f4cd531915cf5785a00ba"
+    },
+    {
+      "path": "template/public/textures/live/detail-experiments.png",
+      "sha256": "e40d7da4a7760f21fde31c2d49181cae21a001ba6379b5fe483a3da49de1bce1",
+      "upstreamSha256": "f631503179c90de018c77d1fef7ef0b2c5fce2d27f51349928bd0ac38179d910"
+    },
+    {
+      "path": "template/public/textures/live/detail-full.png",
+      "sha256": "5e60df6de2ebfd063740a49418a1419d85e56da1e4c2c5feffae568b1fd1f9b5",
+      "upstreamSha256": "44168775d500ad1b833b56d892812784012dcd1a7393a65bb9905a867ccfc347"
+    },
+    {
+      "path": "template/public/textures/live/float-filter.png",
+      "sha256": "bc53168a30bc7f27a51fb732a7f240003a73c57ed054bdadd6ef903c7ef357ae",
+      "upstreamSha256": "592dc0e030129698cd3eefd2ae7ba722d6116af853aa05c4e4660ad118886226"
+    },
+    {
+      "path": "template/public/textures/live/float-search.png",
+      "sha256": "bde28cf571a56667081633871dba8e9a0625b4f4002a59cd5c2ef51b22b25f1d",
+      "upstreamSha256": "53839d02801f6bc2b2b6e7c801cd73ea0edb20b748d248f3ba845dfba835f222"
+    },
+    {
+      "path": "template/public/textures/live/float-section.png",
+      "sha256": "12188cd77a97511dd8e7ec54293efc463c028bfd476c0939302bb95cdaaafcdc",
+      "upstreamSha256": "7036a66956a0014545e88a39d19747b225f97cda4dd43c4c13ecefcecd433a62"
+    },
+    {
+      "path": "template/public/textures/live/float-stats.png",
+      "sha256": "cd7e839b39cfb6e050fcb75756cf1fa40abff4d57b352f031278097c157d07fa",
+      "upstreamSha256": "8a100bd4419c3711dcd2e590a0e122d6c91930670d5bfef1e8c48b979a798cdd"
+    },
+    {
+      "path": "template/public/textures/live/nav.png",
+      "sha256": "d2924f6fcad22b18cd135e528fcc3d0b2bc3df78e2721186392f889b0231257d",
+      "upstreamSha256": "1023b7ac913e4b74ffc913e57bca88c086c7722d7efc9dac36ed8dd6de5cab59"
+    },
+    {
+      "path": "template/public/textures/live/paper1.png",
+      "sha256": "18bf35885f0459a963e6a18fa8adc5ca7c5f52b7baab3cd822a0a31fd2f4042f",
+      "upstreamSha256": "50e288d82440174bae60d8ed1c4fbc5c87d24025e06b5c4061d6bb523eb1a906"
+    },
+    {
+      "path": "template/public/textures/live/paper2.png",
+      "sha256": "af59b001a00853161c0c816848f1cf1f6a667e0a4cae0a66e5ab9f7e5d765972",
+      "upstreamSha256": "059a8b6b012ff449f935a50034171cd5298971eb90f6258156f602dcc51ed804"
+    },
+    {
+      "path": "template/public/textures/live/paper3.png",
+      "sha256": "758a6989cbf8f7a2ffffedfb7e1d5422a5963afe2ff990552c6c706527a45ee1",
+      "upstreamSha256": "2f410e9871033a16caeee984a1bacc250727a86c96fde39e9fcc0981e87a2a16"
+    },
+    {
+      "path": "template/public/textures/live/paper4.png",
+      "sha256": "29388170a6d08baf1ff760cf681a99ff97190765256a4a02249396c8cc1590fb",
+      "upstreamSha256": "5595f9d544467d220a6c9db5c1a28e430df4401976a1c261bc7633216fa326fb"
+    },
+    {
+      "path": "template/public/textures/live/paper5.png",
+      "sha256": "8ee7c16185f32594d757babb25ab71d13ebc1e8cd14e4a8b796a81ae31806f7e",
+      "upstreamSha256": "50f8797cc13871808c1105b46c9cbc81e7c08c6564d22cbde5255d9589593167"
+    },
+    {
+      "path": "template/public/textures/live/papers-full.png",
+      "sha256": "f5f4db5ba95b8163230ff0d722cb933bc31d3e0389cf7ddd6b5bc1988c09c69c",
+      "upstreamSha256": "82b26e7b397806e630303c7b98d5b411c842b70b3aef6b1b318f8aa23bd761f0"
+    },
+    {
+      "path": "template/public/textures/live/projects-empty.png",
+      "sha256": "7f64b2deb6965e0eafd1da03268249b8c08d264771a2069355f9fe8c1f393ef9",
+      "upstreamSha256": "40541655ee1b44d56e75185bb68826e237d22f37534f1489ed6579f6f09e3f33"
+    },
+    {
+      "path": "template/public/textures/live/projects-full.png",
+      "sha256": "d53d27caaef7caaa0e688743e855a2ed110bcf9ec42997dfe379130bc0fcbddc",
+      "upstreamSha256": "b62878daa071387c4fdb478103fbd7f39efb872890dbfdd9d3cbe6f0012afa93"
+    },
+    {
+      "path": "template/public/textures/live/wbr-full.png",
+      "sha256": "c1b7d0a94c463faf235064bd7ca7c922376020f2fa15499c9c0ac20837a7f32e",
+      "upstreamSha256": "81dff5de3e90ffd8759d77716c189b90d0b88290070a5e0e137ffa3b47ef4189"
+    },
+    {
+      "path": "template/remotion.config.ts",
+      "sha256": "74322306f044aa2da278106bfc19251dca471d312946d1b4ab07c01eafa65c0e"
+    },
+    {
+      "path": "template/src/Root.tsx",
+      "sha256": "8eb66cf143cbde04814214f67185a8a6e61be07e6b3b5e130c2578e251672abb"
+    },
+    {
+      "path": "template/src/aifl/Caption.tsx",
+      "sha256": "116a808438f6c55be5f4001cc96b16d150b2d10368f8b199c060cf859e341209"
+    },
+    {
+      "path": "template/src/aifl/DigitRoll.tsx",
+      "sha256": "38f224b78269e68b11c4780f340d300cc1ccd3cbaabdd7273a53dfa0a4c5dfc8"
+    },
+    {
+      "path": "template/src/aifl/FlashCut.tsx",
+      "sha256": "3705429f1bde07e5ce1abd9580b793f6ad9590ba3660f54f4c8f28511ff9966f"
+    },
+    {
+      "path": "template/src/aifl/Main.tsx",
+      "sha256": "e74e9694cd4305955725deaf342d463a96a35dcf18508fc4ce213f4bf4e28e6a"
+    },
+    {
+      "path": "template/src/aifl/PaperTitleCard.tsx",
+      "sha256": "1ed52c1890fdad5c2dece1b002cae2bdfdee4594307f2bd2633ec36f13368851"
+    },
+    {
+      "path": "template/src/aifl/live-layout.json",
+      "sha256": "2cf16d2ead8ec9cdeef5e93cb8861998d62f8a9d3b6254a2653ffde248654aab"
+    },
+    {
+      "path": "template/src/aifl/live/PageCam.tsx",
+      "sha256": "2ed16b800cefcaa3d3c709e58952345c54c0b254ca91687587f02c7ea0670ec7"
+    },
+    {
+      "path": "template/src/aifl/live/SceneDetail.tsx",
+      "sha256": "240de2143a64e790a2f02640cf0c092f31d783e9789952676347c6882d6c27fa"
+    },
+    {
+      "path": "template/src/aifl/live/SceneFlyIn.tsx",
+      "sha256": "33b36bbda193390751eff39a2fa740d077beddff05325181b35f48975346cc7a"
+    },
+    {
+      "path": "template/src/aifl/live/SceneOpen.tsx",
+      "sha256": "1e968d32b5dac1c56ad23a84c74d1a74db7211dc1deb150a7e37a884b644c75e"
+    },
+    {
+      "path": "template/src/aifl/live/SceneOutroLive.tsx",
+      "sha256": "747d732f824fde1d235091f58ce9bb62968bdc0c4e3dc7f34c2ef3d9953f5896"
+    },
+    {
+      "path": "template/src/aifl/live/ScenePapers.tsx",
+      "sha256": "800255af90fad38e5cc48b839f3be4a1870f52d68701557e118adc396420a325"
+    },
+    {
+      "path": "template/src/aifl/live/SceneWbr.tsx",
+      "sha256": "27d42c0b5f0c84a016be706447f806fa1d38cdf328d97e18fc14e8dadfa8aeb8"
+    },
+    {
+      "path": "template/src/index.ts",
+      "sha256": "7c7522648eb3464f3b3c46b41dfc370fe451d8be99bd1f00179924b9f3de71f3"
+    },
+    {
+      "path": "template/src/themes/ThemedFilm.tsx",
+      "sha256": "fd26ffd60821fd6020ce4934320f3df6c854044738b42f128a6cfe4c94f2eb8e"
+    },
+    {
+      "path": "template/src/themes/manifest.tsx",
+      "sha256": "cf30427b26e3486ba69e0accde389892d4e66c47f1bf11cd1af9fc11362f2a20"
+    },
+    {
+      "path": "template/src/themes/palette-assets.json",
+      "sha256": "880e3ea5ec859bcbc0f14784efc930208af992ce8855298344ff52bcefa31169"
+    },
+    {
+      "path": "template/src/themes/palette-assets.ts",
+      "sha256": "06f4608decb9c66af732b6f3b2cfc2826e8cd093c6104b4e5641f4b0cbe66a93"
+    },
+    {
+      "path": "template/src/themes/palettes.json",
+      "sha256": "feaec5dd69247e833d506782131b16dab6a4249c6de1f76b25f88813fa164c66"
+    },
+    {
+      "path": "template/src/themes/visual-theme.tsx",
+      "sha256": "9350fe5e6ccb1685c9de997fd5ad1342b81ed2f499c863bbe290aa46355e12c2"
+    },
+    {
+      "path": "template/src/workbench.ts",
+      "sha256": "46d3e65a377b49c325df09f87f5162a6e97c649dd80e192058850aca79ba3d5d"
+    },
+    {
+      "path": "template/tsconfig.json",
+      "sha256": "ec339bb6f95db886a61f20da00b99f6f8ea372401183c01c53f795dd6ead0cde"
+    }
+  ],
+  "exclusions": [
+    "demos/_legacy/**: retired demos excluded from the current selectable library",
+    "workbench/**: authoring workbench excluded from the source snapshot",
+    "publish/**: publishing and upload tooling excluded",
+    "jianying-export/**: external editor export tooling excluded",
+    "assets/audio/** and template/public/audio/**: audio binaries excluded until separate rights review",
+    "gallery/media/** and videos/**: preview and showcase media binaries excluded",
+    "demos/_textures/** and template/public/textures/live/**: retained only as reference/compatibility fixtures; never production assets",
+    "node_modules/**, package caches, and platform build outputs: generated dependencies excluded"
+  ],
+  "mediaReplacement": {
+    "generator": "scripts/generate-shotcraft-mock-textures.mjs",
+    "description": "Original PNG screenshot fixtures replaced with deterministic abstract dashboard textures; file paths and dimensions retained for demo compatibility.",
+    "sourcePaths": [
+      "demos/_textures/card1.png",
+      "demos/_textures/card10.png",
+      "demos/_textures/card2.png",
+      "demos/_textures/card3.png",
+      "demos/_textures/card4-hires.png",
+      "demos/_textures/card4.png",
+      "demos/_textures/card5.png",
+      "demos/_textures/card6.png",
+      "demos/_textures/card7.png",
+      "demos/_textures/card8.png",
+      "demos/_textures/card9.png",
+      "demos/_textures/detail-full.png",
+      "demos/_textures/float-search.png",
+      "demos/_textures/float-stats.png",
+      "demos/_textures/nav.png",
+      "demos/_textures/paper1.png",
+      "demos/_textures/paper2.png",
+      "demos/_textures/paper3.png",
+      "demos/_textures/paper4.png",
+      "demos/_textures/paper5.png",
+      "demos/_textures/papers-full.png",
+      "demos/_textures/projects-empty.png",
+      "demos/_textures/projects-full.png",
+      "demos/_textures/wbr-full.png",
+      "template/public/textures/live/card1.png",
+      "template/public/textures/live/card10.png",
+      "template/public/textures/live/card2.png",
+      "template/public/textures/live/card3.png",
+      "template/public/textures/live/card4-hires.png",
+      "template/public/textures/live/card4.png",
+      "template/public/textures/live/card5.png",
+      "template/public/textures/live/card6.png",
+      "template/public/textures/live/card7.png",
+      "template/public/textures/live/card8.png",
+      "template/public/textures/live/card9.png",
+      "template/public/textures/live/detail-experiments.png",
+      "template/public/textures/live/detail-full.png",
+      "template/public/textures/live/float-filter.png",
+      "template/public/textures/live/float-search.png",
+      "template/public/textures/live/float-section.png",
+      "template/public/textures/live/float-stats.png",
+      "template/public/textures/live/nav.png",
+      "template/public/textures/live/paper1.png",
+      "template/public/textures/live/paper2.png",
+      "template/public/textures/live/paper3.png",
+      "template/public/textures/live/paper4.png",
+      "template/public/textures/live/paper5.png",
+      "template/public/textures/live/papers-full.png",
+      "template/public/textures/live/projects-empty.png",
+      "template/public/textures/live/projects-full.png",
+      "template/public/textures/live/wbr-full.png"
+    ]
+  }
+}

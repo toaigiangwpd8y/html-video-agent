@@ -1,0 +1,510 @@
+{
+  "sourceRepository": "App Explorer",
+  "sourceCommit": "2ef8c9d0e04821884f28dfdda6b5337958fb6ff1",
+  "sourceTreeWasCleanAtSnapshot": true,
+  "historicalTests": {
+    "testFiles": 24,
+    "tests": 204,
+    "passed": 204
+  },
+  "packagedTests": {
+    "testFiles": 25,
+    "tests": 206,
+    "passed": 206,
+    "addedTestFile": "tests/entrypoints.test.mjs"
+  },
+  "adaptations": [
+    "lib/store.mjs: workspace selection requires an explicit path or KNOWLEDGE_DIR; example data is never a default.",
+    "server.mjs: static assets are module-relative and live data requires an explicit workspace; live projections are extracted to lib/live-view.mjs.",
+    "tools/knowledge.mjs: exposes runKnowledgeCli(argv, options), with CLI process exit behavior isolated to direct execution.",
+    "package.json: package metadata and exports describe the vendored package rather than its source repository."
+  ],
+  "sourceLicense": {
+    "spdx": "MIT",
+    "path": "LICENSE",
+    "sha256": "3cbe09f851eb44909234c59e6e3736e3b63c4192478cd8988ff89b696d64e1ac"
+  },
+  "allowlist": [
+    "lib/**",
+    "tools/**",
+    "public/**",
+    "examples/**",
+    "tests/**",
+    "skills/app-explorer/**",
+    "docs/AGENT_BROWSER.md",
+    "index.d.mts",
+    "package.json",
+    "server.mjs",
+    "LICENSE"
+  ],
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "3cbe09f851eb44909234c59e6e3736e3b63c4192478cd8988ff89b696d64e1ac"
+    },
+    {
+      "path": "docs/AGENT_BROWSER.md",
+      "sha256": "b93a772a38164377facd930812b8d93edf48a7b4570e6ccd3a8a2bf440906551"
+    },
+    {
+      "path": "examples/demo-knowledge/catalog.json",
+      "sha256": "0a7a4d86e9b4a7738cac8ee375454de4ce120aa6ee939bc16fc767df064a41e0"
+    },
+    {
+      "path": "examples/demo-knowledge/docs/README.md",
+      "sha256": "a947b679095b117cb9d31b639d09d3977c746fdb4771770dfe8c4f0e251abaa1"
+    },
+    {
+      "path": "examples/demo-knowledge/docs/features/projects.create.md",
+      "sha256": "961ae53d02c55701b8a6bbbc07177bf742c83be9257b193733e68e09eaad2256"
+    },
+    {
+      "path": "examples/demo-knowledge/docs/features/projects.invite.md",
+      "sha256": "0661be139355336f5d2b51cbb5a199ec210e2ca6e3acf5267b604c1412b34b57"
+    },
+    {
+      "path": "examples/demo-knowledge/docs/features/reports.export.md",
+      "sha256": "0fb0e823a287e3544238ff798cc4428d902a84f90acf8ab14520308f6582bcd9"
+    },
+    {
+      "path": "examples/demo-knowledge/docs/features/settings.roles.md",
+      "sha256": "d4ae988aa6b658faee7071b70ac6e9d64cdb76e104e6bf0928a60cfe238ac43b"
+    },
+    {
+      "path": "examples/demo-knowledge/docs/features/tasks.assign.md",
+      "sha256": "241563269374b67e6698a674947041bac384f820bea67b493e0d5b665c6a6915"
+    },
+    {
+      "path": "examples/demo-knowledge/docs/features/tasks.filter.md",
+      "sha256": "6f3226b7565ef40fa693f03e77c42120b58a0dce65b6cb64cb624b685f1c3da8"
+    },
+    {
+      "path": "examples/demo-knowledge/evidence/demo-run/assignee.png",
+      "sha256": "b470f4abc3acc86700f9bd93841d40b3203576cc851b7daca28cee949398afdc"
+    },
+    {
+      "path": "examples/demo-knowledge/evidence/demo-run/create-dialog.png",
+      "sha256": "5b554c7db9fe6a83ee2607273d0747515752acdb294bb309c29f9e46a4e6c441"
+    },
+    {
+      "path": "examples/demo-knowledge/evidence/demo-run/create-dialog.txt",
+      "sha256": "c1110c0f84ac2eb38affe92076c75decb3d9f7ffc8f7721ab4b650a137852d5b"
+    },
+    {
+      "path": "examples/demo-knowledge/evidence/demo-run/created-project.png",
+      "sha256": "fc201007edfb60b5800940ab59b409b8b9f01e159dbeb7839755620b6a7861d7"
+    },
+    {
+      "path": "examples/demo-knowledge/evidence/demo-run/filters.png",
+      "sha256": "ca9c81e0fa6d8c440022aef2c4d2069800460c5e913924dea8e66ba8760a2651"
+    },
+    {
+      "path": "examples/demo-knowledge/evidence/demo-run/members.png",
+      "sha256": "dbfd4b5a03401782c8c7f02aa4cc4edced869f77e2b522cebb27dd0b4de1f886"
+    },
+    {
+      "path": "examples/demo-knowledge/features/projects.create.json",
+      "sha256": "20039aa08127021d888c2e6fbc3913cd72215356293b71030ea6febbe6e1afed"
+    },
+    {
+      "path": "examples/demo-knowledge/features/projects.invite.json",
+      "sha256": "23878a140904c9b72d4042441cdb6e9b3f270592a3148a1d01abb4585516c1a7"
+    },
+    {
+      "path": "examples/demo-knowledge/features/reports.export.json",
+      "sha256": "e0ac61d3b64dd9a794903daaf2534e899d25d4988caa1eaaecb109292aa07166"
+    },
+    {
+      "path": "examples/demo-knowledge/features/settings.roles.json",
+      "sha256": "9a5cbe79b44644de903d5fc848ece99a5443ec0fa5190e48767af13f151f82f3"
+    },
+    {
+      "path": "examples/demo-knowledge/features/tasks.assign.json",
+      "sha256": "6c1e2f5340ac2d9fd35267ab4025aee28acb482423516f6f5fc47d9bfc7e5fdb"
+    },
+    {
+      "path": "examples/demo-knowledge/features/tasks.filter.json",
+      "sha256": "58d892b19ccc2315f3b636d69b61cf788ed7fe2a6811798cb109f52367874191"
+    },
+    {
+      "path": "examples/observations/demo-update.json",
+      "sha256": "3d93afadf8dfe406f14ab41721283a64ebb28f9b412322eb52561d8d8df3f43e"
+    },
+    {
+      "path": "examples/observations/v2-scenario.json",
+      "sha256": "90fe8615e0a2910442ecd942aa5437802ee7beaec98f0aa9b79f885d2a5bb36b"
+    },
+    {
+      "path": "lib/agent-workflow.mjs",
+      "sha256": "b925e4c56cedb7e8c941558c5bc87e74e72a19b2e2b6c0ff991c84e7ec568b37"
+    },
+    {
+      "path": "lib/browser-capabilities.mjs",
+      "sha256": "34cc3b1cae98d7a5b998ce0bbb86f74ff84c650b91353cea2472c32b2445aba8"
+    },
+    {
+      "path": "lib/coverage.mjs",
+      "sha256": "e800e862fdd31f6f30cdebebe9b4cd4fe42e4a4c086e6fc5563345f4a4e8ef97"
+    },
+    {
+      "path": "lib/diagnostics.mjs",
+      "sha256": "94c23f74e310ae77c4b43dd595b786fddea409199555e7162b9a273cb7e912bb"
+    },
+    {
+      "path": "lib/feature-view.mjs",
+      "sha256": "d441f2a37cf26a021fccdf5a2a10b3602796a7b5a6972784e288e192aa0a5467"
+    },
+    {
+      "path": "lib/frontier.mjs",
+      "sha256": "178150bb7facddbc09a59e7110f432b857097fc08b8d8d918e9e0a06a1eba097"
+    },
+    {
+      "path": "lib/json-io.mjs",
+      "sha256": "9f088d6a7e4aa535490098b4471f9275f5484760d1678d32c60a433d5c19c893"
+    },
+    {
+      "path": "lib/presence-companion.mjs",
+      "sha256": "3e9d40ddd62bd035c92312260285ad2d760f5938ad37bf412dda57b37e76d5d6"
+    },
+    {
+      "path": "lib/presence.mjs",
+      "sha256": "3c77741589626799b5c01b8ef107bd58ff940ca60d76ddd10b80375d2640f7f5"
+    },
+    {
+      "path": "lib/revisions.mjs",
+      "sha256": "35d8cf97d38d3494b28e522dda2fb481edcccc67d0e6367b9caebc285f926137"
+    },
+    {
+      "path": "lib/runs.mjs",
+      "sha256": "34a44288baeb7605c7a1dab6eac6f98fc7b88ee565724cc4318d4961dc73f960"
+    },
+    {
+      "path": "lib/schema.mjs",
+      "sha256": "460e64b13c1a35018bb66aa06a7b52c513c0f22bf54875baaa91be357973c917"
+    },
+    {
+      "path": "lib/store.mjs",
+      "sha256": "a3ce0f3538f15677302c57876c14ba7e9317c49bf5b44ba03dcf5ab2adfc8fea"
+    },
+    {
+      "path": "lib/workspace-reader.mjs",
+      "sha256": "9af3ae6e22c0398f51f3814f94ea662d6803ed0cae3d5000915548df67609268"
+    },
+    {
+      "path": "package.json",
+      "sha256": "5e2b38e63a892bd3622d3dfcdfdb87e77d149f17280acbcd08fa29fbbd5720ff"
+    },
+    {
+      "path": "public/app.js",
+      "sha256": "1f67c9bd6b885b55ca74bda2b7edfb4024b81f983b6a93b38186a57916977fb5"
+    },
+    {
+      "path": "public/index.html",
+      "sha256": "7e74cec471b6ad1c2028082b9299b2679de01919644bbe3d109d088ba604b64e"
+    },
+    {
+      "path": "public/live-utils.js",
+      "sha256": "a114c73a2c94d2940e045d13e5fddfd2b3f475cef9170764ebc396f13e62ec6f"
+    },
+    {
+      "path": "public/style.css",
+      "sha256": "5803c2b86bacd981a85c9bdb87b2c93a395a6ef51a0ded1b00da563322827edd"
+    },
+    {
+      "path": "server.mjs",
+      "sha256": "f392bb6b21962e10981fbbd7f9272d539bc5069d4ba2c231665150ae00d2e283"
+    },
+    {
+      "path": "skills/app-explorer/SKILL.md",
+      "sha256": "9ae9902f1a10ab0aa221723b0bfea1d9b496d2addeb68b61494afdcb53eb153d"
+    },
+    {
+      "path": "skills/app-explorer/references/workflow.md",
+      "sha256": "97b83706f1dd60d89012753266fd2c45b97f547fccebf89f57156be346c04d39"
+    },
+    {
+      "path": "tests/agent-workflow.test.mjs",
+      "sha256": "46b12e087a7d53b6c537a9b7a551ea4b6f9e7cf93580e1823dd0a873787bd714"
+    },
+    {
+      "path": "tests/benchmark.test.mjs",
+      "sha256": "5bdbc5e30241069adcb527256f02ec6ce4c9eaf4ac2c949d4837e95cd34c0fd2"
+    },
+    {
+      "path": "tests/browser-capabilities.test.mjs",
+      "sha256": "da9c1156ae116b049f1b950657e61a15c3d600f26c09b4f6a3fb569f1ffe3d08"
+    },
+    {
+      "path": "tests/coverage.test.mjs",
+      "sha256": "578efc17b80b6eb1739ccd829ecccdc9ccb04d0bc0067bdf16dc483498ddf0d2"
+    },
+    {
+      "path": "tests/diagnostics-api.test.mjs",
+      "sha256": "c3d0b2e8bc6ba936f62f8c7f92c59eea5142ad65ed1c92695f60831482da2feb"
+    },
+    {
+      "path": "tests/diagnostics.test.mjs",
+      "sha256": "dff383e9cea6267238c36d012b0af7bf09631e5a1019f6eb47ec81b9ff7eb0f7"
+    },
+    {
+      "path": "tests/export.test.mjs",
+      "sha256": "e2ef9979baf5166daaaaaf10bf0b433eb8fb73647321ab9256ab17962a46ac86"
+    },
+    {
+      "path": "tests/feature-view.test.mjs",
+      "sha256": "51d8c5ebab836582a23c1c34f568550235768c575002d20406335ad55f0e1a1e"
+    },
+    {
+      "path": "tests/final-review-regressions.test.mjs",
+      "sha256": "d0862d71cacf2628051e59647bba7a2217f68f7f2c06d8cd675980560749cfb7"
+    },
+    {
+      "path": "tests/fixtures/explorer-app.mjs",
+      "sha256": "5be4e994fe9c2697b1070c67268e2be3c2391a6883ae9613f6c631a91298a23b"
+    },
+    {
+      "path": "tests/fixtures/live-server-child.mjs",
+      "sha256": "94d16d6670a91c4cc6c46bb8eccacd2f58f0db893384e797337c3449e429a0ec"
+    },
+    {
+      "path": "tests/flow-hardening-integrated.test.mjs",
+      "sha256": "c13a74256c77c8f59e7c75517168352b2f6d44c5e2b6a478a112466f3e569990"
+    },
+    {
+      "path": "tests/frontier.test.mjs",
+      "sha256": "1c569908d9fb75f6c2c9ccb604ece03af963c63c883454f385d841edce207f8d"
+    },
+    {
+      "path": "tests/journeys.test.mjs",
+      "sha256": "ef4b302951c91d53b1df6e184cb82f87691056c0ac0b7704cab36be46185cf49"
+    },
+    {
+      "path": "tests/json-io.test.mjs",
+      "sha256": "3fd3b0738a443f79404eec1fd98a3c71be27351b3dd289dc95cd651ad28fe4b7"
+    },
+    {
+      "path": "tests/live-client.test.mjs",
+      "sha256": "9a79233647fa2cab5cc6f0b262a66a3e5b1a10e5c9b04dbd498463540ac9003c"
+    },
+    {
+      "path": "tests/live.test.mjs",
+      "sha256": "1e55aff07afd7a91d66e594178eb7315180e05f9f8b664b25aeacb24457c4bde"
+    },
+    {
+      "path": "tests/presence-companion.test.mjs",
+      "sha256": "40692006ebdd8448478c28304716c9b5e650bf76f7a7b3af4e9eb126912e708a"
+    },
+    {
+      "path": "tests/presence.test.mjs",
+      "sha256": "4128cd8b8f7b9e7df34cb414eaaea50424e7c25a112fabbfeab63c2bad3dbd59"
+    },
+    {
+      "path": "tests/revisions.test.mjs",
+      "sha256": "c859dcfa75c42b60e80f9814e08abb1de94fe914c0eb7fde4e9495030df84ab7"
+    },
+    {
+      "path": "tests/runs.test.mjs",
+      "sha256": "e320b92d7703235cf4fa073cff6078c50b8d9c07d3169879532657f3a377926b"
+    },
+    {
+      "path": "tests/schema.test.mjs",
+      "sha256": "e87bfde6ccdd174e310c71ded07b40d427b417b872f36a1559bf1c9a3b05edf7"
+    },
+    {
+      "path": "tests/server-cache.test.mjs",
+      "sha256": "d36643722da901eff667ecbebe143064497517e5dd73e040cd24eea825cfb0eb"
+    },
+    {
+      "path": "tests/server.test.mjs",
+      "sha256": "f6c2e501911679acea13d13817b924192ef1d15703373d1d7d6e0f6cc3cfbb38"
+    },
+    {
+      "path": "tests/storage-performance.test.mjs",
+      "sha256": "9ce6d28e5f393b311525ee4e061e711e1ad1cf57918955c2ef969e94e68822bd"
+    },
+    {
+      "path": "tests/store.test.mjs",
+      "sha256": "e5576b77506e242ebcb9b2d92489cce394bfdadc0206d5dfa54c7e187606bd80"
+    },
+    {
+      "path": "tools/acceptance-fixture.mjs",
+      "sha256": "b0744c077be95db2ed642377d7b2739c8dc1a97f093540a899f69894fc26927a"
+    },
+    {
+      "path": "tools/benchmark.mjs",
+      "sha256": "929623ae282f51ac3dfb124fa55cbdd2793137314566e9eeb338eb01f18e6534"
+    },
+    {
+      "path": "tools/knowledge.mjs",
+      "sha256": "4ab7758e99640c6789799d45a382b38e20bb965cab2c2785d53f7ab74038bfb9"
+    },
+    {
+      "path": "tools/presence-companion.mjs",
+      "sha256": "c28eed29577588ba70f036213aeb9a9ad459e73830b0264cefb763e23c844b3b"
+    }
+  ],
+  "adaptedFiles": [
+    {
+      "path": "lib/store.mjs",
+      "reason": "Explicit workspace selection prevents accidental reads or writes of example data; optional revisioned research metadata is validated atomically with feature writes."
+    },
+    {
+      "path": "lib/revisions.mjs",
+      "reason": "Revision and recovery lock owner metadata is published atomically through a temporary file and hard link, avoiding a partial-owner read during contention."
+    },
+    {
+      "path": "lib/coverage.mjs",
+      "reason": "Research control references are checked against existing contexts, scenarios, open questions, and follow-up tasks."
+    },
+    {
+      "path": "lib/feature-view.mjs",
+      "sourceSha256": "d441f2a37cf26a021fccdf5a2a10b3602796a7b5a6972784e288e192aa0a5467",
+      "currentSha256": "9b6dcef74fbb1591fc61ee9bfeab20cc5157711271170fe1292c03b65bf75faa",
+      "reason": "Feature read models and Markdown exports include research provenance without changing verification status; the local GRA-52 projection adds V1/V2 discovery steps and renders screenshot/snapshot destinations as raw evidence URLs without turning them into verification claims."
+    },
+    {
+      "path": "lib/research-view.mjs",
+      "reason": "New derived projection summarizes existing scenario observations, research candidates, controls, and open coverage; it is not a second knowledge authority."
+    },
+    {
+      "path": "index.mjs",
+      "reason": "Exports the derived research projection alongside existing App Explorer APIs."
+    },
+    {
+      "path": "index.d.mts",
+      "currentSha256": "2a29d8beb7d7c1962563d04bf2ed3221d5b67d7af90fe071d3bf764ee1a4a7e6",
+      "reason": "Declares the research projection interface and the local GRA-52 discovery-step projection types for the video host integration."
+    },
+    {
+      "path": "tests/research-view.test.mjs",
+      "reason": "Adds focused coverage for research metadata validation, projections, coverage gaps, and V1/V2 compatibility."
+    },
+    {
+      "path": "tests/revisions.test.mjs",
+      "reason": "The stale-recovery contention regression synchronizes both child writers at a start barrier, asserts one successful revision and one explicit losing boundary, and preserves diagnostic child results."
+    },
+    {
+      "path": "tests/diagnostics.test.mjs",
+      "reason": "The stale-owner replacement regression injects its competing owner at the atomic hard-link publication boundary used by the adapted revision lock."
+    },
+    {
+      "path": "docs/AGENT_BROWSER.md",
+      "sourceSha256": "b93a772a38164377facd930812b8d93edf48a7b4570e6ccd3a8a2bf440906551",
+      "currentSha256": "f793c3373b30ae2e75a5469e52f4ec5122004344c5c6f8bae9473554765220b8",
+      "reason": "Adds explicit Explorer/video routing, shared-session handoff, and research metadata guidance; local GRA-52 guidance defines evidence-root-relative refs and incremental apply/recovery semantics."
+    },
+    {
+      "path": "skills/app-explorer/SKILL.md",
+      "reason": "Compatibility entry delegates to the single maintained repository skill under .agents."
+    },
+    {
+      "path": "skills/app-explorer/references/workflow.md",
+      "reason": "Compatibility entry delegates to the single maintained repository workflow under .agents."
+    },
+    {
+      "path": "package.json",
+      "reason": "Package metadata and exports describe the vendored package."
+    },
+    {
+      "path": "public/app.js",
+      "reason": "Standalone entrypoint now loads and mounts the shared panel controller."
+    },
+    {
+      "path": "public/index.html",
+      "reason": "Standalone page now provides a mount point for the shared panel fragment."
+    },
+    {
+      "path": "public/live-utils.js",
+      "sourceSha256": "a114c73a2c94d2940e045d13e5fddfd2b3f475cef9170764ebc396f13e62ec6f",
+      "currentSha256": "2b4d70796b0ad298dece626d2fc9612ada185d7168068bb4629c23c3769817d1",
+      "reason": "Live-head merge copies only validated runtime fields and cannot overwrite semantic knowledge fields; local GRA-52 helpers validate polling, app identity, and revision reconciliation."
+    },
+    {
+      "path": "public/style.css",
+      "sourceSha256": "5803c2b86bacd981a85c9bdb87b2c93a395a6ef51a0ded1b00da563322827edd",
+      "currentSha256": "719c65bbaaa3dec7554fdccb1bf3a87fafba9145be20e9dd8fa3ad5c06331948",
+      "reason": "Explorer styles are scoped to the mounted panel root; local GRA-52 styles display evidence loading/error/retry state."
+    },
+    {
+      "path": "server.mjs",
+      "reason": "Static and demo defaults are module-relative; standalone static allowlist serves the shared panel assets."
+    },
+    {
+      "path": "tools/knowledge.mjs",
+      "reason": "Knowledge CLI exposes a callable runner with direct-execution exit behavior isolated."
+    },
+    {
+      "path": "tests/final-review-regressions.test.mjs",
+      "sourceSha256": "d0862d71cacf2628051e59647bba7a2217f68f7f2c06d8cd675980560749cfb7",
+      "currentSha256": "4c285822581039bb621ee5ca05b321fa97122ec8acb0b90531863cb38c2e68a7",
+      "reason": "Retargets feature-projection and Vietnamese accessible-copy assertions from the legacy standalone public/app.js to the maintained shared public/panel.js controller; assertions and semantics are unchanged."
+    },
+    {
+      "path": "lib/schema.mjs",
+      "sourceSha256": "460e64b13c1a35018bb66aa06a7b52c513c0f22bf54875baaa91be357973c917",
+      "currentSha256": "8b4a32b90f75568aa3989e82a5952f0d1c97d918db1afddf1b674f0e78b4db88",
+      "reason": "Local GRA-52 validation rejects a repeated evidence-root prefix while preserving path containment and existing workspace data."
+    },
+    {
+      "path": "lib/workspace-reader.mjs",
+      "sourceSha256": "9af3ae6e22c0398f51f3814f94ea662d6803ed0cae3d5000915548df67609268",
+      "currentSha256": "a2e49a8d5127a2a557c02d82187d180c7974439da1cfe688254a6651f383249c",
+      "reason": "Local GRA-52 freshness handling reloads V1 workspaces without inventing a revision when revision identity is null."
+    },
+    {
+      "path": "public/panel.html",
+      "currentSha256": "ab9adaa9262c17b256dd3f0ad68273efed42382e8ca8fde05a99edc9ca2053f7",
+      "reason": "Local GRA-52 shared panel fragment provides the Explorer evidence detail, selection, lightbox, status, and retry controls."
+    },
+    {
+      "path": "public/panel.js",
+      "currentSha256": "e0c226b7a80ccdc2cac1f9716e20d31a387c93f942afbee264eab126da75cf8b",
+      "reason": "Local GRA-52 shared panel renders discovery and scenario evidence, scopes image URLs to the active app, reconciles freshness without losing selection, retains per-image retry URLs, controls, and keyboard focus across polling, and preserves a delayed lightbox retry through same-app/ref revision refresh."
+    },
+    {
+      "path": "tests/discovery-evidence.test.mjs",
+      "currentSha256": "4d2b7cab84ce92a0d9e20420f5824788fd96bc41782192d5295c5904508e3a51",
+      "reason": "Local GRA-52 coverage verifies discovery projection and export retain evidence with valid raw screenshot/snapshot destinations, without asserting scenario verification."
+    },
+    {
+      "path": "tests/feature-view.test.mjs",
+      "sourceSha256": "51d8c5ebab836582a23c1c34f568550235768c575002d20406335ad55f0e1a1e",
+      "currentSha256": "10deab71f6bdc30293ef9274483acc540dd352a39e2429c028f5561fadcb830b",
+      "reason": "Local GRA-52 tests preserve mixed discovery/scenario projections and keep discovery refs out of verification claims."
+    },
+    {
+      "path": "tests/legacy-freshness.test.mjs",
+      "currentSha256": "fd93caa2197eb6fd60d8c2ed20d185aaae5eda5e7720f0161a2661599aa91921",
+      "reason": "Local GRA-52 regression coverage verifies changed V1 workspace content is reread while its public revision remains null."
+    },
+    {
+      "path": "tests/live-client.test.mjs",
+      "sourceSha256": "9a79233647fa2cab5cc6f0b262a66a3e5b1a10e5c9b04dbd498463540ac9003c",
+      "currentSha256": "9ab9362469db177c8132cec62b45ce6e6a3910c4352294a5bfa86aa50e18039e",
+      "reason": "Local GRA-52 tests validate polling cadence, single-flight behavior, and stable V2 state reuse."
+    },
+    {
+      "path": "tests/schema.test.mjs",
+      "sourceSha256": "e87bfde6ccdd174e310c71ded07b40d427b417b872f36a1559bf1c9a3b05edf7",
+      "currentSha256": "bc083120e06d89a562c83619596cca2365991b31773f0012c9d6245b4851d882",
+      "reason": "Local GRA-52 tests reject duplicated evidence-root prefixes even if a nested file exists."
+    }
+  ],
+  "excludedFiles": [
+    {
+      "path": "tests/evidence/task-G-browser.png",
+      "sha256": "1183cabfd900cd4e6d90026d83fcf559fef55898ec446e3091e32511885202dc",
+      "reason": "Historical manual browser-check screenshot; excluded from the integrated code package."
+    },
+    {
+      "path": "tests/evidence/task-G-reconnect-error.png",
+      "sha256": "4c04de823fa7e75bf81ef3ba6c4aa62665278dbf52b5d95dabb604b2af4934a6",
+      "reason": "Historical manual browser-check screenshot; excluded from the integrated code package."
+    },
+    {
+      "path": "tests/evidence/task-G-reconnect.png",
+      "sha256": "4af847b6d24b9d72196582b44e75ebcc7e315f417d3789798bc237c785f021a2",
+      "reason": "Historical manual browser-check screenshot; excluded from the integrated code package."
+    }
+  ]
+}

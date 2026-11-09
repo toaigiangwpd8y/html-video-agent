@@ -1,0 +1,112 @@
+[
+  {
+    "id": "saas-ad-unspecified-style",
+    "brief": {
+      "productType": "software/SaaS",
+      "objective": "campaign awareness and consideration",
+      "viewerTask": "understand the value of the software",
+      "explicitStyle": null,
+      "productRole": "the product UI is the visual anchor"
+    },
+    "expected": {
+      "primaryProfile": "product-ad",
+      "styleDefault": "high-energy product-centered motion",
+      "applySaasDefault": true
+    },
+    "manualReview": {
+      "verdict": "pass",
+      "rationale": "Campaign awareness plus product UI anchor fits the scoped high-energy SaaS ad default."
+    }
+  },
+  {
+    "id": "saas-ad-explicit-calm",
+    "brief": {
+      "productType": "software/SaaS",
+      "objective": "campaign awareness",
+      "viewerTask": "understand the product promise",
+      "explicitStyle": "calm, minimal, unhurried",
+      "productRole": "the product UI supports the message"
+    },
+    "expected": {
+      "primaryProfile": "product-ad",
+      "styleDefault": "calm, minimal, unhurried",
+      "applySaasDefault": false,
+      "precedence": "explicit user intent"
+    },
+    "manualReview": {
+      "verdict": "pass",
+      "rationale": "The explicit calm direction remains authoritative despite the SaaS campaign context."
+    }
+  },
+  {
+    "id": "non-software-product-ad",
+    "brief": {
+      "productType": "physical consumer product",
+      "objective": "campaign consideration",
+      "viewerTask": "understand the product benefit",
+      "explicitStyle": null,
+      "productRole": "the physical product is the visual anchor"
+    },
+    "expected": {
+      "primaryProfile": "product-ad",
+      "applySaasDefault": false
+    },
+    "manualReview": {
+      "verdict": "pass",
+      "rationale": "A physical product ad is outside the software/SaaS style default."
+    }
+  },
+  {
+    "id": "software-demo-task-proof",
+    "brief": {
+      "productType": "software/SaaS",
+      "objective": "prove a task can be completed",
+      "viewerTask": "observe a specific workflow and its result",
+      "explicitStyle": null,
+      "productRole": "UI behavior is observable task evidence"
+    },
+    "expected": {
+      "primaryProfile": "product-demo",
+      "applySaasDefault": false
+    },
+    "manualReview": {
+      "verdict": "pass",
+      "rationale": "Task completion and observable workflow proof keep this request in product-demo."
+    }
+  },
+  {
+    "id": "software-procedural-tutorial",
+    "brief": {
+      "productType": "software/SaaS",
+      "objective": "teach a repeatable procedure",
+      "viewerTask": "complete the task correctly",
+      "explicitStyle": null,
+      "productRole": "UI communicates steps and successful state changes"
+    },
+    "expected": {
+      "primaryProfile": "procedural-tutorial",
+      "applySaasDefault": false
+    },
+    "manualReview": {
+      "verdict": "pass",
+      "rationale": "Teaching repeatable steps takes precedence over campaign motion guidance."
+    }
+  },
+  {
+    "id": "illustrated-lecture-about-software",
+    "brief": {
+      "productType": "software concept in an instructor-led lecture",
+      "objective": "help students understand the lesson",
+      "viewerTask": "follow and recall the instructor's key ideas",
+      "explicitStyle": null,
+      "productRole": "software may be one lesson example"
+    },
+    "expected": {
+      "applySaasDefault": false
+    },
+    "manualReview": {
+      "verdict": "pass",
+      "rationale": "The instructor-led lesson remains a lecture even when software is an example."
+    }
+  }
+]

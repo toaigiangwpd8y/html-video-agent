@@ -1,0 +1,17 @@
+{
+  "id":"projects.create",
+  "title":"Tạo dự án",
+  "area":"Projects",
+  "summary":"Tạo một dự án mới từ màn hình Projects.",
+  "status":"verified",
+  "entry":{"url":"/projects","label":"Projects → New Project"},
+  "testedContext":{"role":"Admin (demo)","date":"2026-10-15"},
+  "lastVerifiedAt":"2026-10-15",
+  "updatedAt":"2026-10-15",
+  "steps":[
+    {"id":"open-dialog","title":"Mở hộp thoại","action":"Tại Projects, nhấn New Project.","observed":"Hộp thoại Create Project xuất hiện.","screenshot":"demo-run/create-dialog.png","snapshot":"demo-run/create-dialog.txt"},
+    {"id":"submit-project","title":"Tạo dự án","action":"Nhập tên Website Redesign, nhấn Create.","observed":"Dự án Website Redesign xuất hiện trong danh sách.","screenshot":"demo-run/created-project.png"}
+  ],
+  "questions":[],
+  "nextActions":[{"id":"duplicate-name","goal":"Kiểm tra tên dự án trùng","reason":"Chưa rõ ứng dụng xử lý tên trùng như thế nào.","entryPath":"/projects"}]
+}

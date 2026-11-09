@@ -1,0 +1,6 @@
+DEMO ONLY — synthetic snapshot, not a real agent-browser capture.
+- heading "Projects"
+- button "New Project"
+- dialog "Create Project"
+- textbox "Project name"
+- button "Create"

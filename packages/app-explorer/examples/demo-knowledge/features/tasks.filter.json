@@ -1,0 +1,7 @@
+{
+  "id":"tasks.filter","title":"Lọc công việc","area":"Tasks","summary":"Lọc danh sách công việc theo trạng thái.","status":"partial",
+  "entry":{"url":"/tasks","label":"Tasks → Filters"},
+  "testedContext":{"role":"Member (demo)","date":"2026-10-15"},"lastVerifiedAt":null,"updatedAt":"2026-10-15",
+  "steps":[{"id":"see-filter","title":"Mở bộ lọc","action":"Nhấn Filters.","observed":"Menu trạng thái hiện ra.","screenshot":"demo-run/filters.png"}],
+  "questions":[],"nextActions":[{"id":"filter-result","goal":"Xác minh danh sách sau khi lọc","reason":"Mới quan sát menu, chưa kiểm tra dữ liệu trả về.","entryPath":"/tasks"}]
+}

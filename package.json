@@ -1,0 +1,51 @@
+{
+  "name": "agent-native-video-harness-mvp",
+  "version": "0.22.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json && node scripts/copy-backlot-web.mjs && node scripts/copy-app-explorer.mjs",
+    "test": "npm run test:core",
+    "test:core": "node --test dist/tests/*.test.js",
+    "video": "node dist/src/cli.js",
+    "explore": "node dist/src/cli.js explore",
+    "test:explorer": "npm run build && node --test dist/tests/app-explorer-registry.test.js dist/tests/app-explorer-cli.test.js",
+    "test:explorer:package": "npm --prefix packages/app-explorer test",
+    "verify:host": "npm run build && npm run test:core && npm run test:explorer:package",
+    "sources": "node dist/src/cli.js sources",
+    "backlot": "node dist/src/backlot/index.js",
+    "postinstall": "npm run setup -- --renderer=all",
+    "setup": "node scripts/setup.mjs",
+    "registry:check": "node scripts/validate-registry.mjs",
+    "registry:onda:sync": "node scripts/sync-onda-registry.mjs",
+    "registry:search": "node scripts/search-registry.mjs",
+    "registry:onda:inspect": "node scripts/inspect-onda-item.mjs",
+    "registry:onda:vendor": "node scripts/vendor-onda-item.mjs",
+    "registry:poc:still": "node scripts/run-registry-poc-still.mjs",
+    "shotcraft:index": "node scripts/build-shotcraft-search-index.mjs",
+    "shotcraft:search": "node scripts/search-shotcraft-library.mjs",
+    "shotcraft:inspect": "node scripts/inspect-shotcraft-item.mjs",
+    "shotcraft:prepare": "node scripts/shotcraft-prepare.mjs",
+    "shotcraft:compatibility": "npm run build && node scripts/shotcraft-compatibility-run.mjs",
+    "licenses:inventory": "node scripts/build-license-inventory.mjs",
+    "video:host": "node dist/src/hitl-host-cli.js",
+    "bootstrap": "npm ci && npm run build && npm run video -- renderer options --require-all"
+  },
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "^1.0.9",
+    "@office-kit/pptx": "0.21.0",
+    "@office-kit/pptx-preview": "0.11.0",
+    "@resvg/resvg-js": "2.6.2",
+    "dompurify": "3.4.17",
+    "marked": "^18.0.5",
+    "pdfjs-dist": "6.3.289",
+    "playwright-core": "1.62.0",
+    "pptxtojson": "2.1.0"
+  }
+}

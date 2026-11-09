@@ -1,0 +1,46 @@
+[
+  {
+    "id": "headline-progressive-reveal",
+    "storyJob": "Make a headline land through a progressive reveal so the wording change is the evidence.",
+    "temporalProgression": "progressive reveal",
+    "expected": {
+      "candidate": "onda-blur-reveal",
+      "resolution": ["USE", "ADAPT"]
+    }
+  },
+  {
+    "id": "comparison-after-asset-inspection",
+    "storyJob": "Put two comparable subjects in one shared frame so their meaningful difference can be inspected.",
+    "blueprint": "comparison-split",
+    "workflow": ["blueprint", "probe", "asset-inspection", "resolution"],
+    "probeCandidates": ["remotionui-comparison-bars"],
+    "assetInspection": {
+      "actualEvidence": {
+        "inputs": [
+          {"role": "subject_a", "kind": "image", "path": "media/subject-a.svg", "width": 1600, "height": 1200},
+          {"role": "subject_b", "kind": "image", "path": "media/subject-b.svg", "width": 1920, "height": 1080}
+        ],
+        "numericComparisonAvailable": false
+      },
+      "rejectedCandidate": "remotionui-comparison-bars",
+      "selectedCandidate": "remotionui-split-screen",
+      "selectedMediaItem": {
+        "id": "comparison-subject-pair",
+        "paths": ["media/subject-a.svg", "media/subject-b.svg"]
+      },
+      "remotionSourcePath": "remotion/Video.tsx"
+    },
+    "expected": {
+      "resolution": ["REJECT remotionui-comparison-bars", "USE remotionui-split-screen"]
+    }
+  },
+  {
+    "id": "causal-mechanical-evidence",
+    "storyJob": "Show a causal mechanical relationship where the change itself is the proof.",
+    "evidenceObject": "causal mechanical evidence object",
+    "expected": {
+      "resolution": ["NONE"],
+      "authoring": "custom"
+    }
+  }
+]

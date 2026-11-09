@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "Registry assisted authoring proof",
+    "width": 1920,
+    "height": 1080,
+    "durationsInFrames": 180,
+    "fps": 30,
+    "theme": {
+      "palette": ["#0b0b10", "#e8b86d", "#8bd3dd", "#f2f2f4"],
+      "font": "Arial, sans-serif"
+    },
+    "constraints": {
+      "style": "quiet editorial motion with clear evidence",
+      "disallowed": ["voiceover", "remote media", "decorative-only motion"],
+      "motionTone": "deliberate and deterministic"
+    }
+  },
+  "scenes": [
+    {
+      "id": "headline-progressive-reveal",
+      "durationInFrames": 60,
+      "screenText": "Reveal the headline progressively",
+      "visualConcept": "Make a headline land through a progressive reveal so the wording change is the evidence."
+    },
+    {
+      "id": "comparison-after-asset-inspection",
+      "durationInFrames": 60,
+      "screenText": "Inspect the meaningful difference",
+      "visualConcept": "Put two comparable subjects in one shared frame so their meaningful difference can be inspected."
+    },
+    {
+      "id": "causal-mechanical-evidence",
+      "durationInFrames": 60,
+      "screenText": "The change is the proof",
+      "visualConcept": "Show a causal mechanical relationship where the change itself is the proof."
+    }
+  ]
+}

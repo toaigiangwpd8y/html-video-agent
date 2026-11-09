@@ -1,0 +1,20 @@
+[
+  {
+    "name": "zeta-card",
+    "title": "ZetaCard",
+    "description": "A card scene.",
+    "category": "scenes"
+  },
+  {
+    "name": "alpha-reveal",
+    "title": "AlphaReveal",
+    "description": "A reveal entrance.",
+    "category": "entrances"
+  },
+  {
+    "name": "wipe",
+    "title": "wipe",
+    "description": "A scene transition.",
+    "category": "transitions"
+  }
+]

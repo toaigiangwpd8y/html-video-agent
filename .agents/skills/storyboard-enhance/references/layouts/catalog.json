@@ -1,0 +1,1003 @@
+{
+  "version": "1.5.0",
+  "purpose": "renderer-neutral visual-story strategy, semantic content-role, asset-implication, and layout/shot-shape candidates for Storyboard Enhance",
+  "source": {
+    "repo": "https://github.com/heygen-com/hyperframes",
+    "path": "skills/hyperframes-animation/blueprints",
+    "accessed": "2026-09-10",
+    "latest_blueprints_directory_commit_seen": "8532564 (2026-07-21)"
+  },
+  "selection_contract": {
+    "scene_signature_first": true,
+    "retrieval_is_not_selection": true,
+    "min_distinct_families_for_nontrivial_scene": 3,
+    "recent_family_repetition": "soft penalty only",
+    "storyboard_how": "non-binding suggestion unless semantic",
+    "post_selection_read_implementation_guidance": true,
+    "blueprint_annotation_is_not_materialization": true,
+    "shared_theme_must_not_flatten_layout_family": true,
+    "materialize_semantic_evidence_object": true,
+    "temporal_invariants_must_be_observable": true,
+    "transformation_preserves_visual_identity": true,
+    "cross_scene_semantic_continuity_precedes_local_blueprint_convenience": true,
+    "materialization_audit": "YES/PARTIAL/NO before render",
+    "identity_transform_avoids_ambiguous_source_destination_duplication": true,
+    "required_object_continuity_requires_actual_or_visibly_transformed_evidence_object": true,
+    "semantic_strategy_precedes_asset_search": true,
+    "asset_search_is_role_driven": true,
+    "external_media_not_required_by_default": true,
+    "content_roles_are_not_components": true,
+    "selected_blueprint_reused_for_layout_after_asset_resolution": true,
+    "load_full_blueprint_on_demand_only": true
+  },
+  "blueprints": [
+    {
+      "id": "agent-progress-theater",
+      "name": "Agent Progress Theater",
+      "family": "state-progression",
+      "best": [
+        "machine/agent work must be visible over time",
+        "progress, scan, build, processing, checklist, message-thread receipt",
+        "state mutation is the proof"
+      ],
+      "avoid": [
+        "the main action is typing a prompt",
+        "a user cursor must drive every UI state",
+        "a static list is enough"
+      ],
+      "requires": [
+        "at least one meaningful working state",
+        "a visible result or state change"
+      ],
+      "shape": "trigger → visible work-in-progress → result materializes → result resolves or remains partially active",
+      "upstream_roles": [
+        "feature_showcase"
+      ],
+      "story_roles": [
+        "process-state",
+        "machine-working",
+        "progression",
+        "multi-step-result"
+      ],
+      "story_job": "Make intermediate working states and their mutation into a receipt/result the evidence of a multi-step process.",
+      "content_role_ids": [
+        "trigger",
+        "working_states",
+        "persistent_task_identity",
+        "receipt_or_result",
+        "step_evidence"
+      ],
+      "external_media": "conditional",
+      "asset_hint": "Acquire external media only when it materially strengthens a required semantic role."
+    },
+    {
+      "id": "camera-journey",
+      "name": "Camera Journey",
+      "family": "spatial-traversal",
+      "best": [
+        "cause and consequence live in different regions of one continuous world",
+        "travel itself explains the relationship",
+        "the scene benefits from scale/depth/spatial discovery"
+      ],
+      "avoid": [
+        "one object or device is the only hero",
+        "the camera would move without narrative reason",
+        "a simple cut communicates the relation better"
+      ],
+      "requires": [
+        "one continuous spatial world",
+        "at least two meaningful destinations or phases"
+      ],
+      "shape": "enter world → travel to first focus → event/meaning fires → travel to consequence → settle",
+      "upstream_roles": [
+        "feature_showcase",
+        "benefit_highlight"
+      ],
+      "story_roles": [
+        "cause-effect",
+        "mechanism",
+        "spatial-explanation",
+        "cinematic-reveal"
+      ],
+      "story_job": "Use one continuous world where moving from an initiating action or detail to its consequence is itself part of the explanation.",
+      "content_role_ids": [
+        "world",
+        "cause_region",
+        "consequence_region",
+        "identity_landmarks",
+        "payoff"
+      ],
+      "external_media": "conditional",
+      "asset_hint": "Acquire external media only when it materially strengthens a required semantic role."
+    },
+    {
+      "id": "comparison-split",
+      "name": "Balanced Comparison",
+      "family": "comparison",
+      "best": [
+        "exactly two concepts/assets/states have equal weight",
+        "the viewer must compare them at the same time",
+        "symmetry clarifies the claim"
+      ],
+      "avoid": [
+        "more than two primary items",
+        "one side is clearly subordinate",
+        "the comparison is mainly temporal and should be shown sequentially"
+      ],
+      "requires": [
+        "two comparable subjects",
+        "a meaningful comparison dimension"
+      ],
+      "shape": "comparison premise → paired subjects establish → differences/similarities become legible → balanced hold or decisive emphasis",
+      "upstream_roles": [
+        "feature_showcase"
+      ],
+      "story_roles": [
+        "comparison",
+        "before-after",
+        "paired-concepts",
+        "tradeoff"
+      ],
+      "story_job": "Put exactly two semantically comparable subjects into one common frame of reference so their difference or complementarity can be inspected.",
+      "content_role_ids": [
+        "subject_a",
+        "subject_b",
+        "comparison_dimension",
+        "peer_evidence",
+        "conclusion"
+      ],
+      "external_media": "conditional",
+      "asset_hint": "Acquire external media only when it materially strengthens a required semantic role."
+    },
+    {
+      "id": "constellation-hub",
+      "name": "Hub and Satellites",
+      "family": "hub-spoke",
+      "best": [
+        "one core connects many peers",
+        "ecosystem/integration/central-platform relationships",
+        "the center must become the final focus"
+      ],
+      "avoid": [
+        "relationships are sequential rather than radial",
+        "there is no meaningful central entity",
+        "many nodes would become unreadable"
+      ],
+      "requires": [
+        "one central semantic anchor",
+        "multiple related satellites"
+      ],
+      "shape": "satellites establish around hub → relation becomes obvious → converge, orbit, or focus toward hub → hold on core",
+      "upstream_roles": [
+        "hook",
+        "social_proof",
+        "cta"
+      ],
+      "story_roles": [
+        "ecosystem",
+        "hub-and-spoke",
+        "relationship-map",
+        "integration",
+        "central-idea"
+      ],
+      "story_job": "Show one anchor as the organizing center of multiple related peers or dependencies.",
+      "content_role_ids": [
+        "hub",
+        "satellites",
+        "relationship_meaning",
+        "labels_or_evidence",
+        "payoff"
+      ],
+      "external_media": "conditional",
+      "asset_hint": "Acquire external media only when it materially strengthens a required semantic role."
+    },
+    {
+      "id": "cta-morph-press",
+      "name": "Identity to Action Morph",
+      "family": "same-anchor-transform",
+      "best": [
+        "one identity/state should become one action at the same focal anchor",
+        "the scene needs a compact final action beat",
+        "a transformation is clearer than introducing a new layout"
+      ],
+      "avoid": [
+        "multiple actions compete",
+        "the CTA requires a multi-step workflow",
+        "there is no meaningful shared identity between before and after"
+      ],
+      "requires": [
+        "one starting focal object",
+        "one final action/focal state"
+      ],
+      "shape": "identity/focal object holds → transforms in place → action becomes clear → optional interaction confirms → hold",
+      "upstream_roles": [
+        "hook",
+        "cta"
+      ],
+      "story_roles": [
+        "action",
+        "single-widget-demo",
+        "focused-closing",
+        "micro-interaction"
+      ],
+      "story_job": "Concentrate attention on one identity/widget that changes into one actionable state and, when appropriate, receives a single confirming interaction.",
+      "content_role_ids": [
+        "source_identity_or_widget",
+        "target_action_state",
+        "payload_or_action",
+        "confirmation",
+        "closing_message"
+      ],
+      "external_media": "conditional",
+      "asset_hint": "Acquire external media only when it materially strengthens a required semantic role."
+    },
+    {
+      "id": "cursor-ui-demo",
+      "name": "Interaction-Driven Surface Demo",
+      "family": "interaction-demo",
+      "best": [
+        "a visible user interaction is the causal actor",
+        "a real interface/workflow is the evidence",
+        "2–4 discrete interaction states tell the story"
+      ],
+      "avoid": [
+        "the machine acts after one trigger without continued user input",
+        "the scene is only a static product showcase",
+        "the interface can be summarized more clearly without simulated interaction"
+      ],
+      "requires": [
+        "a surface with meaningful states",
+        "an interaction sequence with causal changes"
+      ],
+      "shape": "surface establish → interaction → state response → next interaction/state → payoff",
+      "upstream_roles": [
+        "hook",
+        "product_intro",
+        "feature_showcase",
+        "benefit_highlight"
+      ],
+      "story_roles": [
+        "workflow-demo",
+        "interaction",
+        "before-after-state",
+        "software-mechanism"
+      ],
+      "story_job": "Explain a real interactive workflow by making user actions visibly cause state changes on the same product surface.",
+      "content_role_ids": [
+        "product_surface",
+        "interaction_targets",
+        "state_sequence",
+        "result",
+        "cursor_or_actor"
+      ],
+      "external_media": "required",
+      "asset_hint": "Acquire truthful source media/capture for the primary evidence role before layout."
+    },
+    {
+      "id": "dataviz-countup",
+      "name": "Data Hero / Metric Journey",
+      "family": "data-focus",
+      "best": [
+        "numbers/charts are the evidence",
+        "one metric or trend should dominate",
+        "the argument depends on quantitative change"
+      ],
+      "avoid": [
+        "data is decorative or unsupported",
+        "multiple unrelated metrics compete",
+        "a narrative asset is more important than the numbers"
+      ],
+      "requires": [
+        "source-grounded quantitative evidence",
+        "a clear metric hierarchy"
+      ],
+      "shape": "data instrument establishes → values/trend develop → supporting metrics recede → hero metric lands",
+      "upstream_roles": [
+        "hook",
+        "pain_point",
+        "product_intro",
+        "feature_showcase",
+        "social_proof"
+      ],
+      "story_roles": [
+        "quantitative-evidence",
+        "trend",
+        "comparison",
+        "metric-proof",
+        "data-story"
+      ],
+      "story_job": "Let verified quantitative evidence carry the argument through one or more data states, then land on the metric or relationship that matters.",
+      "content_role_ids": [
+        "data_source",
+        "visual_encoding",
+        "hero_metric_or_relation",
+        "context_label",
+        "supporting_marks"
+      ],
+      "external_media": "conditional",
+      "asset_hint": "Acquire external media only when it materially strengthens a required semantic role."
+    },
+    {
+      "id": "device-surface-showcase",
+      "name": "Surface Hero Showcase",
+      "family": "surface-hero",
+      "best": [
+        "a product/page/device surface itself is the evidence",
+        "the viewer should experience a feature within one persistent surface",
+        "screen state changes are more important than pointer choreography"
+      ],
+      "avoid": [
+        "the camera must traverse many unrelated regions",
+        "a cursor-driven workflow is the primary story",
+        "the scene has no real surface to showcase"
+      ],
+      "requires": [
+        "one dominant surface",
+        "at least one meaningful state change or internal flow"
+      ],
+      "shape": "surface establishes as hero → internal state/flow advances → focal feature is emphasized → surface settles",
+      "upstream_roles": [
+        "product_intro",
+        "feature_showcase"
+      ],
+      "story_roles": [
+        "product-tour",
+        "surface-showcase",
+        "workflow-overview",
+        "artifact-tour"
+      ],
+      "story_job": "Hold one product/device/surface as the hero while its real states or views demonstrate the core experience.",
+      "content_role_ids": [
+        "hero_surface",
+        "screen_states",
+        "flow_order",
+        "success_or_payoff"
+      ],
+      "external_media": "required",
+      "asset_hint": "Acquire truthful source media/capture for the primary evidence role before layout."
+    },
+    {
+      "id": "fixed-anchor-cycle",
+      "name": "Fixed Anchor, Cycling World",
+      "family": "fixed-anchor",
+      "best": [
+        "one identity/statement must stay constant while surrounding examples vary",
+        "breadth is the claim",
+        "repetition around a stable anchor communicates consistency"
+      ],
+      "avoid": [
+        "the anchor itself must transform",
+        "items need simultaneous comparison",
+        "the cycle would become filler rather than evidence"
+      ],
+      "requires": [
+        "one persistent anchor",
+        "multiple meaningful surrounding states/examples"
+      ],
+      "shape": "anchor establishes → surrounding states cycle → cadence may change → final state joins/resolves with anchor",
+      "upstream_roles": [
+        "hook",
+        "benefit_highlight",
+        "branding"
+      ],
+      "story_roles": [
+        "breadth",
+        "variation-around-constant",
+        "compatibility",
+        "roll-call",
+        "theme-cycle"
+      ],
+      "story_job": "Keep one semantic anchor constant while a peer slot or surrounding state cycles, proving breadth or variation without losing identity.",
+      "content_role_ids": [
+        "fixed_anchor",
+        "cycle_items",
+        "shared_relation",
+        "resolution",
+        "supporting_evidence"
+      ],
+      "external_media": "conditional",
+      "asset_hint": "Acquire external media only when it materially strengthens a required semantic role."
+    },
+    {
+      "id": "grid-card-assemble",
+      "name": "Collection Assemble",
+      "family": "collection",
+      "best": [
+        "many peers must accumulate into one collection",
+        "breadth/coverage is the point",
+        "the viewer benefits from seeing the set co-resident at the end"
+      ],
+      "avoid": [
+        "only two items need comparison",
+        "items have a strict causal sequence",
+        "collection density would exceed readability"
+      ],
+      "requires": [
+        "3+ peer items or repeated units",
+        "a meaningful collection structure"
+      ],
+      "shape": "empty/partial field → items arrive progressively → collection structure becomes clear → assembled set holds or reframes",
+      "upstream_roles": [
+        "feature_showcase",
+        "benefit_highlight",
+        "social_proof"
+      ],
+      "story_roles": [
+        "collection",
+        "breadth",
+        "enumeration",
+        "portfolio",
+        "evidence-set"
+      ],
+      "story_job": "Reveal a peer collection whose breadth or accumulation is the evidence, without requiring literal cards.",
+      "content_role_ids": [
+        "peer_items",
+        "collection_dimension",
+        "item_evidence",
+        "collection_payoff"
+      ],
+      "external_media": "conditional",
+      "asset_hint": "Acquire external media only when it materially strengthens a required semantic role."
+    },
+    {
+      "id": "kinetic-type-beats",
+      "name": "Kinetic Type Beats",
+      "family": "typography",
+      "best": [
+        "words/phrases themselves carry the argument",
+        "a hook or payoff can be expressed through changing language",
+        "minimal imagery is intentional"
+      ],
+      "avoid": [
+        "visual evidence is required",
+        "the scene would become a generic text slideshow",
+        "too much copy must be read at once"
+      ],
+      "requires": [
+        "short high-value text beats",
+        "clear phrase hierarchy"
+      ],
+      "shape": "text premise → token/phrase change or escalating beats → emphasis/payoff → hold or handoff",
+      "upstream_roles": [
+        "hook",
+        "pain_point",
+        "product_intro",
+        "benefit_highlight",
+        "cta",
+        "branding"
+      ],
+      "story_roles": [
+        "hook",
+        "problem",
+        "claim",
+        "explanation",
+        "benefit",
+        "payoff",
+        "closing"
+      ],
+      "story_job": "Let wording itself carry the scene through successive statement states; use when the semantic evidence is primarily language rather than external media.",
+      "content_role_ids": [
+        "message_beats",
+        "anchor_phrase",
+        "payoff",
+        "supporting_mark"
+      ],
+      "external_media": "none",
+      "asset_hint": "Prefer text/data/generated graphics; do not fetch media just to fill space."
+    },
+    {
+      "id": "logo-assemble-lockup",
+      "name": "Identity Assemble to Lockup",
+      "family": "identity-assembly",
+      "best": [
+        "a mark/identity must come into existence or resolve from prior material",
+        "brand/product identity is the semantic payoff",
+        "parts-to-whole transformation is meaningful"
+      ],
+      "avoid": [
+        "there is no meaningful identity object",
+        "the scene needs factual evidence more than branding",
+        "assembly would be decorative filler"
+      ],
+      "requires": [
+        "a target identity/lockup",
+        "a justified source state: parts, prior phrase, marks, or cleared field"
+      ],
+      "shape": "prepare/clear → parts or prior material transform toward identity → lockup completes → hold or extend to CTA",
+      "upstream_roles": [
+        "product_intro",
+        "cta",
+        "branding"
+      ],
+      "story_roles": [
+        "identity-reveal",
+        "brand-lockup",
+        "closing"
+      ],
+      "story_job": "Make one identity/mark come into existence or resolve from prior material, then hold it as the semantic conclusion.",
+      "content_role_ids": [
+        "identity_mark",
+        "source_material",
+        "lockup_support",
+        "hold_state"
+      ],
+      "external_media": "conditional",
+      "asset_hint": "Acquire external media only when it materially strengthens a required semantic role."
+    },
+    {
+      "id": "overwhelm-surround",
+      "name": "Accumulation to Overwhelm",
+      "family": "accumulation",
+      "best": [
+        "the problem is too many tools/windows/alerts/items",
+        "density itself is evidence",
+        "the emotional arc should move from recognition to pressure"
+      ],
+      "avoid": [
+        "the problem is quantitative rather than experiential",
+        "many items would be fabricated rather than sourced",
+        "the viewer needs calm comparison rather than overload"
+      ],
+      "requires": [
+        "multiple recognizable pressure sources",
+        "one focal victim/subject or central question"
+      ],
+      "shape": "normal field → elements accumulate → density crosses threshold → focal subject becomes surrounded or center opens for the question",
+      "upstream_roles": [
+        "pain_point"
+      ],
+      "story_roles": [
+        "problem",
+        "overload",
+        "pressure",
+        "fragmentation"
+      ],
+      "story_job": "Make accumulation itself the evidence that a focal subject is becoming overloaded or surrounded.",
+      "content_role_ids": [
+        "focal_subject",
+        "pressure_sources",
+        "accumulation_relation",
+        "threshold_or_question"
+      ],
+      "external_media": "conditional",
+      "asset_hint": "Acquire external media only when it materially strengthens a required semantic role."
+    },
+    {
+      "id": "panel-edit-live-sync",
+      "name": "Coupled Control and Result",
+      "family": "coupled-regions",
+      "best": [
+        "one control change must visibly cause another surface to update",
+        "cause and effect must be seen simultaneously",
+        "editing/inspection is the feature"
+      ],
+      "avoid": [
+        "the workflow is click-through rather than continuous manipulation",
+        "the result can appear after a cut with no loss of meaning",
+        "the two surfaces cannot fit readably together"
+      ],
+      "requires": [
+        "a control/input region",
+        "a target/result region",
+        "a direct causal mapping"
+      ],
+      "shape": "coupled regions establish → control changes → result responds in same beat → repeat/refine → final result demonstrates edited behavior",
+      "upstream_roles": [
+        "feature_showcase"
+      ],
+      "story_roles": [
+        "cause-effect",
+        "live-edit",
+        "control-result",
+        "parameter-explanation"
+      ],
+      "story_job": "Keep a control/input and its target/result visible as one causal pair so changes can be inspected in the same beat.",
+      "content_role_ids": [
+        "control_region",
+        "target_region",
+        "causal_mapping",
+        "before_after_states",
+        "value_or_label"
+      ],
+      "external_media": "conditional",
+      "asset_hint": "Acquire external media only when it materially strengthens a required semantic role."
+    },
+    {
+      "id": "prompt-type-submit-generate",
+      "name": "Prompt to Generated Result",
+      "family": "prompt-response",
+      "best": [
+        "a typed ask is causally important",
+        "the machine response is the payoff",
+        "AI/search/command behavior must be demonstrated"
+      ],
+      "avoid": [
+        "typing is just decorative text",
+        "the user must keep clicking through a workflow",
+        "the output has no credible surface or artifact"
+      ],
+      "requires": [
+        "one meaningful input/prompt",
+        "one observable response/result"
+      ],
+      "shape": "input surface establishes → prompt types → submit/commit → machine works/responds → result lands or loop restarts",
+      "upstream_roles": [
+        "hook",
+        "product_intro",
+        "feature_showcase",
+        "cta"
+      ],
+      "story_roles": [
+        "input-output",
+        "AI-mechanism",
+        "query-result",
+        "command-response"
+      ],
+      "story_job": "Make a meaningful input causally produce an observable machine response, so the ask→answer relationship is the scene.",
+      "content_role_ids": [
+        "input_surface",
+        "input_content",
+        "commit_event",
+        "response_surface",
+        "result_evidence"
+      ],
+      "external_media": "conditional",
+      "asset_hint": "Acquire external media only when it materially strengthens a required semantic role."
+    },
+    {
+      "id": "spatial-pan-stations",
+      "name": "Spatial Stations",
+      "family": "station-traversal",
+      "best": [
+        "milestones/steps/concepts can live at distinct spatial stations",
+        "sequence and location should reinforce each other",
+        "one canvas can hold the whole path"
+      ],
+      "avoid": [
+        "the sequence has no spatial meaning",
+        "camera travel would be longer than the content warrants",
+        "the items need simultaneous comparison"
+      ],
+      "requires": [
+        "2+ ordered stations",
+        "one coherent world/path"
+      ],
+      "shape": "wide spatial map implied → station 1 focus → travel → station 2 focus → … → final station hold",
+      "upstream_roles": [
+        "hook",
+        "pain_point",
+        "product_intro"
+      ],
+      "story_roles": [
+        "timeline",
+        "journey",
+        "process",
+        "multi-step-explanation",
+        "connected-problems"
+      ],
+      "story_job": "Turn an ordered set of milestones, concepts, or evidence points into distinct stations in one coherent conceptual world.",
+      "content_role_ids": [
+        "stations",
+        "path_or_world",
+        "station_evidence",
+        "final_station",
+        "connectors"
+      ],
+      "external_media": "conditional",
+      "asset_hint": "Acquire external media only when it materially strengthens a required semantic role."
+    },
+    {
+      "id": "ticker-takeover",
+      "name": "Cycle then Takeover",
+      "family": "takeover",
+      "best": [
+        "several possibilities should be rejected/replaced by one decisive hero",
+        "the final reveal should feel physically dominant",
+        "a collision/takeover communicates the rhetorical turn"
+      ],
+      "avoid": [
+        "the transition should be calm",
+        "the alternatives are evidence that must remain visible",
+        "the hero does not semantically replace the earlier options"
+      ],
+      "requires": [
+        "a cycling set of options/labels",
+        "one decisive final hero"
+      ],
+      "shape": "context establishes → options cycle → hero enters with force → prior content yields/exits → hero holds",
+      "upstream_roles": [
+        "hook",
+        "branding"
+      ],
+      "story_roles": [
+        "option-rejection",
+        "reframing",
+        "decisive-reveal",
+        "identity-payoff"
+      ],
+      "story_job": "Cycle through plausible alternatives, then replace them with one semantically decisive hero that resolves the uncertainty.",
+      "content_role_ids": [
+        "options",
+        "shared_question",
+        "hero",
+        "payoff_context"
+      ],
+      "external_media": "conditional",
+      "asset_hint": "Acquire external media only when it materially strengthens a required semantic role."
+    },
+    {
+      "id": "titlecard-reveal",
+      "name": "Quiet Landing / Title Reveal",
+      "family": "quiet-landing",
+      "best": [
+        "the video needs a breather or landing beat",
+        "one short title/proof/identity statement deserves stillness",
+        "low motion is intentionally contrasted with busy neighbors"
+      ],
+      "avoid": [
+        "multiple ideas must develop",
+        "a static card would hide a required visual progression",
+        "low motion is being used only because implementation is easier"
+      ],
+      "requires": [
+        "one concise dominant message or proof"
+      ],
+      "shape": "clean field establishes → one restrained reveal/change → still readable hold",
+      "upstream_roles": [
+        "product_intro",
+        "benefit_highlight",
+        "social_proof",
+        "cta"
+      ],
+      "story_roles": [
+        "breather",
+        "section-title",
+        "single-claim",
+        "proof-hold",
+        "closing"
+      ],
+      "story_job": "Give one short semantic message enough visual stillness to land between denser scenes.",
+      "content_role_ids": [
+        "dominant_message",
+        "supporting_line",
+        "proof_or_mark",
+        "hold_state"
+      ],
+      "external_media": "none",
+      "asset_hint": "Prefer text/data/generated graphics; do not fetch media just to fill space."
+    },
+    {
+      "id": "transcript-scroll-artifact-reveal",
+      "name": "Long Surface to Artifact Reveal",
+      "family": "long-surface",
+      "best": [
+        "a long transcript/feed/document is evidence of work",
+        "traversal demonstrates quantity or process",
+        "one artifact/detail should emerge as payoff"
+      ],
+      "avoid": [
+        "there is no meaningful long surface",
+        "scrolling would be unreadable filler",
+        "the artifact can be shown directly without losing the proof"
+      ],
+      "requires": [
+        "one coherent long content surface",
+        "one focal pivot into an artifact/detail"
+      ],
+      "shape": "long surface establishes → traverse meaningful excerpts → focal item selected/highlighted → artifact/detail expands or replaces field → payoff hold",
+      "upstream_roles": [
+        "feature_showcase"
+      ],
+      "story_roles": [
+        "evidence-to-artifact",
+        "document-traversal",
+        "process-proof",
+        "research-result"
+      ],
+      "story_job": "Use a long evidence surface to prove work/quantity/process, then pivot from one selected part into the concrete artifact or detail it produced.",
+      "content_role_ids": [
+        "long_surface",
+        "meaningful_excerpts",
+        "pivot_item",
+        "artifact",
+        "artifact_focus"
+      ],
+      "external_media": "conditional",
+      "asset_hint": "Acquire external media only when it materially strengthens a required semantic role."
+    },
+    {
+      "id": "typewriter-reveal",
+      "name": "Typewriter Reveal",
+      "family": "typed-text",
+      "best": [
+        "the act of typing is itself relatable or meaningful",
+        "one line should feel authored live",
+        "typed text should transform into or support a payoff"
+      ],
+      "avoid": [
+        "typing only slows down information",
+        "the scene needs a real product input and machine response",
+        "copy is too long for readable live typing"
+      ],
+      "requires": [
+        "short text suitable for live reveal"
+      ],
+      "shape": "caret/typing begins → line completes or edits → line collapses/yields or remains as anchor → payoff appears → hold",
+      "upstream_roles": [
+        "hook",
+        "branding"
+      ],
+      "story_roles": [
+        "hook",
+        "authored-thought",
+        "prompt-like-idea",
+        "closing"
+      ],
+      "story_job": "Make the act of authoring one short line the evidence, then let that line resolve into a semantic payoff or identity.",
+      "content_role_ids": [
+        "typed_line",
+        "authoring_anchor",
+        "payoff",
+        "brand_or_context"
+      ],
+      "external_media": "none",
+      "asset_hint": "Prefer text/data/generated graphics; do not fetch media just to fill space."
+    },
+    {
+      "id": "video-text-pivot",
+      "name": "Media to Text Handoff",
+      "family": "media-handoff",
+      "best": [
+        "a video/image/demo should yield to a metric or statement without disappearing immediately",
+        "show → impact → interpretation is the rhetorical arc",
+        "the same visual weight should transfer across media types"
+      ],
+      "avoid": [
+        "the media and text have no causal relation",
+        "a clean cut is semantically stronger",
+        "screen space cannot support a readable overlap/handoff"
+      ],
+      "requires": [
+        "one primary media subject",
+        "one metric/text payoff related to that media"
+      ],
+      "shape": "media establishes → media yields space while staying present → metric/result inherits weight → media clears → text/statement takes center → final stamp",
+      "upstream_roles": [
+        "product_intro",
+        "feature_showcase"
+      ],
+      "story_roles": [
+        "evidence-to-interpretation",
+        "media-to-claim",
+        "demo-to-impact"
+      ],
+      "story_job": "Let primary media establish evidence, then transfer visual importance to the metric or statement that interprets that evidence.",
+      "content_role_ids": [
+        "primary_media",
+        "interpretive_payoff",
+        "causal_bridge",
+        "final_statement",
+        "source_context"
+      ],
+      "external_media": "required",
+      "asset_hint": "Acquire truthful source media/capture for the primary evidence role before layout."
+    },
+    {
+      "id": "zoom-out-workspace-reveal",
+      "name": "Nested Zoom-Out Reveal",
+      "family": "nested-reveal",
+      "best": [
+        "a close-up detail gains new meaning when revealed inside a larger whole",
+        "scale/context reversal is the payoff",
+        "one continuous outward reveal is stronger than cuts"
+      ],
+      "avoid": [
+        "there is no genuine containing whole",
+        "the scene needs several unrelated camera legs",
+        "zoom-out is being used only for spectacle"
+      ],
+      "requires": [
+        "a meaningful nested detail",
+        "a credible containing context/world"
+      ],
+      "shape": "tight detail → local action → continuous outward reveal through context layers → wide containing whole → wide-frame payoff",
+      "upstream_roles": [
+        "hook",
+        "benefit_highlight"
+      ],
+      "story_roles": [
+        "recontextualization",
+        "scale-reveal",
+        "detail-to-system",
+        "mystery-to-context"
+      ],
+      "story_job": "Start from one meaningful detail and reveal that it belongs to a larger containing system without breaking identity.",
+      "content_role_ids": [
+        "nested_detail",
+        "containing_context",
+        "identity_bridge",
+        "wide_payoff"
+      ],
+      "external_media": "conditional",
+      "asset_hint": "Acquire external media only when it materially strengthens a required semantic role."
+    },
+    {
+      "id": "interruption-reentry",
+      "name": "Interruption and Re-entry",
+      "family": "interruption-reentry",
+      "best": [
+        "one continuous process is interrupted and later resumed",
+        "the unfinished state must survive the interruption",
+        "re-entry/context reconstruction is the semantic point"
+      ],
+      "avoid": [
+        "generic overload is the main claim",
+        "the interruption permanently replaces the original process",
+        "a simple before/after comparison is enough"
+      ],
+      "requires": [
+        "one persistent process/task identity",
+        "an interruption event",
+        "a distinct re-entry or reconstruction phase"
+      ],
+      "shape": "active process → interruption → unfinished state preserved → return without full context → reconstruction → same process resumes",
+      "upstream_roles": [],
+      "story_roles": [
+        "interruption",
+        "context-loss",
+        "recovery",
+        "process-continuity"
+      ],
+      "story_job": "Keep one process identifiable across interruption, incomplete return, context reconstruction, and resumption so re-entry cost is visible.",
+      "content_role_ids": [
+        "persistent_process",
+        "interruption_event",
+        "unfinished_state",
+        "reentry_state",
+        "reconstruction_steps",
+        "resumed_state"
+      ],
+      "external_media": "conditional",
+      "asset_hint": "Acquire external media only when it materially strengthens a required semantic role."
+    },
+    {
+      "id": "abstract-to-concrete-timeline",
+      "name": "Abstract to Concrete Timeline",
+      "family": "representation-handoff",
+      "best": [
+        "an abstract duration/timeline becomes a concrete schedule or calendar",
+        "temporal landmarks must survive a change of representation",
+        "the concrete surface should inherit identity from the abstract model"
+      ],
+      "avoid": [
+        "the concrete example is unrelated to the abstract model",
+        "there is no representation change",
+        "the scene is primarily a simultaneous comparison"
+      ],
+      "requires": [
+        "an abstract time/order model",
+        "a concrete time-based representation",
+        "shared duration, order, landmarks, or state identity"
+      ],
+      "shape": "abstract time model → invariant landmarks → added real-world context → concrete schedule resolves → inherited identity holds",
+      "upstream_roles": [],
+      "story_roles": [
+        "abstract-to-concrete",
+        "timeline",
+        "example",
+        "representation-handoff",
+        "schedule"
+      ],
+      "story_job": "Transform an abstract time/order model into a concrete schedule/example while visibly preserving the same duration, landmarks, order, or state identity.",
+      "content_role_ids": [
+        "abstract_model",
+        "invariant_landmarks",
+        "concrete_representation",
+        "identity_bridge",
+        "concrete_payoff"
+      ],
+      "external_media": "none",
+      "asset_hint": "Prefer text/data/generated graphics; do not fetch media just to fill space."
+    }
+  ]
+}

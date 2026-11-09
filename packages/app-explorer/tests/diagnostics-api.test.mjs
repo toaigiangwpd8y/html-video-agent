@@ -1,0 +1,30 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
+import { initWorkspace } from '../lib/store.mjs';
+import { recordDiagnostic } from '../lib/diagnostics.mjs';
+import { createServer } from '../server.mjs';
+
+test('read-only diagnostics API exposes sanitized events without knowledge revision changes', async (t) => {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'app-explorer-diagnostic-api-'));
+  initWorkspace(dir, 'Diagnostic API', 'https://example.org');
+  t.after(() => fs.rmSync(dir, { recursive: true, force: true }));
+  const before = JSON.parse(fs.readFileSync(path.join(dir, 'CURRENT.json'), 'utf8')).revision;
+  for (let index = 1; index <= 3; index++) await recordDiagnostic(dir, { id: `diag.api-${index}`, runId: 'run.api', operationId: 'op.api', timestamp: '2026-10-16T10:00:00.000Z', operation: 'workspace_read', phase: 'error', status: 'failed', errorCode: 'io_error' });
+  const server = createServer({ dataDir: dir });
+  const port = await new Promise((resolve) => server.listen(0, '127.0.0.1', () => resolve(server.address().port)));
+  t.after(() => server.close());
+  const response = await fetch(`http://127.0.0.1:${port}/api/diagnostics?limit=2`);
+  assert.equal(response.status, 200);
+  const page = await response.json();
+  assert.deepEqual(page.events.map((event) => event.id), ['diag.api-1', 'diag.api-2']);
+  assert.equal(page.events[0].errorCode, 'io_error');
+  assert.equal(page.hasMore, true);
+  const next = await (await fetch(`http://127.0.0.1:${port}/api/diagnostics?limit=2&after=${encodeURIComponent(page.cursor)}`)).json();
+  assert.deepEqual(next.events.map((event) => event.id), ['diag.api-3']);
+  assert.equal(next.hasMore, false);
+  assert.equal(JSON.parse(fs.readFileSync(path.join(dir, 'CURRENT.json'), 'utf8')).revision, before);
+  assert.equal((await fetch(`http://127.0.0.1:${port}/api/diagnostics`, { method: 'POST' })).status, 405);
+});

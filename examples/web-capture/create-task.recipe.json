@@ -1,0 +1,38 @@
+{
+  "version": "1",
+  "name": "Create a task in the local fixture",
+  "app": {
+    "url": "http://127.0.0.1:41973/",
+    "viewport": { "width": 1280, "height": 720 },
+    "dpr": 1,
+    "fps": 30,
+    "clock": false,
+    "headless": true,
+    "server": {
+      "command": "node",
+      "args": ["tests/fixtures/web-capture/server.mjs", "41973"],
+      "cwd": ".",
+      "healthUrl": "http://127.0.0.1:41973/health",
+      "startTimeoutMs": 10000
+    },
+    "maxFrames": 900,
+    "maxDurationSeconds": 30,
+    "maxArtifactBytes": 52428800,
+    "maxRunBytes": 536870912
+  },
+  "steps": [
+    { "action": "waitFor", "target": { "role": "heading", "name": "Task library" } },
+    { "action": "screenshot", "name": "empty-state", "mode": "viewport" },
+    { "action": "marker", "name": "before-create" },
+    { "action": "fill", "target": { "role": "textbox", "name": "Task name" }, "value": "Demo task", "travelFrames": 8, "holdFrames": 5 },
+    { "action": "click", "target": { "role": "button", "name": "Create task" }, "travelFrames": 8, "holdFrames": 30 },
+    { "action": "assertText", "target": { "role": "list", "name": "Saved tasks" }, "text": "Demo task" },
+    { "action": "screenshot", "name": "saved-task", "mode": "element", "target": { "role": "list", "name": "Saved tasks" } },
+    { "action": "marker", "name": "task-created" },
+    { "action": "screenshot", "name": "result-page", "mode": "fullPage" }
+  ],
+  "outputs": { "video": true, "cursorOverlay": true },
+  "postconditions": [
+    { "action": "assertText", "target": { "role": "list", "name": "Saved tasks" }, "text": "Demo task" }
+  ]
+}

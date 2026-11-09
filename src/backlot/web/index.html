@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+
+<html data-palette="studio" lang="vi">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Backlot · Không gian sản xuất video</title>
+<meta content="#f7f7f4" name="theme-color"/>
+<link href="./theme.css" rel="stylesheet"/>
+<link href="./style.css" rel="stylesheet"/>
+<link href="./review.css" rel="stylesheet"/>
+<link href="./workspace.css" rel="stylesheet"/>
+<link href="./studio-redesign.css" rel="stylesheet"/></head>
+<body>
+<a class="skip-link" href="#stageViewport">Đến nội dung chính</a>
+<div class="console-layout studio-shell" id="app">
+<!-- Top Header -->
+<header class="console-header">
+<div class="brand-group"><div class="studio-breadcrumb"><span>Workspace</span><span class="studio-crumb-separator">/</span><span id="studioHeaderProject">Backlot</span><span class="studio-crumb-separator">/</span><strong id="studioCrumbName">Tổng quan</strong></div></div>
+<div class="header-meta-row">
+<div class="project-metrics" id="projectMetrics">
+<div class="metric-item">
+<span class="metric-label">DỰ ÁN</span>
+<span class="metric-val" id="topProjectTitle">--</span>
+</div>
+<div class="metric-item">
+<span class="metric-label">KHUNG HÌNH</span>
+<span class="metric-val mono" id="topProjectFormat">--</span>
+</div>
+<div class="metric-item">
+<span class="metric-label">THỜI LƯỢNG</span>
+<span class="metric-val mono" id="topProjectDuration">--</span>
+</div>
+</div>
+<div class="system-status">
+<div class="status-indicator" id="connectionIndicator">
+<span class="status-dot"></span>
+<span class="mono" id="connectionLabel">ĐANG KẾT NỐI</span>
+</div>
+<button class="btn btn-sm btn-ghost" id="refreshBtn">Đồng bộ</button>
+</div>
+</div>
+</header>
+<!-- Global HITL Alert Bar (When Action Required) -->
+<div class="hitl-notice-bar hidden" id="hitlNoticeBar">
+<div class="notice-info">
+<span class="notice-tag">CẦN BẠN XEM</span>
+<span class="notice-text" id="hitlNoticeText">Dự án đang chờ bạn xử lý.</span>
+</div>
+<button class="btn btn-sm btn-primary" id="hitlJumpBtn">Mở bước cần xử lý</button>
+</div>
+<!-- Pipeline Stepper / Primary Stage Navigation -->
+<nav class="pipeline-nav"><div class="studio-brand"><div aria-hidden="true" class="studio-brand-mark">◩</div><div><strong>backlot<span>.</span></strong><small>CREATIVE STUDIO</small></div></div><div class="studio-project-card"><div aria-hidden="true" class="studio-project-avatar">B</div><div class="studio-project-copy"><strong id="sidebarProjectName">Dự án đang tải</strong><small id="sidebarProjectFormat">Workspace · Production</small></div><span aria-hidden="true" class="studio-chevron">⌄</span></div><div class="studio-nav-caption">WORKSPACE</div><a class="studio-explorer-link" href="./explorer.html"><span aria-hidden="true" class="studio-nav-icon">◎</span><span>Khám phá ứng dụng</span><span aria-hidden="true" class="studio-link-arrow">↗</span></a><div class="studio-nav-caption studio-production-label">SẢN XUẤT</div>
+<div class="pipeline-stepper" id="pipelineStepper">
+<div class="workspace-nav-heading">SẢN XUẤT VIDEO</div>
+<!-- Rendered dynamically via app.js -->
+</div>
+<button class="stage-history-trigger" id="openStageHistoryBtn" type="button">Mở lại 1 stage</button>
+<div class="studio-sidebar-footer"><span class="studio-live-dot"></span><span>Backlot workspace</span><small>Production interface</small></div></nav>
+<!-- Dedicated Stage Pages Container -->
+<main class="stage-viewport" id="stageViewport" tabindex="-1"><div aria-live="polite" class="current-page-heading studio-page-heading"><div class="studio-eyebrow" id="studioPageKicker">WORKSPACE / 00</div>
+<div class="current-page-copy">
+<h1 class="current-page-title" id="currentPageTitle">Tổng quan</h1>
+<p class="current-page-summary" id="currentPageSummary">Tiến độ, nội dung mới nhất và việc cần làm tiếp theo.</p>
+</div>
+<span class="review-header-badge" id="overviewStateBadge">Đang tải</span>
+<span class="review-header-badge" hidden="" id="reviewStatusLabel">Chưa sẵn sàng để duyệt</span>
+</div>
+<section class="stage-page" id="page-overview">
+<section class="overview-load-state" id="overviewLoadState" role="status">Đang tải trạng thái dự án…</section>
+
+<div class="studio-overview-meta"><span class="studio-status-chip"><i></i><span id="overviewProcessLabel">Đang đồng bộ</span></span><span class="studio-overview-count" id="overviewCountLabel">— bước hoàn tất</span><div class="studio-progress-rail"><span id="studioProgressFill"></span></div><span class="studio-muted">Trạng thái từ dự án</span></div><div class="studio-hero-grid"><section class="studio-feature"><div aria-label="Tư liệu của dự án" class="studio-feature-media" id="studioHeroMedia" role="img"><div class="studio-feature-placeholder"></div></div><div class="studio-feature-overlay"><span class="studio-kicker">DỰ ÁN HIỆN TẠI</span><h2 id="studioHeroTitle">Dự án của bạn, trong tầm mắt.</h2><p id="studioHeroSummary">Các bước sản xuất và phiên bản mới nhất nằm trong một không gian.</p><button class="btn btn-primary" id="studioHeroOpenBtn" type="button">Xem sản phẩm <span aria-hidden="true">↗</span></button></div><span class="studio-feature-badge" id="studioHeroFormat">VIDEO PROJECT</span></section><div class="studio-hero-side"><div id="studioAttentionMount"><section aria-live="polite" class="overview-attention" hidden="" id="overviewAttention"></section></div><div class="studio-mini-stats"><div><small>Định dạng</small><strong id="studioStatFormat">—</strong></div><div><small>Thời lượng</small><strong id="studioStatDuration">—</strong></div><div><small>Trạng thái</small><strong id="studioStatStatus">—</strong></div></div></div></div><div class="overview-columns">
+<section aria-labelledby="overviewWorkTitle" class="overview-work"><h2 id="overviewWorkTitle">Hành trình sản xuất</h2><div id="overviewProgress"></div><div class="overview-stage-list" id="overviewStages"></div></section>
+<section aria-labelledby="overviewLatestTitle" class="overview-latest"><h2 id="overviewLatestTitle">Nội dung gần đây</h2><div id="overviewLatest"></div></section>
+</div>
+</section>
+<!-- Combined stage 1: Request &amp; Brief -->
+<section class="stage-page" data-page-summary="Yêu cầu ban đầu, thông tin cần làm rõ và định hướng sản xuất đã thống nhất." data-page-title="Yêu cầu &amp; định hướng" id="page-request_brief">
+<section aria-labelledby="substage-request-title" class="stage-subsection">
+<div class="stage-subsection-header">
+<div class="stage-substage-num mono">GIAI ĐOẠN 01 / 10</div>
+<h2 class="stage-subsection-title" id="substage-request-title">Yêu cầu ban đầu</h2>
+<p class="stage-subsection-desc">Nội dung bạn đã cung cấp cho dự án.</p>
+</div>
+<div class="stage-subsection-content">
+<div class="card">
+<div class="card-header">
+<span class="card-title">Nội dung yêu cầu</span>
+<span class="badge mono" id="requestLengthBadge">0 ký tự</span>
+</div>
+<div class="code-view markdown-preview" id="requestRawContent">Chưa ghi nhận yêu cầu.</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="substage-clarification-title" class="stage-subsection">
+<div class="stage-subsection-header">
+<div class="stage-substage-num mono">GIAI ĐOẠN 02 / 10</div>
+<h2 class="stage-subsection-title" id="substage-clarification-title">Làm rõ yêu cầu</h2>
+<p class="stage-subsection-desc">Các quyết định đã chốt và câu hỏi cần bạn trả lời.</p>
+</div>
+<div class="stage-subsection-content">
+<div class="stage-action-box hidden" id="clarifyHitlActionSlot">
+<div class="action-box-title">Cần bạn trả lời câu hỏi</div>
+<div id="clarifyFormContainer"></div>
+</div>
+<div class="two-col-layout">
+<div class="card">
+<div class="card-header">
+<span class="card-title">Quyết định</span>
+<span class="badge mono" id="clarifyStatusBadge">Đang chờ</span>
+</div>
+<div class="data-list" id="clarifyDecisionsList">
+<div class="empty-note">Chưa ghi nhận quyết định nào.</div>
+</div>
+</div>
+<div class="card">
+<div class="card-header">
+<span class="card-title">Câu hỏi và câu trả lời</span>
+</div>
+<div class="data-list" id="clarifyQuestionsList">
+<div class="empty-note">Chưa ghi nhận câu hỏi nào.</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="substage-video_brief-title" class="stage-subsection">
+<div class="stage-subsection-header">
+<div class="stage-substage-num mono">GIAI ĐOẠN 03 / 10</div>
+<h2 class="stage-subsection-title" id="substage-video_brief-title">Định hướng video</h2>
+<p class="stage-subsection-desc">Mục tiêu, khán giả, thời lượng, nhịp điệu và các giới hạn nội dung.</p>
+</div>
+<div class="stage-subsection-content">
+<div class="stage-action-box hidden" id="briefHitlActionSlot">
+<div class="action-box-title">Duyệt định hướng video</div>
+<p class="action-box-desc">Duyệt để tiếp tục hoặc yêu cầu chỉnh sửa.</p>
+<button class="btn btn-primary" id="approveBriefBtn">Duyệt yêu cầu</button>
+</div>
+<div class="two-col-layout">
+<div class="card">
+<div class="card-header">
+<span class="card-title">Thông tin chính</span>
+<span class="badge mono" id="briefStatusBadge">Đang chờ</span>
+</div>
+<div class="params-table" id="briefParameters">
+<div class="empty-note">Chưa có định hướng được lưu.</div>
+</div>
+</div>
+<div class="card">
+<div class="card-header">
+<span class="card-title">Giới hạn nội dung</span>
+</div>
+<div class="params-table" id="briefGuardrails">
+<div class="empty-note">Chưa có giới hạn nội dung.</div>
+</div>
+</div>
+</div>
+<div class="card renderer-choice-card">
+<div class="card-header">
+<span class="card-title">Renderer</span>
+<span class="badge mono" id="rendererChoiceStatus">Cần bạn chọn</span>
+</div>
+<p class="card-desc" id="rendererChoiceDescription">Chọn Renderer để tạo bản xem trước.</p>
+<div class="renderer-choice-grid" id="rendererChoiceGrid">
+<div class="empty-note">Chưa kiểm tra khả năng sử dụng Renderer.</div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<!-- Combined stage 2: Profile &amp; Script -->
+<section class="stage-page" data-page-summary="Định hướng sản xuất và toàn bộ lời dẫn, hội thoại." data-page-title="Tiêu chí &amp; kịch bản" id="page-profile_script">
+<section aria-labelledby="substage-script-title" class="stage-subsection">
+<div class="stage-subsection-header">
+<div class="stage-substage-num mono">GIAI ĐOẠN 05 / 10</div>
+<h2 class="stage-subsection-title" id="substage-script-title">Kịch bản lời dẫn</h2>
+<p class="stage-subsection-desc">Lời thuyết minh, hội thoại và nhịp nội dung theo từng cảnh.</p>
+</div>
+<div class="stage-subsection-content">
+<div class="stage-action-box hidden" id="scriptHitlActionSlot">
+<div class="action-box-title">Duyệt kịch bản</div>
+<p class="action-box-desc">Xem nội dung bên dưới, duyệt hoặc yêu cầu chỉnh sửa.</p>
+<button class="btn btn-primary" id="approveScriptBtn">Duyệt kịch bản</button>
+</div>
+<div class="studio-script-layout"><aside class="studio-script-outline"><span class="studio-pane-kicker">CẤU TRÚC NỘI DUNG</span><nav aria-label="Mục lục kịch bản" id="studioScriptOutline"><p>Chưa có mục lục.</p></nav></aside><div id="studioScriptPaperMount"><div class="script-grid studio-script-paper">
+<article class="script-document">
+<div aria-label="Nội dung kịch bản" class="screenplay-canvas markdown-preview" id="scriptContentArea" role="article">
+<div class="empty-note">Chưa có kịch bản được lưu.</div>
+</div>
+</article>
+</div></div><aside class="studio-script-inspector"><span class="studio-pane-kicker">THÔNG TIN BẢN THẢO</span><div class="studio-inspector-stat"><span>Độ dài kịch bản</span><strong id="studioScriptLength">—</strong></div><div class="studio-inspector-stat"><span>Trạng thái</span><strong id="studioScriptStatus">—</strong></div><p>Đọc và duyệt bản thảo tại vùng tài liệu. Thông tin kỹ thuật và lịch sử vẫn có ở cuối trang.</p></aside></div>
+</div>
+</section>
+<section aria-labelledby="substage-production_profile-title" class="stage-subsection">
+<div class="stage-subsection-header">
+<div class="stage-substage-num mono">GIAI ĐOẠN 04 / 10</div>
+<h2 class="stage-subsection-title" id="substage-production_profile-title">Định hướng sản xuất</h2>
+<p class="stage-subsection-desc">Tiêu chí để video đáp ứng đúng mục tiêu và cách trình bày.</p>
+</div>
+<div class="stage-subsection-content">
+<div class="card">
+<div class="card-header">
+<span class="card-title">Cấu hình sản xuất</span>
+<span class="badge mono" id="profileStatusBadge">Đang chờ</span>
+</div>
+<details class="technical-disclosure"><summary>Xem cấu hình chi tiết</summary><pre class="code-view" id="profileRawContent">Chưa có cấu hình sản xuất.</pre></details>
+</div>
+</div>
+</section>
+</section>
+<!-- Combined stage 3: Storyboard -->
+<section class="stage-page" data-page-summary="Nội dung, hình ảnh và thời lượng dự kiến cho từng cảnh." data-page-title="Phân cảnh" id="page-storyboard">
+<section aria-labelledby="substage-storyboard-title" class="stage-subsection">
+<div class="stage-subsection-header">
+<div class="stage-substage-num mono">GIAI ĐOẠN 06 / 10</div>
+<h2 class="stage-subsection-title" id="substage-storyboard-title">Bảng phân cảnh</h2>
+<p class="stage-subsection-desc">Các cảnh theo thứ tự cùng hình ảnh và lời thoại dự kiến.</p>
+</div>
+<div class="stage-subsection-content">
+<div class="stage-action-box hidden" id="storyboardHitlActionSlot">
+<div class="action-box-title">Duyệt bảng phân cảnh</div>
+<p class="action-box-desc">Duyệt để chuyển sang dựng video hoặc yêu cầu chỉnh sửa.</p>
+<button class="btn btn-primary" id="approveStoryboardBtn">Duyệt phân cảnh</button>
+</div>
+<details class="theme-disclosure">
+<summary><span>Chủ đề hình ảnh</span><span class="badge mono" id="themeStatusBadge">Chưa có</span></summary>
+<div class="theme-panel" id="themePanel">
+<div class="empty-note">Chưa có chủ đề hình ảnh.</div>
+</div>
+</details>
+<div class="studio-story-toolbar"><div><span class="studio-pane-kicker">BỘ PHÂN CẢNH</span><strong id="studioStoryCount">0 cảnh</strong></div><div aria-label="Chế độ xem phân cảnh" class="studio-segmented" role="group"><button aria-pressed="true" class="is-selected" id="studioStoryGrid" type="button">Lưới</button><button aria-pressed="false" id="studioStoryList" type="button">Danh sách</button></div></div><ol aria-label="Các cảnh theo thứ tự" class="storyboard-canvas studio-grid-view" id="storyboardCardsContainer">
+<li class="empty-note">Chưa có bảng phân cảnh.</li>
+</ol>
+</div>
+</section>
+</section>
+<!-- Combined stage 4: Canonical &amp; Asset Preflight -->
+<section class="stage-page" data-page-summary="Thông tin dự án đã duyệt và các tư liệu dùng để tạo video." data-page-title="Dự án &amp; tư liệu" id="page-canonical_assets">
+<section aria-labelledby="substage-asset_acquisition-title" class="stage-subsection">
+<div class="stage-subsection-header">
+<div class="stage-substage-num mono">GIAI ĐOẠN 08 / 10</div>
+<h2 class="stage-subsection-title" id="substage-asset_acquisition-title">Tư liệu sản xuất</h2>
+<p class="stage-subsection-desc">Video, hình ảnh, giọng đọc và phông chữ đã đăng ký cho dự án.</p>
+</div>
+<div class="stage-subsection-content">
+<div class="stage-action-box hidden" id="assetPreflightHitlActionSlot">
+<div class="action-box-title">Duyệt dự án và tư liệu</div>
+<p class="action-box-desc">Kiểm tra danh sách tư liệu rồi duyệt hoặc yêu cầu chỉnh sửa.</p>
+<pre class="code-view" id="assetPreflightReviewBinding"></pre>
+<button class="btn btn-primary" id="approveAssetPreflightBtn">Duyệt tư liệu</button>
+</div>
+<div aria-label="Thư viện tư liệu" class="card asset-manifest-card" id="assetManifestCard">
+<div class="card-header asset-manifest-header">
+<div class="header-title-group">
+<span class="card-title">Thư viện tư liệu</span>
+<span class="badge mono" id="assetsCountBadge">0 tư liệu</span>
+</div>
+<div class="asset-category-filters" id="assetCategoryFilters">
+<button class="filter-tab active" data-filter="all" id="filterTabAll">Tất cả (<span id="countFilterAll">0</span>)</button>
+<button class="filter-tab" data-filter="video" id="filterTabVideo">Video (<span id="countFilterVideo">0</span>)</button>
+<button class="filter-tab" data-filter="image" id="filterTabImage">Ảnh (<span id="countFilterImage">0</span>)</button>
+<button class="filter-tab" data-filter="voice" id="filterTabVoice">Âm thanh (<span id="countFilterVoice">0</span>)</button>
+<button class="filter-tab" data-filter="font" id="filterTabFont">Phông chữ (<span id="countFilterFont">0</span>)</button>
+</div>
+</div>
+<p class="empty-note asset-empty-state" hidden="" id="assetsEmptyState">Chưa có tư liệu được đăng ký cho dự án này.</p>
+<!-- Video Category Section -->
+<div aria-label="Video" class="asset-category-section" data-category="video" id="assetCategoryGroupVideo">
+<div class="asset-grid" id="assetVideoGrid">
+</div>
+</div>
+<!-- Image Category Section -->
+<div aria-label="Hình ảnh" class="asset-category-section" data-category="image" id="assetCategoryGroupImage">
+<div class="asset-grid" id="assetImageGrid">
+</div>
+</div>
+<!-- Voice Category Section -->
+<div aria-label="Âm thanh" class="asset-category-section" data-category="voice" id="assetCategoryGroupVoice">
+<div class="asset-grid" id="assetVoiceGrid">
+</div>
+</div>
+<!-- Font Category Section -->
+<div aria-label="Phông chữ" class="asset-category-section" data-category="font" id="assetCategoryGroupFont">
+<div class="asset-grid" id="assetFontGrid">
+</div>
+</div>
+<div id="assetRegistryGrid" style="display: none;"></div>
+</div>
+<div class="card mb-4">
+<div class="card-header">
+<span class="card-title">Kiểm tra tư liệu</span>
+<span class="badge mono" id="prodPreflightBadge">Đang chờ</span>
+</div>
+<details class="technical-disclosure"><summary>Xem kết quả kiểm tra chi tiết</summary><pre class="code-view" id="prodPreflightRaw">Chưa chạy kiểm tra tư liệu.</pre></details>
+</div>
+</div>
+</section>
+<section aria-labelledby="substage-canonical_project-title" class="stage-subsection">
+<div class="stage-subsection-header">
+<div class="stage-substage-num mono">GIAI ĐOẠN 07 / 10</div>
+<h2 class="stage-subsection-title" id="substage-canonical_project-title">Nội dung dự án</h2>
+<p class="stage-subsection-desc">Bản nội dung hiện hành đã được duyệt.</p>
+</div>
+<div class="stage-subsection-content">
+<div class="two-col-layout">
+<div class="card">
+<div class="card-header">
+<span class="card-title">Nội dung dự án đã duyệt</span>
+<span class="badge mono" id="canonicalStatusBadge">Bản chính</span>
+</div>
+<details class="technical-disclosure"><summary>Xem cấu trúc nội dung</summary><pre class="code-view" id="canonicalProjectRaw">Chưa có nội dung dự án được duyệt.</pre></details>
+</div>
+<div class="card">
+<div class="card-header">
+<span class="card-title">Phiên bản dự án</span>
+</div>
+<details class="technical-disclosure"><summary>Xem thông tin phiên bản</summary><pre class="code-view" id="projectStateRaw">Chưa có thông tin phiên bản.</pre></details>
+</div>
+</div>
+</div>
+</section>
+</section>
+<!-- Combined stage 5: Studio Preview -->
+<section class="stage-page" data-page-summary="Xem trạng thái bản dựng, mở Studio và theo dõi quyết định duyệt." data-page-title="Duyệt bản dựng" id="page-remotion_composition">
+<section aria-labelledby="substage-remotion_composition-title" class="stage-subsection">
+<div class="stage-subsection-header">
+<div class="stage-substage-num mono">GIAI ĐOẠN 09 / 10</div>
+<h2 class="stage-subsection-title" id="substage-remotion_composition-title">Duyệt bản dựng</h2>
+</div>
+<div class="stage-subsection-content">
+<div aria-label="Duyệt bản dựng" class="review-workspace studio-review-grid">
+<section aria-label="Mở Studio" class="review-launcher" id="reviewLauncher"><div aria-hidden="true" class="studio-review-visual"><div class="studio-preview-orbit"></div><div class="studio-preview-cross"></div><div class="studio-preview-word">STUDIO / REVIEW</div><div class="studio-preview-caption">Bản dựng thực tế mở trong Studio</div></div>
+<div class="review-launcher-copy"><h2 id="reviewLauncherHeading">Xem trong Studio</h2><p id="reviewLauncherHint">Mở trong thẻ mới.</p></div>
+<a class="review-studio-link" hidden="" href="#" id="rendererPreviewLink" rel="noopener noreferrer" target="_blank">Mở Studio</a>
+<p class="review-studio-unavailable" hidden="" id="reviewStudioUnavailable">Studio hiện chưa khả dụng.</p>
+</section>
+<p class="review-next-action" id="reviewStatusDescription">Đang chờ bản dựng sẵn sàng để bạn xem.</p>
+<section aria-label="Quyết định duyệt" class="review-actions" hidden="" id="rendererReviewHitlActionSlot">
+<div class="review-actions-heading"><h2>Quyết định</h2></div>
+<div class="review-change-form" data-review-changes="VISUAL_REVIEW" hidden="">
+<label for="reviewChanges-VISUAL_REVIEW">Ghi chú cho lần sửa tiếp theo</label>
+<textarea aria-describedby="reviewFeedbackHint" class="hitl-review-changes-input" id="reviewChanges-VISUAL_REVIEW" maxlength="4000" placeholder="Mô tả những điểm cần chỉnh trước khi duyệt." rows="3"></textarea>
+<p class="review-feedback-hint" id="reviewFeedbackHint">Cần có ghi chú khi yêu cầu sửa. Có thể duyệt bản này mà không gửi ghi chú.</p>
+<div class="review-old-draft" hidden="" id="reviewOldDraftNotice">
+<p>Ghi chú này được viết cho <span id="reviewOldDraftSource">bản trước</span>. Hãy xem lại trước khi dùng cho bản mới.</p>
+<label><input id="reviewDraftAcknowledge" type="checkbox"/> Dùng ghi chú này cho bản hiện tại</label>
+</div>
+<div class="review-decision-row">
+<button class="btn btn-ghost hitl-review-changes-submit" type="button">Yêu cầu chỉnh sửa</button>
+<button class="btn btn-primary review-approve" hidden="" id="approveRendererReviewBtn">Duyệt bản dựng</button>
+</div>
+</div>
+<div aria-live="polite" class="review-action-message" hidden="" id="reviewActionMessage" role="status"></div>
+</section>
+<section aria-live="polite" class="review-approved-next-step" hidden="" id="reviewApprovedNextStep">
+<h2 id="reviewApprovedHeading">Đã duyệt bản dựng</h2>
+<p id="reviewApprovedCopy">Agent có thể bắt đầu render video.</p>
+<a href="?stage=final_render">Xem trạng thái bàn giao</a>
+</section>
+<details class="review-details" id="reviewDetails">
+<summary>Chi tiết bản duyệt</summary>
+<a class="review-details-studio-link" hidden="" href="#" id="reviewDetailsStudioLink" rel="noopener noreferrer" target="_blank">Mở bản đã duyệt trong Studio</a>
+<dl class="review-identity">
+<div><dt>Dự án</dt><dd id="reviewProjectIdentity">—</dd></div>
+<div><dt>Renderer</dt><dd id="reviewRendererIdentity">—</dd></div>
+<div><dt>Bản sửa dự án</dt><dd id="reviewProjectContext">Đang chờ trạng thái Renderer</dd></div>
+<div><dt>Nguồn</dt><dd><span class="mono" id="reviewSourceSummary">Chưa có mã nhận diện nguồn</span></dd></div>
+<div><dt>Mã nguồn đầy đủ</dt><dd><pre class="mono" id="rendererSourceHash">Chưa có nguồn từ Renderer.</pre></dd></div>
+</dl>
+</details>
+</div>
+</div>
+</section>
+</section>
+<!-- Combined stage 6: Final Render &amp; QA -->
+<section class="stage-page" data-page-summary="Theo dõi video đã render, bằng chứng kiểm tra và trạng thái bàn giao." data-page-title="Bàn giao video" id="page-final_render">
+<section aria-labelledby="substage-final_render-title" class="stage-subsection">
+<div class="stage-subsection-header">
+<div class="stage-substage-num mono">VIDEO ĐÃ RENDER</div>
+<h2 class="stage-subsection-title" id="substage-final_render-title">Video và kiểm tra</h2>
+<p class="stage-subsection-desc">Theo dõi video, bằng chứng kiểm tra và kết quả hoàn tất.</p>
+</div>
+<div class="stage-subsection-content">
+<div class="two-col-layout">
+<div class="card">
+<div class="card-header">
+<span class="card-title">Video đã render</span>
+<span class="badge mono" id="finalVideoBadge">Đang chờ</span>
+</div>
+<div class="video-stage-slot" id="finalVideoPlayerSlot">
+<div class="empty-note">Video chưa được render.</div>
+</div>
+</div>
+<div class="card">
+<div class="card-header">
+<span class="card-title">Bằng chứng kiểm tra</span>
+<span class="badge mono" id="finalEvidenceCountBadge">0 khung hình</span>
+</div>
+<div class="evidence-grid evidence-scroll-box" id="finalEvidenceGrid">
+<div class="empty-note">Bằng chứng sẽ xuất hiện sau khi render.</div>
+</div>
+<details class="manifest-accordion">
+<summary class="manifest-accordion-summary mono">Xem thông tin kỹ thuật</summary>
+<pre class="code-view" id="finalManifestContentRaw">Thông tin kỹ thuật sẽ có sau khi hoàn tất kiểm tra.</pre>
+</details>
+</div>
+</div>
+</div>
+</section>
+</section>
+</main>
+<!-- Footer -->
+<footer class="console-footer">
+<div>Backlot · Sản xuất video</div>
+</footer>
+</div>
+<dialog aria-labelledby="stageHistoryTitle" class="stage-history-dialog" id="stageHistoryDialog">
+<header class="stage-history-dialog-header">
+<h2 id="stageHistoryTitle">Lịch sử duyệt và thông tin phiên bản</h2>
+<button aria-label="Đóng cửa sổ" class="btn btn-sm btn-ghost" id="closeStageHistoryBtn" type="button">Đóng</button>
+</header>
+<div class="stage-history-dialog-content">
+<div class="params-table" id="scriptMetadataArea"><div class="empty-note">Chưa ghi nhận lịch sử duyệt.</div></div>
+</div>
+</dialog>
+<script src="./app.js" type="module"></script>
+</body>
+</html>

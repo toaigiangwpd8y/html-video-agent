@@ -1,0 +1,7 @@
+{
+  "id":"tasks.assign","title":"Phân công công việc","area":"Tasks","summary":"Gán người phụ trách cho một công việc.","status":"verified",
+  "entry":{"url":"/tasks","label":"Tasks → Open task"},
+  "testedContext":{"role":"Admin (demo)","date":"2026-10-15"},"lastVerifiedAt":"2026-10-15","updatedAt":"2026-10-15",
+  "steps":[{"id":"assign-owner","title":"Chọn người phụ trách","action":"Mở task và chọn Assignee.","observed":"Tên người phụ trách hiển thị trên task sau khi chọn.","screenshot":"demo-run/assignee.png"}],
+  "questions":[],"nextActions":[]
+}

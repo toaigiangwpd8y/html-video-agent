@@ -1,0 +1,111 @@
+/* First-party HTML primitives used by generated HyperFrames compositions. */
+.hf-scene {
+  position: relative;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding: var(--hf-safe-area-block) var(--hf-safe-area-inline);
+  box-sizing: border-box;
+  color: var(--hf-color-paper);
+  background: var(--hf-color-ink);
+  font-family: var(--hf-font-body);
+}
+
+.hf-title {
+  max-width: 18ch;
+  margin: 0;
+  color: inherit;
+  font-family: var(--hf-font-display);
+  font-size: clamp(3.5rem, 8vw, 9rem);
+  font-weight: 720;
+  letter-spacing: -0.055em;
+  line-height: 0.98;
+  text-wrap: balance;
+}
+
+.hf-copy {
+  max-width: 34ch;
+  margin: 0;
+  color: inherit;
+  font-size: clamp(1.25rem, 2.2vw, 2.5rem);
+  line-height: 1.25;
+  text-wrap: pretty;
+}
+
+.hf-media-fullscreen {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.hf-media-fullscreen > img,
+.hf-media-fullscreen > video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hf-media-fullscreen::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 35%, rgb(0 0 0 / 58%));
+  content: "";
+  pointer-events: none;
+}
+
+.hf-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: stretch;
+  min-width: 0;
+  min-height: 0;
+}
+
+.hf-split__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--hf-space-3);
+  padding: clamp(3rem, 7vw, 8rem);
+}
+
+.hf-split__media {
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.hf-split__media img,
+.hf-split__media video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hf-enter-fade-up {
+  animation: hf-enter-fade-up var(--hf-motion-enter) var(--hf-motion-ease) both;
+}
+
+.hf-enter-fade-up:nth-child(2) {
+  animation-delay: 90ms;
+}
+
+.hf-enter-fade-up:nth-child(3) {
+  animation-delay: 180ms;
+}
+
+@keyframes hf-enter-fade-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 1.25rem, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}

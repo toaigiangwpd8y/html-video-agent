@@ -1,0 +1,29 @@
+{
+  "name": "agent-native-video-harness-remotion",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "studio": "node scripts/run-remotion.mjs studio",
+    "typecheck": "tsc --noEmit",
+    "still": "node scripts/run-remotion.mjs still ../output/preview.png",
+    "render": "node scripts/run-remotion.mjs render ../output/final.mp4"
+  },
+  "dependencies": {
+    "@remotion/bundler": "4.0.538",
+    "@remotion/cli": "4.0.538",
+    "@remotion/fonts": "4.0.538",
+    "@remotion/gsap": "4.0.538",
+    "@remotion/media": "4.0.538",
+    "@remotion/player": "4.0.538",
+    "@remotion/transitions": "4.0.538",
+    "gsap": "3.15.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "remotion": "4.0.538"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.8.3"
+  }
+}

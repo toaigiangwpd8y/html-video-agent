@@ -1,0 +1,8 @@
+{
+  "id":"projects.invite","title":"Mời thành viên","area":"Projects","summary":"Thêm cộng tác viên vào một dự án.","status":"partial",
+  "entry":{"url":"/projects/website-redesign/members","label":"Project → Members"},
+  "testedContext":{"role":"Admin (demo)","date":"2026-10-15"},"lastVerifiedAt":null,"updatedAt":"2026-10-15",
+  "steps":[{"id":"open-members","title":"Mở quản lý thành viên","action":"Chọn Members trong dự án.","observed":"Nút Invite Member xuất hiện.","screenshot":"demo-run/members.png"}],
+  "questions":["Người có quyền Viewer có thể mời thêm thành viên không?"],
+  "nextActions":[{"id":"viewer-role","goal":"Kiểm tra quyền Viewer","reason":"Chưa xác minh quyền mời thành viên của Viewer.","entryPath":"/projects/website-redesign/members"}]
+}

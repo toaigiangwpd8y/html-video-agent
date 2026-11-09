@@ -1,0 +1,12 @@
+{
+  "name": "@app-explorer/knowledge-base",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Vendored App Explorer knowledge base runtime",
+  "exports": { ".": { "types": "./index.d.mts", "import": "./index.mjs" } },
+  "bin": { "app-explorer-knowledge": "./cli.mjs" },
+  "engines": { "node": ">=22.18.0" },
+  "scripts": { "test": "node --test tests/*.test.mjs" },
+  "license": "MIT"
+}

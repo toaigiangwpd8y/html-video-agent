@@ -1,0 +1,149 @@
+{
+  "app": {
+    "name": "TaskFlow Demo",
+    "baseUrl": "https://example.com",
+    "description": "Dữ liệu và hình minh họa giả lập. Không phải bằng chứng từ ứng dụng thật.",
+    "demo": true
+  },
+  "features": [
+    {
+      "id": "projects.create",
+      "title": "Tạo dự án",
+      "area": "Projects",
+      "status": "verified",
+      "summary": "Tạo một dự án mới từ màn hình Projects.",
+      "updatedAt": "2026-10-15"
+    },
+    {
+      "id": "projects.invite",
+      "title": "Mời thành viên",
+      "area": "Projects",
+      "status": "partial",
+      "summary": "Thêm cộng tác viên vào một dự án.",
+      "updatedAt": "2026-10-15"
+    },
+    {
+      "id": "tasks.assign",
+      "title": "Phân công công việc",
+      "area": "Tasks",
+      "status": "verified",
+      "summary": "Gán người phụ trách cho một công việc.",
+      "updatedAt": "2026-10-15"
+    },
+    {
+      "id": "tasks.filter",
+      "title": "Lọc công việc",
+      "area": "Tasks",
+      "status": "partial",
+      "summary": "Lọc danh sách công việc theo trạng thái.",
+      "updatedAt": "2026-10-15"
+    },
+    {
+      "id": "reports.export",
+      "title": "Xuất báo cáo",
+      "area": "Reports",
+      "status": "discovered",
+      "summary": "Xuất dữ liệu báo cáo ra tệp.",
+      "updatedAt": "2026-10-15"
+    },
+    {
+      "id": "settings.roles",
+      "title": "Quản lý vai trò",
+      "area": "Settings",
+      "status": "blocked",
+      "summary": "Chỉnh sửa quyền của người dùng.",
+      "updatedAt": "2026-10-15"
+    }
+  ],
+  "journeys": [
+    {
+      "id": "start-project",
+      "title": "Bắt đầu một dự án",
+      "description": "Tạo dự án, mời người cùng làm và phân công nhiệm vụ.",
+      "nodes": [
+        {
+          "id": "start-project.step-1",
+          "type": "scenario",
+          "title": "projects.create",
+          "featureId": "projects.create",
+          "outcome": "unknown",
+          "preconditions": [],
+          "completionCriteria": [],
+          "evidenceRefs": []
+        },
+        {
+          "id": "start-project.step-2",
+          "type": "scenario",
+          "title": "projects.invite",
+          "featureId": "projects.invite",
+          "outcome": "unknown",
+          "preconditions": [],
+          "completionCriteria": [],
+          "evidenceRefs": []
+        },
+        {
+          "id": "start-project.step-3",
+          "type": "scenario",
+          "title": "tasks.assign",
+          "featureId": "tasks.assign",
+          "outcome": "unknown",
+          "preconditions": [],
+          "completionCriteria": [],
+          "evidenceRefs": []
+        }
+      ],
+      "edges": [
+        {
+          "from": "start-project.step-1",
+          "to": "start-project.step-2",
+          "condition": "Continue to next step"
+        },
+        {
+          "from": "start-project.step-2",
+          "to": "start-project.step-3",
+          "condition": "Continue to next step"
+        }
+      ],
+      "scenarioRunIds": [],
+      "outcome": "unknown",
+      "evidenceRefs": []
+    },
+    {
+      "id": "reporting",
+      "title": "Theo dõi và báo cáo",
+      "description": "Lọc các công việc trước khi xuất báo cáo.",
+      "nodes": [
+        {
+          "id": "reporting.step-1",
+          "type": "scenario",
+          "title": "tasks.filter",
+          "featureId": "tasks.filter",
+          "outcome": "unknown",
+          "preconditions": [],
+          "completionCriteria": [],
+          "evidenceRefs": []
+        },
+        {
+          "id": "reporting.step-2",
+          "type": "scenario",
+          "title": "reports.export",
+          "featureId": "reports.export",
+          "outcome": "unknown",
+          "preconditions": [],
+          "completionCriteria": [],
+          "evidenceRefs": []
+        }
+      ],
+      "edges": [
+        {
+          "from": "reporting.step-1",
+          "to": "reporting.step-2",
+          "condition": "Continue to next step"
+        }
+      ],
+      "scenarioRunIds": [],
+      "outcome": "unknown",
+      "evidenceRefs": []
+    }
+  ]
+}

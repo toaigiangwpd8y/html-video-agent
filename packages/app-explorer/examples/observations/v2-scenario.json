@@ -1,0 +1,78 @@
+{
+  "version": 2,
+  "features": [
+    {
+      "id": "projects.create",
+      "title": "Tạo dự án",
+      "area": "Projects",
+      "summary": "Tạo một dự án mới từ màn hình Projects.",
+      "entry": {
+        "url": "/projects",
+        "label": "Projects → New Project"
+      },
+      "questions": [
+        "Ứng dụng xử lý tên trùng như thế nào?"
+      ],
+      "nextActions": [
+        {
+          "id": "duplicate-name",
+          "goal": "Kiểm tra tên trùng",
+          "reason": "Chưa quan sát trường hợp tên trùng."
+        }
+      ]
+    }
+  ],
+  "inventory": {
+    "contexts": [
+      {
+        "id": "admin.demo",
+        "role": "Admin (demo)",
+        "tenantAlias": "demo",
+        "environment": "demo",
+        "date": "2026-10-15"
+      }
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "projects.create.admin-demo",
+      "featureId": "projects.create",
+      "contextId": "admin.demo",
+      "preconditions": [
+        "Projects page is open."
+      ],
+      "goal": "Create a project and confirm it appears in the list.",
+      "completionCriteria": [
+        {
+          "id": "project-visible",
+          "description": "The created project appears in the Projects list.",
+          "met": true,
+          "evidenceRefs": [
+            "demo-run/created-project.png"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "submit-project",
+          "action": "Enter a project name and submit the form.",
+          "observed": "The new project appears in the Projects list.",
+          "evidenceRefs": [
+            "demo-run/created-project.png"
+          ]
+        }
+      ],
+      "outcome": "success",
+      "evidenceRefs": [
+        "demo-run/created-project.png"
+      ],
+      "testedContext": {
+        "role": "Admin (demo)",
+        "date": "2026-10-15",
+        "contextId": "admin.demo"
+      },
+      "lastVerifiedAt": "2026-10-15"
+    }
+  ],
+  "baseRevision": "r000001"
+}

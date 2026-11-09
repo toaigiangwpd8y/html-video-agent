@@ -1,0 +1,10 @@
+{
+  "meta": {"title": "SpendTrack - 30s student finance ad", "width": 1920, "height": 1080, "durationsInFrames": 900, "fps": 30, "theme": {"palette": ["#0B1930", "#76E6C4", "#F8FAFC"], "font": "Inter"}, "constraints": {"style": "modern-2d", "disallowed": ["unsupported-product-ui"], "motionTone": "smooth-and-calm"}},
+  "scenes": [
+    {"id": "scene-1", "durationInFrames": 180, "screenText": "Where did my money go?", "visualConcept": "Scattered spending labels orbit a month-end calendar, making the lack of a coherent view perceptible."},
+    {"id": "scene-2", "durationInFrames": 180, "screenText": "Small purchases add up", "visualConcept": "Coffee, lunch, and travel purchases appear as small fragments that converge to show the source of the financial fog."},
+    {"id": "scene-3", "durationInFrames": 210, "screenText": "See income and spending clearly", "visualConcept": "The product groups spending and income into meaningful categories, showing a state change from scattered entries to an ordered view."},
+    {"id": "scene-4", "durationInFrames": 180, "screenText": "Understanding reduces pressure", "visualConcept": "A calm summary makes the whole financial picture legible and gives the viewer room to understand the changed state."},
+    {"id": "scene-5", "durationInFrames": 150, "screenText": "Start observing your cash flow", "visualConcept": "The final message lands as a clear invitation after the earlier fragments have become an understandable picture."}
+  ]
+}

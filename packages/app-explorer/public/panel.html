@@ -1,0 +1,35 @@
+<div class="app-explorer-panel">
+  <a class="skip-link" href="#main">Đến nội dung chính</a>
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="brand"><div class="brand-mark">A<span>•</span></div><div><strong>App Explorer</strong><small>Kho tri thức</small></div></div>
+      <div class="side-caption">WORKSPACE</div>
+      <div id="appIdentity" class="app-identity">Đang tải...</div>
+      <label class="app-switcher-wrap" hidden>Ứng dụng<select id="appSwitcher" aria-label="Chọn ứng dụng đã đăng ký"></select></label>
+      <div class="side-caption nav-caption">KHÁM PHÁ</div>
+      <nav aria-label="Điều hướng" class="side-nav">
+        <button type="button" data-view="catalog" class="nav-link active"><span class="nav-ico">▦</span> Chức năng <span id="navCount" class="nav-count"></span></button>
+        <button type="button" data-view="journeys" class="nav-link"><span class="nav-ico">⇢</span> Hành trình</button>
+        <button type="button" data-view="queue" class="nav-link"><span class="nav-ico">☷</span> Việc tiếp theo <span id="queueCount" class="nav-count"></span></button>
+        <button type="button" data-view="activity" class="nav-link"><span class="nav-ico">◷</span> Hoạt động</button>
+      </nav>
+      <div class="side-caption nav-caption">NHÓM CHỨC NĂNG</div>
+      <nav class="areas" id="areas" aria-label="Nhóm chức năng"></nav>
+      <div class="sidebar-bottom">
+        <div class="sync-label"><span class="sync-dot"></span> Workspace cục bộ</div>
+        <div class="sidebar-tip">Chế độ chỉ đọc.</div>
+      </div>
+    </aside>
+    <div class="page">
+      <header class="topbar"><div class="breadcrumb">Khám phá <span>/</span> <strong id="breadcrumbs">Chức năng</strong></div><div class="top-right"><span class="read-only">CHẾ ĐỘ CHỈ ĐỌC</span><a id="upstreamDashboardLink" class="upstream-dashboard-link" hidden target="_blank" rel="noopener noreferrer">Bảng điều khiển agent-browser ↗</a><span class="avatar" aria-hidden="true">KB</span></div></header>
+      <section id="liveStatus" class="live-status" aria-label="Trạng thái đồng bộ" aria-live="polite" aria-atomic="true"><span>Đang kết nối với Workspace…</span></section>
+      <main id="main" tabindex="-1"></main>
+    </div>
+  </div>
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Xem ảnh bằng chứng" hidden>
+    <div class="lightbox-head"><span id="lightboxTitle">Ảnh bằng chứng</span><button id="closeLightbox" class="icon-button" type="button" aria-label="Đóng ảnh">✕</button></div>
+    <div class="lightbox-body"><div class="lightbox-image-wrap"><img id="lightboxImg" width="1280" height="720" alt="Ảnh chụp màn hình"/><div id="lightboxImageStatus" class="evidence-image-status" role="status" aria-live="polite">Đang tải ảnh…</div><button id="retryLightboxImage" class="evidence-image-retry" type="button" hidden>Thử tải lại ảnh</button></div></div>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+</div>

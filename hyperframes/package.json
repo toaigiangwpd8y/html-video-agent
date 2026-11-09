@@ -1,0 +1,13 @@
+{
+  "name": "agent-video-hyperframes-runtime",
+  "version": "0.22.0",
+  "private": true,
+  "description": "Pinned local HyperFrames CLI runtime for the video harness.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "hyperframes": "0.8.50"
+  }
+}

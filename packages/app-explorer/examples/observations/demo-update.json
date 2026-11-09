@@ -1,0 +1,21 @@
+{
+  "features": [
+    {
+      "id": "reports.export",
+      "title": "Xuất báo cáo",
+      "area": "Reports",
+      "summary": "Xuất dữ liệu báo cáo ra tệp.",
+      "status": "discovered",
+      "entry": {"url": "/reports", "label": "Reports → Export"},
+      "testedContext": null,
+      "lastVerifiedAt": null,
+      "updatedAt": "2026-10-15",
+      "steps": [],
+      "questions": ["Ứng dụng hỗ trợ CSV hay XLSX?", "Export có giới hạn số dòng không?"],
+      "nextActions": [
+        {"id":"export-format","goal":"Thử nút Export","reason":"Mới phát hiện nút, chưa tải tệp để kiểm tra.","entryPath":"/reports"},
+        {"id":"export-limit","goal":"Tìm giới hạn xuất dữ liệu","reason":"Chưa kiểm tra dữ liệu nhiều dòng.","entryPath":"/reports"}
+      ]
+    }
+  ]
+}

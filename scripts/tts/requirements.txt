@@ -1,0 +1,2 @@
+# CPU/ONNX SDK verified from the official VieNeu-TTS PyPI metadata.
+vieneu==3.8.3

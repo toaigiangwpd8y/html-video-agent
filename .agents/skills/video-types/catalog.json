@@ -1,0 +1,49 @@
+{
+  "version": "1",
+  "profiles": [
+    {
+      "id": "neutral",
+      "description": "Taste-neutral fallback when no specialized viewer outcome is justified; the exact approved brief supplies all creative priorities."
+    },
+    {
+      "id": "product-ad",
+      "description": "Product or brand campaign communication whose primary outcome is attention, message recall, consideration, or action rather than complete workflow understanding."
+    },
+    {
+      "id": "technical-explainer",
+      "description": "Builds a causally accurate mental model of a technical system, architecture, mechanism, interface, state change, or engineering process."
+    },
+    {
+      "id": "concept-explainer",
+      "description": "Builds transferable intuition about a concept or phenomenon so the viewer can explain it and recognize or apply it in a nearby example."
+    },
+    {
+      "id": "illustrated-explainer",
+      "description": "Short narration-led explanation specifically communicated through coordinated simple illustrations, concise headline text, and speech-following captions."
+    },
+    {
+      "id": "procedural-tutorial",
+      "description": "Makes a target viewer able to complete a task correctly, recognize important state changes, and handle relevant prerequisites or branches."
+    },
+    {
+      "id": "product-demo",
+      "description": "Proves product value through observable behavior in a concrete user job: initial state, action, response, result, and resulting value."
+    },
+    {
+      "id": "persuasive-pitch",
+      "description": "Builds a credible audience-specific argument for an idea, proposal, project, strategy, decision, or ask."
+    },
+    {
+      "id": "general-narrative",
+      "description": "Uses story progression, changed state, stakes, discovery, supported causal relationships, emotion, or thematic payoff as the primary communication mechanism."
+    },
+    {
+      "id": "data-report",
+      "description": "Helps viewers accurately understand data findings, comparisons, trends, context, uncertainty, limitations, and supported conclusions."
+    },
+    {
+      "id": "lecture-explainer",
+      "description": "Turns an instructor's lecture deck and approved voice-over into a video students can follow and review: faithful to the approved narration and deck facts, with each idea's structure made visible."
+    }
+  ]
+}

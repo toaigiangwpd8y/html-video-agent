@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "workflow": "slides-to-video",
+  "request": "request.md",
+  "brief": "brief.md",
+  "script": "script.md",
+  "sources": [
+    {
+      "id": "lesson",
+      "type": "pptx",
+      "path": "sources/lesson.pptx"
+    }
+  ]
+}
