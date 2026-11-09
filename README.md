@@ -1,109 +1,322 @@
-# Agent-native video harness v0.22.0
+# HTML Video Agent
 
-Renderer-neutral canonical workflow with a human-selected Remotion or HyperFrames renderer. The repository owns semantic state, validation, revisions, evidence, and delivery; the external harness owns creative reasoning.
+**Turn your product into a motion ad. Built with your coding agent.**
 
-## Production flow
+Create product ads and SaaS promos with kinetic typography, product-centered motion, real interface assets, and optional narration. Shape the campaign with your coding agent, review it in Backlot, and render locally with Remotion or HyperFrames.
 
-```text
-Request -> clarification assessment -> Video Brief + explicit renderer choice
-  -> frozen Production Profile -> one Script + bounded self-check -> approval
-  -> Storyboard approval -> canonical video.json
-  -> one Storyboard Enhance author
-       scene strategy -> licensed local assets -> production preflight
-       -> selected renderer workspace -> one bounded self-check
-  -> selected renderer check -> local preview/Backlot review -> HUMAN approval
-  -> renderer-specific render/evidence -> shared final manifest -> MP4 finalize
-```
+[Watch the promo](https://github.com/user-attachments/assets/5ed5537f-2e58-4645-ab3b-3cac6c326db6) · [Quick start](#quick-start) · [Create your first product ad](#create-your-first-product-ad) · [Web dashboard](#web-dashboard) · [Documentation](#documentation)
 
-No asset or Scene Design approval checkpoint is added. The human chooses an engine during Video Brief review; no renderer is selected automatically. Final visual review opens that renderer's local preview and provides a direct Backlot link. Preview is not approval. Renderer use is scoped to local educational video authoring; this repository does not provide or distribute a hosted animation tool.
+Bring a product, a target audience, and one message worth remembering. HTML Video Agent gives your coding agent a production workflow to turn that brief into campaign copy, visual beats, assets, animation and an MP4. You review the important decisions in **Backlot** before production moves forward.
 
-## Ownership
+The repository manages project state, approvals, assets and rendering. Bring your own coding agent for creative reasoning and authoring.
 
-`video.json` remains the only semantic source of truth with exactly `meta` and `scenes` at the top level. Its sequential integer scene budgets sum to `meta.durationsInFrames`. `assets/manifest.json` records local path, source/provenance, scene binding, license or rights, and permitted use.
+https://github.com/user-attachments/assets/5ed5537f-2e58-4645-ab3b-3cac6c326db6
 
-The selected renderer workspace owns visual implementation and local timing. Remotion source lives under `remotion/generated/`; HyperFrames source lives in its versioned HTML project. Visible text must match canonical `video.json`; `video renderer check` verifies rendered copy against canonical text (HyperFrames by source binding, Remotion by the `copy_parity` lint rule) and reports geometry findings in `.video/layout-lint.json`. After a rendered or finalized delivery, start visual-only edits with `video renderer revise`; it preserves the prior delivery and opens a fresh renderer authoring version whose source needs new check, review, and approval. Copy/narration/meaning edits return through canonical Storyboard approval and create a new renderer version. HyperFrames versions stay under `hyperframes/projects/`; prior Remotion source is preserved under `remotion/projects/` when canonical state advances.
+**Product promo showcase: Earth Nullschool — The World Is Moving.** A 56-second video built around the product interface, motion and short visual messages, provided here as a 1280 × 720 MP4 with audio. [Open or download the video →](https://github.com/user-attachments/assets/5ed5537f-2e58-4645-ab3b-3cac6c326db6)
 
-Generated renderer workspaces, copied media, and implementation manifests are git-ignored. Keep them local unless their specific assets and project files receive separate distribution review.
+> The demo illustrates one completed project. Subject, aspect ratio, length, narration, visual style and renderer are chosen for each new video.
 
-HyperFrames uses the first-party Title/Text, Fullscreen Media, and Split Layout kit. Remotion uses React/TypeScript compositions. Both renderers preserve canonical frame budgets and use local assets. The CLI's bundled HyperFrames Studio is only a local visual-review editor and is not copied or redistributed.
+## Built for product ads
 
-## Runtime and compliance controls
+- **One campaign message.** Define the audience, objective and dominant product benefit, then develop copy and visual beats around it. Campaigns can aim for awareness, consideration or a clear next action.
+- **SaaS and software promos.** Put the interface at the center of the ad with purposeful UI movement, readable type and a recognizable feature payoff.
+- **Motion shaped to the brand.** For SaaS ads without a specified style, the product-ad profile favors energetic motion and kinetic typography. Your brief can explicitly choose a calm, minimal or otherwise different direction.
+- **Product visuals with provenance.** Use screenshots, recordings and faithfully derived UI elements, with source, rights and scene bindings recorded for production assets.
+- **Supported claims.** Ground feature and benefit claims in supplied material or existing product evidence. App Explorer can supply reusable knowledge after you explicitly request exploration.
+- **Explore authenticated apps with a human handoff.** With the external agent-browser CLI configured, the agent can open a visible Chrome/Chromium session, let you log in, then continue exploring that same session after you hand control back in chat. It records observations and linked screenshots for later campaign research.
+- **Narration and sound.** Add optional local Vietnamese narration and registered audio assets. Review speech, music and effects against the campaign pacing.
+- **Review before delivery.** Approve the campaign brief, script, storyboard, assets and visual build through the workflow's review gates.
+- **Two rendering engines.** Choose React/TypeScript with Remotion or HTML/CSS with HyperFrames at the Video Brief checkpoint.
 
-- Node.js 22.18.0 or later.
-- HyperFrames CLI is pinned to `0.8.50`; Remotion packages are pinned by `remotion/package-lock.json`.
-- `npm run bootstrap` installs root dependencies, prepares both pinned runtimes, builds the harness, and fails unless both renderer options are available. `npm run setup -- --renderer=hyperframes|remotion` repairs one engine.
-- Setup installs pinned packages from `registry.npmjs.org` with package scripts, audit hooks, and funding output disabled. When Remotion is selected, it also installs the pinned official Remotion Agent Skills set for implementation guidance. Setup does not download a browser or FFmpeg.
-- Rendering requires a locally installed Chrome/Chromium, FFmpeg, and ffprobe. No cloud rendering, publish, auth, telemetry, update check, or HyperFrames skill download is used.
-- HyperFrames commands are invoked from the locked local package with telemetry, update checks, and skill downloads disabled. Backlot and both Studio previews are constrained to loopback.
-- `video renderer review` opens the selected renderer's local preview. Runtime dependencies and applicable third-party terms are listed in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
-- `video renderer finalize` writes a shared `.video/final-manifest.json` for Backlot/status and retains each renderer's detailed implementation manifest. Renderer availability indicates installed runtime readiness, not compliance approval.
+The dedicated **product-ad** profile guides campaign attention, product recall and the intended response. The repository also supports product demos, tutorials, explainers, data reports and slide-based videos as secondary use cases.
 
-## Setup
+Every project has one approved semantic source: the script, storyboard and canonical video project. Renderer workspaces implement that approved content. Changing narration or meaning returns to the relevant review step.
 
-```bash
+## Web dashboard
+
+**Backlot** is the local production dashboard. It shows the current stage, review artifacts, approvals and delivery evidence. Instructions and creative feedback stay in your coding-agent conversation.
+
+### Track production
+
+![Backlot production overview](docs/media/backlot-dashboard.png)
+
+The overview follows a real completed demo project through request, script, storyboard, production, visual review and delivery.
+
+### Inspect delivery
+
+![Backlot delivery view](docs/media/backlot-delivery.png)
+
+Review the rendered video and available evidence from the delivery view. Opening a preview and recording approval are separate actions.
+
+### Explore an app
+
+![App Explorer dashboard](docs/media/app-explorer.png)
+
+App Explorer is a separate knowledge workspace for explicitly requested app exploration. A URL in a video request does not automatically start browsing or verify product claims.
+
+*These screenshots were captured from the local web interface using the demo project. Interface content and available actions depend on project state.*
+
+## Quick start
+
+### Prerequisites
+
+Install these first:
+
+| Requirement | Used for |
+| --- | --- |
+| Node.js **22.18+**, including npm | Workflow CLI, dashboard and renderer setup |
+| Git | Clone the repository |
+| Chrome or Chromium | Local rendering and visual inspection |
+| FFmpeg and ffprobe, available on PATH | Media processing and output checks |
+| A coding agent with local file, shell and image access | Script, storyboard, assets and renderer authoring |
+
+The repository does not bundle an LLM client or model subscription. Configure your chosen coding agent separately. Asset search, image generation and authenticated app capture depend on the tools and permissions available to that agent.
+
+### Install
+
+~~~bash
+git clone https://github.com/toaigiangwpd8y/html-video-agent.git
+cd html-video-agent
 npm run bootstrap
-npm test
-```
+~~~
 
-Bootstrap installs root dependencies, prepares both pinned renderers, builds the harness, and fails unless both renderer options are available. If install scripts were disabled, run `npm run setup -- --renderer=all` manually.
+Bootstrap installs npm dependencies and both pinned renderer runtimes, installs the renderer guidance, builds the CLI, and verifies both rendering options. It preserves existing project state.
 
-## CLI workflow
+Chrome/Chromium and FFmpeg are separate prerequisites; bootstrap does not download them. If your browser is not discovered, point the readiness check at its executable:
 
-```bash
-npm run video -- init
-npm run video -- request set request.md
-npm run video -- clarify template
-npm run video -- clarify commit .video/candidates/clarification.json
-npm run video -- brief template
-npm run video -- brief commit .video/candidates/brief.json
+~~~powershell
+# Windows PowerShell example — adjust to your installation.
+$env:CHROME_PATH = "C:\Program Files\Google\Chrome\Application\chrome.exe"
+$env:REMOTION_BROWSER_EXECUTABLE = $env:CHROME_PATH
 npm run video -- renderer options --require-all
-# Human approval and explicit choice: npm run video:host -- brief approve <remotion|hyperframes>
-npm run video -- profile catalog
-npm run video -- profile template
-npm run video -- profile commit .video/candidates/profile.json
-npm run video -- script commit .video/candidates/script.md
-# Human approval: npm run video:host -- script approve
-npm run video -- storyboard commit .video/candidates/project.json
-# Human approval: npm run video:host -- storyboard approve
-npm run video -- project preflight production
-npm run video -- renderer prepare
-npm run video -- renderer check
-npm run video -- renderer review
-# Stop for VISUAL_REVIEW; host records approval.
-npm run video:host -- renderer approve
-npm run video -- renderer render
-npm run video -- renderer finalize
+~~~
+
+On macOS/Linux, set those environment variables using your shell's syntax. On Windows, use npm.cmd if PowerShell blocks npm.ps1.
+
+To repair a renderer installation:
+
+~~~bash
+npm run setup -- --renderer=all
+npm run build
+npm run video -- renderer options --require-all
+~~~
+
+### Open Backlot
+
+~~~bash
+npm run backlot
+~~~
+
+Open **http://127.0.0.1:4200**. Keep this terminal running while you work with your coding agent in another terminal or agent application.
+
+Backlot, renderer previews and project media are served locally. The repository currently implements a local authoring workflow.
+
+## Create your first product ad
+
+### 1. Open the repository in your coding agent
+
+Ask the agent to follow AGENTS.md and use the agent-video skill. For example:
+
+~~~text
+Use agent-video with product-ad as the PRIMARY production profile.
+Create a 30-second launch ad for my task-management app.
+
+Product material: my supplied screenshots, brand assets and feature notes.
+Audience: small teams coordinating client projects.
+Campaign objective: encourage viewers to try the product.
+Main message: keep project work visible in one shared workspace.
+Language: Vietnamese.
+Format: 1920 × 1080.
+Style: energetic SaaS promo, kinetic type and purposeful UI motion.
+Use only features supported by the supplied material.
+Propose a short CTA that fits the available product and offer details.
+Propose the Video Brief first, then wait for my review in Backlot.
+~~~
+
+Supply your product URL, brand assets, screenshots or recordings, supported features, and any offer or CTA details. State the audience, campaign objective, dominant message, placement, language and duration. Reference ads can guide the presentation; your product material supports the claims.
+
+### 2. Review the brief and choose a renderer
+
+The agent assesses the campaign request and asks questions when material information is missing. Review the audience, objective, central message, style and intended response in the Video Brief, then select **Remotion** or **HyperFrames**.
+
+| Renderer | Authoring approach |
+| --- | --- |
+| Remotion | React/TypeScript compositions, reusable components and frame-based animation |
+| HyperFrames | HTML/CSS scenes with the pinned CLI and a local Studio preview |
+
+Your selection is recorded for the project. Renderer availability must pass before the brief is reviewed.
+
+### 3. Approve the script and storyboard
+
+Review the campaign copy, product claims and CTA, then the scene plan. Check that the product remains recognizable and that every beat supports the dominant message. Use **Request Changes** when you want revisions. Approval binds the current artifact, so later changes can require a fresh review.
+
+For narrated work, review the generated speech and measured duration too. If narration exceeds an approved hard limit, the workflow asks for a script or brief decision.
+
+### 4. Review assets and the visual build
+
+After storyboard approval, the agent resolves local assets, records their source and permitted use, and builds the selected renderer workspace. Complete any asset preflight review requested by Backlot.
+
+Open the renderer preview and check UI fidelity, type readability, brand presence, transitions and the product payoff. Review the actual audio and CTA timing. Use Backlot to record the visual decision.
+
+### 5. Render and collect the MP4
+
+After the required approvals, the agent renders and finalizes delivery. Normal completion produces:
+
+~~~text
+output/final.mp4
+~~~
+
+You can check progress at any time:
+
+~~~bash
 npm run video -- status
-```
+npm run video -- hitl status
+~~~
 
-## App Explorer
+Backlot records human decisions. The creative agent must stop at a pending review and resume after the host records your approval or change request.
 
-Reusable App Explorer knowledge is stored outside `.video` in one dataset per registered app. Registration creates the fixed `workspaces/<app-id>` directory without initializing or overwriting knowledge.
+## Optional local narration
 
-```bash
-npm run explore -- apps add --id crm --name "CRM" --url https://crm.example
-npm run explore -- apps list
-npm run explore -- --app crm summary --json
-npm run explore -- next --data ./existing-knowledge --json
-npm run explore -- apps source add --app crm --alias source --path ../crm-source
-npm run explore -- evidence materialize selection.json --app crm
-```
+For the pinned VieNeu CPU/ONNX narration path, use Python **3.11 or 3.12**:
 
-The host `--app` option resolves only registered app IDs. Use either `--app` or the existing explicit `--data` option. App Explorer commands and flags are forwarded to the package CLI; its direct `--data` interface remains available through `runKnowledgeCli` and `packages/app-explorer/cli.mjs`.
+~~~bash
+python -m pip install -r scripts/tts/requirements.txt
+npm run video -- tts doctor
+~~~
 
-Research binding and evidence-promotion JSON contracts are documented in [App Explorer research inputs](docs/APP_EXPLORER_RESEARCH.md). Run `npm run verify:host` for the compiled host suite plus the retained App Explorer package suite; `npm run test:explorer` runs the focused host registration/CLI checks.
+Bootstrap does not install these Python dependencies or model weights. The first synthesis downloads the pinned model snapshots. If you use a virtual environment, activate it first or set VIDEO_TTS_PYTHON to its Python executable.
 
-`explore evidence materialize` promotes one PNG, JPEG, or WebP linked to a context, feature, scenario, and execution in the named immutable V2 revision. Its selection JSON supplies `revision`, `contextId`, `featureId`, `scenarioId`, `executionId`, `evidenceRef`, `assetId`, `sceneId`, `role`, and a factual `rights` or `license` statement with `permittedUse`. When the reference has no hash in the frozen research binding (including later-revision evidence), selection JSON must also supply `expectedSourceSha256` as `sha256:<64 lowercase hex digits>`. This digest matches the selected current workspace bytes before copying; Explorer revision manifests do not snapshot evidence image bytes, so it does not prove the bytes historically present at that revision. Each copied file stays under `assets/app-explorer/` with a machine-readable `researchEvidence` origin and content hash. Later evidence can be added from a newer revision without replacing the frozen research binding; changing canonical copy or meaning still goes through Storyboard revision and review.
+The narration manifest records exact text, audio hashes and measured duration. Review the voice output as part of your project.
 
-The creative agent must never run the host approval command. For workflow details, see `CODEX_E2E.md`, `docs/ARCHITECTURE.md`, and `.agents/skills/agent-video/SKILL.md`.
+[TTS setup, narration format and duration handling →](docs/TTS.md)
 
-For slide-based requests, place source decks in `video-input/` or pass a local PPTX/PDF to `npm run video -- source import <path>`. For lecture decks that need per-slide review, use `npm run video -- sources extract <deck.pdf|deck.pptx>`, bind a slide-labeled script with `sources script`, and create/check its assessment with `sources assess template|check`. `video init` preserves `.video/sources/`. Extraction supplies analysis context; `video.json` remains the approved source of meaning and visible copy. Remotion projects derive theme, font, and frame-motion modules from canonical theme tokens and registered fonts.
-# Local TTS and checkpoint reopening
+## App Explorer and real interface evidence
 
-Narration uses pinned self-hosted VieNeu v3 Turbo CPU/ONNX; see [docs/TTS.md](docs/TTS.md) for general installation guidance, commands, measured WAV manifests, and sample memory measurements. Script approval binds exact voice bytes. Hard duration ceilings produce a host-owned `DURATION_FIT` decision; approved narration is never sped up or trimmed.
+Before writing a product ad, you can ask the agent to learn the app's actual features and workflows. App Explorer keeps reusable product knowledge and evidence so the campaign can draw on observed behavior.
 
-Approved checkpoints can be reopened from Backlot or `npm run video:host -- reopen ...`. Reopening snapshots old approvals and invalidates downstream authorization. Before resubmitting, inspect `video revision status` and submit a hash-bound report with `video revision reconcile <report.json>`. Previously approved artifacts may be reused but require fresh review.
+### Open Chrome, log in, hand back to the agent
 
-## License
+With a compatible external **agent-browser** CLI and Chrome/Chromium configured, the workflow supports a visible browser session shared with you:
 
-Original project-authored code and documentation are licensed under the MIT License in [LICENSE](LICENSE). Third-party components and runtimes retain their own terms; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and [SOURCE_NOTICES.md](SOURCE_NOTICES.md) for source and license information. This project is not affiliated with or endorsed by the referenced upstream projects.
+1. **Define the scope.** Give the app URL, account role and workflows to explore. Specify which actions the agent may perform, especially actions that create, edit or delete data.
+2. **Open the app.** Ask the agent to launch a headed browser session. The browser is the live app surface; Backlot/Explorer shows the knowledge being collected.
+3. **Log in yourself.** Complete sign-in, MFA or other interactive steps in the visible browser. Keep credentials in the browser rather than the chat or project files.
+4. **Hand control back in chat.** Tell the agent that login is complete and to continue. It checks the account/role and resumes the authorized work on that same browser session.
+5. **Explore and record.** The agent inspects controls, performs authorized workflows, observes the results and saves linked evidence. It records unknown or blocked behavior as follow-up work.
+6. **Review or resume.** Inspect features, scenarios, questions and evidence in Explorer. Saved knowledge and checkpoints support continuation; an expired login requires you to authenticate again.
+
+For example, give your coding agent this request:
+
+~~~text
+Use App Explorer to explore https://my-product.example.
+Open a visible Chrome session and let me log in first.
+Wait until I say "login complete" before continuing.
+
+Explore the dashboard and the workflow for creating a project.
+Use my demo workspace. You may create one clearly labeled test project;
+do not delete existing data or change billing or account settings.
+
+After I hand the browser back, continue in the same session.
+Capture screenshots of meaningful results and record the steps,
+observations, limitations and remaining questions in App Explorer.
+We will use supported findings to plan a product ad later.
+~~~
+
+The handoff uses a browser session managed by the configured browser tools. Attaching to an existing tab requires a supported session connection; opening an arbitrary personal Chrome tab alone does not register it with App Explorer. The agent-browser CLI is an external prerequisite, configured separately from repository bootstrap.
+
+### What exploration records
+
+- **Features and workflows:** entry points, actions, observed responses, tested context and scenario completion criteria.
+- **Screenshots:** a redacted image of an observed result for each exercised UI feature or scenario, linked to the corresponding step and evidence record. This does not require an image for every click.
+- **Text/accessibility snapshots:** supporting page structure and control information used to understand the current state.
+- **Progress and gaps:** checkpoints, open questions, blocked tasks and the next feasible work, so a pause can be resumed without treating incomplete research as finished.
+
+Evidence images live under the registered app's knowledge workspace in evidence/<run-id>/. Records link them by relative reference. The dataset is versioned separately from the video project and can be reused for later campaigns. Private authentication/session descriptors are kept outside the project and Git; screenshots must be reviewed and redacted before being saved as knowledge.
+
+A screenshot records an observed state. Verified scenarios also need their completion criteria met and the tested context recorded. Login loss, missing evidence or an unresolved result leaves the work partial or blocked.
+
+### Exploration technology
+
+| Component | Role |
+| --- | --- |
+| Your coding agent + app-explorer skill | Chooses the next authorized task, interprets observations and writes structured knowledge |
+| External agent-browser CLI | Drives the live browser, reads accessibility snapshots, interacts with controls and captures screenshots |
+| Chrome/Chromium | Runs the actual app and the user-authenticated browser session |
+| App Explorer runtime | Stores features, scenarios, evidence references, revisions, checkpoints and follow-up work |
+| Backlot/Explorer web interface | Displays collected knowledge, evidence and progress while you steer through chat |
+| Pinned playwright-core CDP adapter | Connects production web capture to an explicitly registered shared browser session when that evidence is needed for the ad |
+
+App Explorer's CLI stores and validates knowledge; your coding agent and the external browser CLI perform the exploration. Exploration is explicitly requested and respects the authorized account, role and actions.
+
+To register an app and inspect its knowledge from the CLI:
+
+~~~bash
+npm run explore -- apps add --id my-product --name "My Product" --url https://my-product.example
+npm run explore -- --app my-product summary --json
+npm run explore -- --app my-product next --json
+~~~
+
+For a product ad, the agent reads existing knowledge and identifies gaps relevant to the campaign claims. Research evidence becomes a production asset only after the required storyboard, rights, binding and preflight checks.
+
+[Browser workflow and session handoff →](packages/app-explorer/docs/AGENT_BROWSER.md) · [App research contracts →](docs/APP_EXPLORER_RESEARCH.md) · [Web capture guide →](docs/WEB_APP_CAPTURE.md)
+
+## How it works
+
+~~~mermaid
+flowchart LR
+    A[Product + campaign brief] --> B[Video Brief + renderer choice]
+    B --> C[Campaign copy review]
+    C --> D[Storyboard review]
+    D --> E[Assets + visual implementation]
+    E --> F[Preview + human approval]
+    F --> G[Render + finalized MP4]
+~~~
+
+For advertising, choose product-ad as the primary Production Profile. Its creative criteria prioritize campaign objective, one dominant message, product fidelity and credible claims. The agent writes one complete script and performs a bounded self-check before human review.
+
+Project artifacts remain independent of the renderer:
+
+~~~text
+.video/                      Workflow state, brief, script and review records
+video.json                   Approved scene meaning, copy and frame budgets
+assets/manifest.json         Asset provenance, rights and scene bindings
+remotion/generated/          Current Remotion implementation, when selected
+hyperframes/projects/        HyperFrames implementation versions, when selected
+output/final.mp4              Final video
+.video/final-manifest.json   Delivery evidence and output binding
+~~~
+
+Project state, generated renderer workspaces, inputs and outputs are git-ignored. A new project can archive previous work; keep deliveries and source media you want to retain.
+
+## Other video formats
+
+The same workflow also supports product demos, tutorials, explainers, pitches, reports and lecture videos. Choose the profile that matches the viewer outcome when these are the main job.
+
+PPTX and PDF input is available for slide-based work through source import and per-slide extraction. See [slide input conventions](video-input/README.md) and the [video-type skills](.agents/skills/video-types/catalog.json) for these secondary workflows.
+
+## Documentation
+
+| Guide | Details |
+| --- | --- |
+| [Agent instructions](AGENTS.md) | Repository workflow and runtime boundaries |
+| [Agent video skill](.agents/skills/agent-video/SKILL.md) | End-to-end authoring procedure |
+| [Product ad profile](.agents/skills/video-types/product-ad/SKILL.md) | Campaign objectives, product fidelity and ad presentation guidance |
+| [Codex workflow](CODEX_E2E.md) | Checkpoints and authoring flow |
+| [Architecture](docs/ARCHITECTURE.md) | Canonical artifacts and renderer ownership |
+| [Human review contract](HITL_ADAPTER.md) | Approval and revision states |
+| [TTS](docs/TTS.md) | Local narration setup and formats |
+| [Web capture](docs/WEB_APP_CAPTURE.md) | Interface capture and asset resolution |
+
+For development checks:
+
+~~~bash
+npm run build
+npm run verify:host
+~~~
+
+## License and attribution
+
+Original project-authored code and documentation use the [MIT License](LICENSE). Third-party components, imported source libraries and rendering runtimes retain their own terms; see [Third-party notices](THIRD_PARTY_NOTICES.md) and [Source notices](SOURCE_NOTICES.md).
+
+The demo includes Earth Nullschool interface imagery. Including a demonstration here does not grant rights to reuse third-party branding, interface imagery or data in another production. Review the sources and intended use for your own assets.
+
